@@ -1,0 +1,50 @@
+1. Informazioni e organizzazioni: il sistema
+informativo.
+
+1)Che cos'è un sistema?In che modo la nozione di
+sistema è utile?
+Risposta: Un sistema è un insieme di componeneti
+che concorrono al raggiungimento di un obiettivo
+comune, 
+
+
+2)Che cos'è un modello e come aiuta a capire la
+realtà?
+Risposta: Un modello è ciò che si ottiene dalla
+modellazione della realtà
+
+3)Che cos'è un modello a scatola nera?Come aiuta a
+capire meglio la struttura dei sistemi?
+Risposta: Un modello black-box è un tipo di
+modello di cui non ci è dato sapere la sua
+implementazione interna, ma dato un input si
+ricevo un output ( questo output non deve variare
+se l'input non varia).
+
+4)Che cos'è un organigramma?
+Risposta: L'organigramma è la struttura gerarchica
+di un azienda/impresa oppure ente dove vengono
+descritte tutti i ruoli.
+
+5)Che cosa si intende per core business di un
+azienda?
+Risposta: Il core business di una azienda è il
+bene/servizio primario che l'azienda produce per
+generare incasso.
+
+6)Che cos'è il sistema informativo di un'azienda e
+quali sono le sue compoenenti?
+
+7)Che differenza esiste tra il sistema informativo
+e il sistema informatico?
+Risposta: Possiamo definire il sistema informatico
+come un sottoinsieme del sistema informativo ed
+inoltre il sistema informativo rappresenta tutte
+le procedure, regolamenti, informazioni, etc a
+supporto delle attività aziendali/enti; in questo
+contesto il sistema informatico deve automatizzare
+i flussi di informazione e agevolare i processi.
+
+8)Che cosa significa granularità?
+
+9)Come si può evolvere un sistema informativo?

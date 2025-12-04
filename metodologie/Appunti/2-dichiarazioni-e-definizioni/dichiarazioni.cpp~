@@ -1,0 +1,56 @@
+// Dichiarazioni & definizioni
+
+/*
+  Prima di poter usare un nome (identificatore) in
+  un programma C++,  è necessario dichiararlo, per
+  informare al compilatore del tipo di entità che
+  rappresenta.
+
+  Alcune dichiarazioni sono spesso anche
+  definizioni, ma è possibile dichiarare senza
+  definire immediatamente l'implementazione
+  dell'entità.
+
+  Una definizione è appunto l'implementazione della
+  dichiarazione, essa fornisce tutto ciò che serve a
+  un programma per l'uso di tale entità e se è
+  necessaria accontanore memoria.
+
+  Questa distinzione ci permette di poter separare
+  le dichiarazioni dalle definizioni, infatti le
+  dichiarazioni vengono utilizzate per definire le
+  interfacce mentre le definizioni si trovano in
+  file differnti.
+*/
+
+
+
+#include <iostream>
+
+// Date è una struct con tre membri
+struct Date {int d,m,y;};
+
+// day è una funzione che ha una definizione
+int day(Date* p){return p->d; }
+
+
+int main(){
+  
+  // accantona memoria per un char è lo
+  // inizializza a 0
+  char c;
+  
+  // accontano memoria per un
+  // intero e lo inizializza ad 1
+  auto count = 1;
+
+  // accontano memoria per il puntatore a char
+  // accontona memoria per la stringa
+  // inizializza il puntatore all'indirizzo di
+  // memoria della stringa
+  const char* name = "Nihal"; 
+  // Date è una struct con tre membri
+  struct Date {int d,m,y;};
+
+  return 0;
+}

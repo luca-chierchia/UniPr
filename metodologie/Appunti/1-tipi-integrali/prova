@@ -1,0 +1,100 @@
+// ==================================================
+// Argomenti di ripasso
+// Fonte:
+//   B. Stroustrup,
+//   "C++: Linguaggio, libreria standard,
+//    principi di programmazione",
+//   Quarta edizione, Pearson, 2015.
+//
+// Capitolo 6 — Tipi e dichiarazioni
+//
+// Tipi fondamentali:
+//   Il C++ possiede un insieme di tipi
+//   fondamentali che corrispondono alle unità
+//   di memorizzazione di base:
+//
+//   - bool   → booleano (true/false)
+//   - char   → carattere
+//   - int    → interi
+//   - double → virgola mobile
+//   - void   → assenza di informazioni
+//
+// I tipi int, bool e char sono detti
+// "tipi integrali".
+// ==================================================
+
+
+#include <iostream>
+
+
+// ==================================================
+// Tipi Booleani
+//
+// f(a,b):
+//   Confronta due interi e stampa il risultato
+//   booleano.
+// ==================================================
+void f(int a, int b) {
+  bool b1(a == b);
+  std::cout << b1 << std::endl;
+}
+
+
+// Uso comune di bool: funzione che verifica
+// un predicato.
+bool greater(int a, int b) {
+  return a > b;
+}
+
+
+// Funzione di test. Deve essere definita dopo
+// f() e greater(), altrimenti il compilatore
+// non trova le dichiarazioni.
+void test01(int a, int b) {
+  f(a, a); // stampa 1 se a == a
+  f(a, b); // stampa 0 se a != b
+  greater(a, b);
+  greater(b, a);
+}
+
+
+// ==================================================
+// Tipi Carattere, Narrowing e Conversioni
+//
+// NARROWING:
+//   Conversione implicita da tipo più grande a
+//   tipo più piccolo, con possibile perdita.
+//
+// CONVERSIONI IMPLICITE:
+//   Operazioni automatiche del compilatore.
+//
+// ARITMETICA E LOGICA BIT A BIT:
+//   bool → int (1 o 0) per le operazioni,
+//   poi riconversione a bool.
+// ==================================================
+int main() {
+
+  // Test booleani
+  std::cout << "primo test:\n";
+  test01(3, 3);
+
+  std::cout << "secondo test:\n";
+  test01(5, 2);
+
+  bool b2{"c"};  // const char* → bool (true)
+  bool b3{4};    // errore: {} impedisce narrowing
+  bool b31 = 4;  // valido: 4 != 0 → true
+  bool b4{1};    // valido
+
+  // es1
+  bool a = true;
+  bool b = true;
+  bool z = a - b;
+  // true(1) - true(1) = 0 → false
+
+
+  // Sezione tipi carattere
+
+
+  return 0;
+}

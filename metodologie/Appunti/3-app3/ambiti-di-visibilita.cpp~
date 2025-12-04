@@ -1,0 +1,27 @@
+// Ambiti di visibilità
+
+/*
+  Una dichiarazione introduce un nome in un certo
+  ambito, esistono diversi ambiti di visibilità
+  (scope) ed in base a dove viene dichiarata
+  l'entità cambia la sua visibiltià ovvero la
+  possibilità di poter utilizzare tale entità.
+
+  tipologie di ambiti di visibilità:
+  - ambito locale,
+  - ambito globale,
+  - ambito di clase,
+  - ambito dell'istruzione,
+
+*/
+
+#include <iostream>
+
+// ambito globale
+int x = 1; // x è visibile ovunque nel file
+
+
+int main(){
+  
+  return 0;
+    }

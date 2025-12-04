@@ -1,0 +1,31 @@
+// Puntatori e riferimenti
+
+/*
+  Possiamo riferirci ad un oggetto per nome, in C++ gran parte degli
+  oggetti ha "un'identità", ovvero risiede a uno specifico indirizzo di
+  memoria, un oggetto è accessibile conoscendo l'indirizzo ed il tipo, i
+  puntatori ed i riferimenti ci permettono di contenere ed usare gli
+  indirizzi.
+
+  Puntatori
+  Un puntatore è un contenitore di un altro indirizzo di memoria, può
+  essere vista come una variabile che contiene per l'appunto un altro
+  indirizzo di memoria, l'operazione fondamentale del puntatore è il
+  deferimento che ci permette di ovvero riferirsi all'oggetto a cui
+  punta il puntatore.
+  In generale per un tipo T, T* è il puntatore a T, T* p contiene
+  l'indirizzo di un oggetto di tipo T
+*/
+
+
+#include <iostream>
+
+int main(){
+
+  char c = "a";
+  char* pc = &c; 
+  std::cout << "Indirizzo del puntatore: " << &pc << std::endl; 
+  std::cout << "sono pc ed il mio contenuto è: "<< pc << ", punto a: " << *pc << std::endl;
+  return 0;
+}
+

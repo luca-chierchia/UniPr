@@ -1,0 +1,117 @@
+// ============================================================================
+// Appunti sul libro di Stroustrup
+// Autore: Luca Chierchia
+// ============================================================================
+//
+// Note:
+// - Tutto ciò che segue in commenti è testo esplicativo
+// - Il codice è eseguibile senza toccare il file
+// - Separazione chiara per la stampa: righe "===="
+//
+// ============================================================================
+
+
+// Argomenti di ripasso
+/*  B. Stroustrup
+    C++: Linguaggio, libreria standard, principi di programmazione
+    Quarta edizione, Pearson, 2015.
+
+    Capitolo 6:  Tipi e dichiarazioni
+    
+
+
+   Tipi fondamentali
+   Il C++ ha un set di tipi fondamentali corrispondenti alle più comuni
+   unità di base di memorizzazione di un computer:
+   -booleani, tipo booleano (true e false)
+   -char, tipi carattere
+   -int, i tipi interi
+   -double, sono i tipi in virgola mobile
+   -void, per indicare l'assenza di informazioni
+*/
+
+// I tipi int,bool e char sono detti collettivamente tipi integrali.
+
+
+#include <iostream>
+
+
+// Tipi Booleani
+
+void f(int a, int b){
+  bool b1(a==b);
+  std::cout << b1 << std::endl;
+};
+
+// Un utilizzo comune di bool è come tipo di ritorno di una funzione
+// che verifica un predicato
+bool greater(int a,int b){
+  return a > b;
+}
+
+// funzione di test dichiarato e definita dopo f() e greater()
+// altrimenti il compilatore segnalerebbe un errore in fase di
+// compilazione  perchè non riuscirebbe a trovare le funzioni da
+// includere in test01()
+void test01(int a, int b){
+  f(a,a); // se a è uguale a b allora stampa 1
+  f(a,b); //  se a è diverso da b allora stampa 0
+  greater(a,b); // se a è maggiore di b ritorna 1
+  greater(b,a); // se a è minore di b ritorna 0
+}
+
+// Tipi Carattere
+
+
+/*
+
+NARROWING
+il narrowing in C++ la conversione implicita di un tipo di dato
+più grande in un tipo di dato più piccolo con la conseguente perdita
+di dati (conversione per restringimento)
+
+CONVERSIONI IMPLICITE
+le conversioni implicite sono le conversioni attuate dal compilatore
+in maniera automatica.
+
+ARITMETICA && ESPRESSIONI LOGICHE bit a bit
+I booleani vengono convertiti in int, quindi le espressioni vengono
+eseguiti su valori convertiti (1 e 0), successivamente se il risultato
+torna ad essere un booleano come nell'esempio es1
+
+*/
+
+
+int main(){
+
+  // Sezione codice per tipi booleani
+  std::cout << "primo test:" << std::endl;
+  test01(3,3);
+  std:: cout << "secondo test:" << std::endl;
+  test01(5,2);
+
+  bool b2 {"c"}; // conversione da const char* -> bool
+  bool b3 {4}; // errore di compilazione {} questa sintassi dovrebbe
+	       // prevenire il narrowing e per l'appunto la perdita di
+	       // informazione che in questo caso non è consentita
+  bool b31 = 4; // in questo caso b31 = 1 dato che 4 != 0
+  bool b4 {1}; // viene inizializzato correttamente
+
+  // es1
+  bool a = true; 
+  bool b = true; 
+  bool z = a-b; // z sarà false perchè l'operazione viene effettuata
+		// sulla conversione ad interi, quindi 1-1 = 0, viene
+		// poi nuovamente convertito in in booleano.
+  
+
+  // Sezione codice per tipi carattere
+
+  
+  
+  
+  return 0;
+  }
+
+
+
