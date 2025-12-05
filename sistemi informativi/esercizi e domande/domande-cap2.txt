@@ -2,20 +2,73 @@
 
 1)Che cos'è un processo business e quali 
 sono le sue caratteristiche?
-
 2)Quali sono le informazioni necessarie se si
 vuole conoscere completamente un processo
 business?
-Risposta: Un processo business è l'insieme di
-tutte le attività coinvolte in maniera diretta o
-inderetta al core business aziendale.
+Risposta 1+2: Il processo business è l'insieme di
+attività che l'organizzazione svolge per il
+prodotto o servizio. Un processo business presenta
+diverse caratteristiche tra cui:
+- input del processo, tutte le entità che vengono
+  coinvolte nel processo.
+  
+- output del processo, il bene prodotto dal
+  processo.
+  
+- trigger, l'evento scatenante del processo.
+
+- risorse organizzative,
+
+- risorse ausiliare, l'entità non direttamente
+  coinvolte nella produzione del bene o del
+  servizio, ma che offrono un supporto al processo
+  business .
+  
+- risorse umane, che compiono il processo, che
+  che supervisionano il processo, che sono
+  responsabili del processo.
+  
+- costi del processo, tutte le spese generate dal
+  processo.
+  
+Un'altro fattore è molto importante nel processo
+business, gli stakeholder, ovvero tutte le figure
+che hanno interesse nel processo, sono figure
+esterne ma possono essere anche direttamente
+coinvolte nell'azienda o collaborare con essa come
+ad esempio i fornitori.
+
 
 3)Che cos'è la catena del valore di Porter?Perchè
 è cosi importante nel contesto aziendale?
+La catena di Porter rappresenta la
+classificazione dei processi, fondamentalemnte
+all'interno di un organizzazione possiamo
+identificare 3 macro-aree:
+
+- buy side, ovvero quello che riguardo
+  l'approvvigionamento delle risorse per il
+  processo.
+  
+- inside, il processo vero è proprio, qui si
+  potrebbe attuare un ulteriore suddivisione tra
+  processi primari, secondari ed ausiliari.
+  
+- sell side, lato vendite, vede coinvolte tutte le
+  funzioni utili alla vendita come ad esempio il
+  reparto marketing, la distribuzione e
+  post.vendita.
+  
+CATENA DI PORTER
+(buy side)Gestione dell materie prime
+-->(inside)Trasformazion e -->(sell side)
+Marketing e Vendite --> Distribuzione --> Post
+vendita.
+
 
 4)Che cosa si intende per processi primari e
 processi secondari o ausiliari?
-Risposta: Il processo primario di un azienda/ente
+Il processo primario di un azienda/ente
 è il processo che ha il compito di generare il
 prdotto o il servizio nel concreto, mentre i
 processi ausiliari o secondari sono tutti quei
@@ -23,4 +76,59 @@ processi a sostegno del processo primario, come ad
 esempio il reparto vendite/acquisti, contabilità,
 amministrazione,risorse umane, etc
 
-5)
+5)Classificazione gerarchica dei processi: che
+cos'è e come è strutturata la Piramide di Anthony?
+La piramide di Anthony è un altro tipo
+di classificazione dei processi, ma dal punto di
+vista decisionale, inoltre hanno un impatto
+temporale diverso, sono cosi suddivisi:
+
+- processi strategici, pianificazione a lungo
+  termine degli obiettivi aziendali, il dove si
+  vuole arrivare, coinvolge il top-managment.
+
+- processi tattici, coinvolge il middle-managment,
+  a questo livello si pianifica il come
+  raggiungere gli obiettivi prefissati dal livello
+  prima.
+
+- processi operativi, qui troviamo tutte le
+  attività di base quotidiane che sono coinvolte
+  nel processo vero e proprio.
+
+6)Che cos'è un KPI?
+Un KPI (Key Performance Indicator) è un..
+
+7)Che cosa si intende per process owner?
+Il process owner è il supervisore del processo.
+
+8)Che cos'è una divisione aziendale o funzione
+aziendale?
+Una divisione o funzione aziendale è un componente
+che partecipa al processo business dell'azienda,
+ad esempio il reparto vendite, il reparto acquisti
+possono essere visti rispettivamente come funzioni
+vendita e funzioni acquisti ed infatti il processo
+attraversa ogni funzione aziendale dalla logistica
+alla vendita.
+
+
+9)Che cosa si intende per progetto?
+10)Che cos'è il project managment?
+11)Che cosa si intende per WBS?
+Il Work breakdowns
+
+12)Che cosa si intende per OBS?
+13)Come avviene solitamente la mappatura dei
+processi sulle strutture aziendali?
+14)Che cos'è una matrice delle responsabilità o
+matrice RAM?
+15)Che cosa si intende per architettura aziendale?
+16)Che cosa esprime lo standard ISO 42010?
+17)Che cosa si intende per vista di
+un'architettura?
+18)Che cos'è lo standard TOGAF?
+19)Che cosa esprime TOGAF ADM attraverso le viste
+TOGAF?
+20)Come è strutturato il modello TOGAF per la
+suddivisione delle aziende?

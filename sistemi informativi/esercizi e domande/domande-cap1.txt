@@ -11,7 +11,8 @@ comune,
 2)Che cos'è un modello e come aiuta a capire la
 realtà?
 Risposta: Un modello è ciò che si ottiene dalla
-modellazione della realtà
+modellazione della realtà ci aiuta nella a
+rappresentare il sistema.
 
 3)Che cos'è un modello a scatola nera?Come aiuta a
 capire meglio la struttura dei sistemi?
@@ -24,16 +25,23 @@ se l'input non varia).
 4)Che cos'è un organigramma?
 Risposta: L'organigramma è la struttura gerarchica
 di un azienda/impresa oppure ente dove vengono
-descritte tutti i ruoli.
+descritte tutti i ruoli. (potrebbe essere anche
+una rappresentazione grafica)
 
 5)Che cosa si intende per core business di un
 azienda?
 Risposta: Il core business di una azienda è il
 bene/servizio primario che l'azienda produce per
-generare incasso.
+generare incasso, ovvero è la principale attività
+aziendale di tipo operativo.
 
 6)Che cos'è il sistema informativo di un'azienda e
 quali sono le sue compoenenti?
+Risposta: Il sistema informativo all'interno
+dell'azienda e l'insieme di persone,
+apparecchiature, procedure aziendali
+il cui compito è quello di produrre
+informazioni utili all'impresa e a gestirla
 
 7)Che differenza esiste tra il sistema informativo
 e il sistema informatico?
@@ -46,5 +54,18 @@ contesto il sistema informatico deve automatizzare
 i flussi di informazione e agevolare i processi.
 
 8)Che cosa significa granularità?
+Risposta: La granularità è il livello di dettaglio
+con cui osserviamo un determinato componenete del sistema.
 
 9)Come si può evolvere un sistema informativo?
+Risposta: Un sistema evolutivo può evolversi in
+diversi modi:
+1- imperativo tecnologico, il motore principale di
+questo tipo di evoluzione è l'integrazione
+tecnologica
+2- imperativo organizzativo, sono i cambiamenti
+organizzativi a guidare l'evoluzione del sistema
+informativo.
+3- prospettivo emergente, l'evoluzione è indotta
+dalla continua interazione tra l'IT, gli utenti ed
+il resto del contesto.
