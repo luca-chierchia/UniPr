@@ -9,41 +9,6 @@ Risposta 1+2: Il processo business è l'insieme di
 attività che l'organizzazione svolge per il
 prodotto o servizio. Un processo business presenta
 diverse caratteristiche tra cui:
-- input del processo, tutte le entità che vengono
-  coinvolte nel processo.
-  
-- output del processo, il bene prodotto dal
-  processo.
-  
-- trigger, l'evento scatenante del processo.
-
-- risorse organizzative,
-
-- risorse ausiliare, l'entità non direttamente
-  coinvolte nella produzione del bene o del
-  servizio, ma che offrono un supporto al processo
-  business .
-  
-- risorse umane, che compiono il processo, che
-  che supervisionano il processo, che sono
-  responsabili del processo.
-  
-- costi del processo, tutte le spese generate dal
-  processo.
-  
-Un'altro fattore è molto importante nel processo
-business, gli stakeholder, ovvero tutte le figure
-che hanno interesse nel processo, sono figure
-esterne ma possono essere anche direttamente
-coinvolte nell'azienda o collaborare con essa come
-ad esempio i fornitori.
-
-
-3)Che cos'è la catena del valore di Porter?Perchè
-è cosi importante nel contesto aziendale?
-La catena di Porter rappresenta la
-classificazione dei processi, fondamentalemnte
-all'interno di un organizzazione possiamo
 identificare 3 macro-aree:
 
 - buy side, ovvero quello che riguardo
@@ -97,10 +62,15 @@ temporale diverso, sono cosi suddivisi:
   nel processo vero e proprio.
 
 6)Che cos'è un KPI?
-Un KPI (Key Performance Indicator) è un..
+Un KPI (Key Performance Indicator) è uno strumento
+che fornisce dei parametri per misurare la qualità
+dei processi, uno strumento utile in supporto ai
+precedenti parametri di efficienza ed efficacia.
 
 7)Che cosa si intende per process owner?
-Il process owner è il supervisore del processo.
+Il process owner è il supervisore del processo, ha
+il compito di supervisionare  e garantire di
+raggiungere gli obiettivi prefissati.
 
 8)Che cos'è una divisione aziendale o funzione
 aziendale?
@@ -114,21 +84,127 @@ alla vendita.
 
 
 9)Che cosa si intende per progetto?
+Il progetto è un insieme organizzato di attività
+limitate nel tempo, allo scopo di creare servizio
+oppure un prodotto
+
 10)Che cos'è il project managment?
+Il project managment è l'applicazione delle skill,
+delle conoscenze, strumenti e tecniche coinvolte
+nelle attività del progetto.
+
 11)Che cosa si intende per WBS?
-Il Work breakdowns
+Il Work breakdowns structure è una metodologia di
+scomposizione strutturata di un lavoro oppure un progetto.
 
 12)Che cosa si intende per OBS?
+L'Organization breakdown structure è una
+metodologia di scomposizione strutturata
+dell'organizzazione  che ci permette di
+identificare ruoli e responsabilità.
+
 13)Come avviene solitamente la mappatura dei
 processi sulle strutture aziendali?
+La mappatura dei processi sulle strutture
+aziendali richiede la conoscenza di:
+
+- organigramma, ovvero le gerarchie e le
+  responsabilità
+
+- proprietò logiche, mandato, compiti,processi.
+
+- proprietà quantitative, organici della
+  struttura, volume di lavoro.
+
+- efficacia e sua misurazione.
+
 14)Che cos'è una matrice delle responsabilità o
 matrice RAM?
+La Responsability Assignament Matrix ci permette
+di specifiare ruoli di ogni persona o divisione
+organizzativa coninvolta nel procesos
+
 15)Che cosa si intende per architettura aziendale?
+L'architettura aziendale è la descrizione completa
+dell'organizazzione, spiega come funzionano i
+processi , qualsi informazioni si usano, quali
+sistemi li supportano e su quali tecnologie si
+basano. E come una mappa che mostra come tutto si
+collega, ma non entra nel dettaglio
+
 16)Che cosa esprime lo standard ISO 42010?
+Lo standard ISO 42010 stabilisce le regole per
+documentare correttamente l'archietettura
+aziendale.
+
 17)Che cosa si intende per vista di
 un'architettura?
+Per vista di un archietettura si intende il punto
+di vista di uno stakeholder (soggetto interno od
+esterno che ha interesse nelle attività
+aziendali), ogni stakeholder può avere un punto di
+vista differente generando cosi modelli diversi,
+ogni modello appunto avrà caratteristiche
+importanti per lo stakeholder.
+
 18)Che cos'è lo standard TOGAF?
+The Open Group Architecture Framework è una
+metodologia per lo sviluppo di un architettura.
+
 19)Che cosa esprime TOGAF ADM attraverso le viste
 TOGAF?
+L'Architecture Development Method definisce le
+viste TOGAF per l'azienda conformi allo standard
+ISO 42010
+
 20)Come è strutturato il modello TOGAF per la
 suddivisione delle aziende?
+Il modello TOGAF è suddiviso in 3 livelli,
+rispettivamente:
+
+- Livello business, a questo livello troviamo i
+  processi e gli attori attivi.
+
+- Livello applicazioni, a questo livello troviamo
+  le applicazioni che supportano i processi.
+
+- Livello tecnologico, il livello che vede le
+ strutture e tecnologie utilizzate dal livello
+ applicativo per operare.
+
+Appunti Aggiuntivi
+
+Schema Catena di Porter e Piramide di Anthony:
+
+| Modello                         | Punto di vista                   | Cosa classifica                              |
+| ------------------------------- | -------------------------------- | -------------------------------------------- |
+| **Piramide di Anthony**         | Livello decisionale              | Processi strategici / gestionali / operativi |
+| **Catena del valore di Porter** | Creazione di valore nei processi | Attività primarie e di supporto              |
+
+
+Catena di Porter.
+
+Dalla catena di Porter è possibile derivare dai
+macroprocessi altri processi molto importanti dal
+punto di vista aziendale/ente come: gestione ciclo
+passivo,gestione ciclo passivo, gestione
+approvvigionamento(SCM),gestione magazzino,
+amministrazione, gestione relazione con il cliente(CRM).
+
+
+Efficacia ed Efficienza.
+
+Sappiamo che i risultati di un processo possono e
+devono essere misurabili, abbiamo quindi unità di
+misura che ci permettono di indentificare la
+qualità del risultato:
+
+- Efficienza: se è a parita di input il risultato
+  atteso migliora la qualità allora abbiamo
+  aumentato l'efficienza del processo;
+  Out effettivo/ Input
+
+- Efficacia: quanto più l'output del processo si
+  avvicina all' output atteso allora abbiamo
+  migliorato l'efficacia del processo;
+  Out effettivo/ Out atteso
