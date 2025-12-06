@@ -134,3 +134,18 @@ comporta?
 
 19)Che cos'è il cloud computing?Quali vantaggi
 comporta?Che cosa lo può limitare?
+
+
+Alcune osservazioni utili
+
+Nella progettazione di un sistema informatico
+moderno è essenziale comprendere come i diversi
+componenti dell’architettura interagiscono tra
+loro per garantire scalabilità, affidabilità e
+flessibilità. Concetti come l’architettura
+distribuita client–server, i diversi tipi di
+server (Web Server, Database Server, Object
+Server, Transaction Server, Domain Server, ecc.) e
+gli standard architetturali (come l’ISO 42010)
+permettono di strutturare il sistema in entità
+logiche specializzate
