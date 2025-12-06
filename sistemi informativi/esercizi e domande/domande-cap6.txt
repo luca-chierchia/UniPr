@@ -4,12 +4,15 @@
 Risposta: Nelle applicazioni di tipo
 interattive(uomo-macchina), i componeneti
 principali sono:
-- l'interfaccia utente che permette
-all'uomo di interagire con l'elaboratore.
-- regole funzionali, insieme di funzioni che
-svolgono un determinato compito dopo l'interazione
-con gli utenti.
-- dati, elemento su cui si compie l'elaborazione.
+
+ - l'interfaccia utente che permette
+ all'uomo di interagire con l'elaboratore.
+
+ - regole funzionali, insieme di funzioni che
+ svolgono un determinato compito dopo l'interazione
+ con gli utenti.
+
+ - dati, elemento su cui si compie l'elaborazione.
 
 2)Qual'è il ruolo delle reti entro i sistemi
 informatici odierni?
@@ -24,40 +27,43 @@ problemi di compatibilità)
 
 3)Cos'è il modello ISO/OSI che concetto importante
 introduce?
-Risposta: L'ISO/OSI è un modello concettuale che
-descrivi come deve avvenire la comunicazione tra
+L'ISO/OSI(Open System Interconnection) è un
+modello concettuale che introduce
+la stratificazione e l'idipendenza tra livelli,
+descrive come deve avvenire la comunicazione tra
 due sistemi in rete ed è suddivisa in 7 livelli:
-1-livello fisico, le strutture che permettono il transito
-dei dati.
-2-livello data-link, che definisce i controlli da
-fare sulla conversioni dei bit-segnale, organizza
-i frame di dati e governa il trasferimento tra
-sorgente e destinatario.
-3-livello rete, questo livello è responsabile del
-routing, ha diversi standard dal data-link.
-4-livello trasporto, ha il compito di suddividere
-i dati in più pacchetti stabilendo l'ordine e
-verificando l'arrivo, il protocollo più utilizzato
-è il TCP ( Transport Control Protocl). Nota i dati
-possono viaggiare anche su percorsi diversi ma
-giunti alla stessa destinazione vengono
-riassemblati con un preciso ordine per essere
-identici come quando sono partiti dalla sorgente.
-5-livello sessione, garantisce un controllo di
-flusso per le informazioni, dal momento che inizia
-fino a quando viene chiusa la comunicazione.
-6- livello presentazione, definisci la corretta
-conversione dei dati dal momento che due
-elaboratori diversi potrebbero avere codifiche
-diverse.
-7-livello applicazione: il software che si occupa
-di stabilire la comunicazione tra sorgente e destinatario.
 
-Precisazione, i primi 4 compiti vengono svolti dal
-software TCP/IP , mentre gli ultimi 3(sessione,
-presentazione e applicazione) possono essere
-svolti dal software che con cui si effettua
-l'operaizone come Outlook,Skype,etc.
+ 1-livello fisico, le strutture che permettono
+ il transito dei dati. ( cavi,segnali elettrici/ottici)
+ 
+ 2-livello data-link, organizza i bit in frame,
+ gestisce errori e accesso al canale.
+
+ 3-livello rete, questo livello è responsabile
+ dell'instradamento(routing), ad esempio
+ protocollo IP.
+
+ 4-livello trasporto, ha il compito di suddivide
+ i dati in più pacchetti stabilendo l'ordine e
+ verificando l'arrivo, il protocollo più utilizzato
+ è il TCP ( Transport Control Protocl). Nota i dati
+ possono viaggiare anche su percorsi diversi ma
+ giunti alla stessa destinazione vengono
+ riassemblati con un preciso ordine per essere
+ identici come quando sono partiti dalla sorgente.
+
+ 5-livello sessione, garantisce un controllo di
+ flusso per le informazioni, dal momento che inizia
+ fino a quando viene chiusa la comunicazione.
+
+ 6- livello presentazione, definisci la corretta
+ conversione(codifiche,compressione,cifratura)
+ dei dati per renderli comprensibili ai sistemi coinvolti.
+
+ 7-livello applicazione: il software che si occupa
+ di stabilire la comunicazione tra sorgente e destinatario.
+
+
 
 
 4)Che cos'è il modello client-server? Che
@@ -70,22 +76,54 @@ che richiede tale servizio, talvolta un client può
 fungere sia da client che da server, come ad
 esempio nei sistemi P2P.
 Esistono diverse funzionalità server:
--File server e print server.
--Domain server, server che gestisce
-utenti,permessi ed autentificazioni in una rete
-aziendale (come Active Directory).
--Database server, ospita e gestisce db, salva,
-legge e scrive i dati ed esegue le query.
--Web server, fornisce pagine web tramite
-HTTP/HTTPS e risponde alle richieste dei browser client.
--Terminal server, permette agli utenti di accedere
-a un desktop remoto oppure a delle applicazioni in
-esecuzione su un server, ad esempio è possibile
-utilizzare software non presente sul proprio PC.
--Groupware server, server che fornisce strumenti
-per lavoro collaborativo.
--Application server, 
--Administration server.
+
+ - File server : computer o servizio di rete che
+ mette a disposizione file e cartelle condivise e
+ gestisce operazioni di accesso, lettura,
+ scrittura e autorizzazione agli utenti della
+ rete.
+
+ - Print server: computer o servizio di rete che
+   gestisce le code di stampa di più computer
+   collegati al print server.
+   
+ - Domain server, server che gestisce
+   utenti,permessi ed autentificazioni in una rete
+   aziendale (come Active Directory).
+ 
+ - Database server: elaboratore che ospita e
+   gestisce db , salva, legge e scrive i dati ed
+   esegue le query.
+ 
+ - Web server: servizio che fornisce pagine e
+   servizi web tramite HTTP/HTTPS, è possibile
+   accedere alle pagine tramite link, infatti è
+   possibile navigare tra gli ipertesti cliccando
+   sui link che si trovano incorporati non solo a
+   del testo ma anche alle immagini ed i video.
+ 
+ - Terminal server: permette agli utenti di accedere
+   a un desktop remoto oppure a delle applicazioni in
+   esecuzione su un server, ad esempio è possibile
+   utilizzare software non presente sul proprio PC.
+
+ - Groupware server: server che fornisce strumenti
+   per lavoro collaborativo.
+
+ - Application server: ospita ed esegue la logica
+   applicativa di uno o più programm, fornendo
+   servizi complessi tramite API, servi web o
+   protocolli specifici.
+
+ - Administration server: è un server dedicato
+   alla gestione, configurazione e monitoraggio di
+   altri server o servizi all'interno di un
+   sistema informativo.
+
+ - Object server: server che espone oggetti
+   applicativi accessibili da remoto, permettendo
+   ai client di invocare metodi sugli oggetti come
+   se fossero locali.
 
 5)In base a quali criteri si procede alla scelta
 di un'applicazione entro un sistema informatico?
@@ -95,8 +133,13 @@ Risposta:
 programma applicativo? Quali problematiche sono
 legate all'interfaccia utente? Come essa
 interviene nel lavoro quotidiano?
-Risposta: l'interfacci utente di un programma
-è l'intermediario tra l'utente e l'elaboratore
+Una delle principali problematiche legate
+all'interfaccia utente è la supportabilità della
+stessa, infatti ogni sistema è dotato di librerie
+grafiche proprie ciò comporta differenze tra
+interfacce grafiche di una stessa applicazione ed
+eventuali modifiche devono essere effettuate
+singolarmente su ogni sistema.
 
 7)Che cosa sono le matrici di compatibilità del software?
 
@@ -105,10 +148,28 @@ l'inserimento di un nuovo componenete è soggetto?
 
 9)Che cosa si intende "problemi di manutenibilità
 di un software?
+La manutenibilità del software è uno dei maggiori
+dei problemi dei produttori di applicativi, questo
+è la fase che segue l'entrata in servizio di un
+software. Si possno distinguere :
+
+- Manutenzione evolutiva: cambiamenti del software
+  per adattamenti a nuove specifiche.
+
+- Manutenzione ordinaria: correzzione errori che
+  non dovevano essere presenti in fase di rilascio.
 
 10)Che cos'è un sistema informatico distribuito?
 In che situazioni esso si trova? Quali
 problematiche di gestione vi sono associate?
+Un sistema informatico distribuito è un sistema
+che opera tra 2 o più nodi(computer) collegati in rete,
+in genere questi modelli si definiscono
+client-server oppure modelli multi-tier. Il
+modello client-server presenta problemi di
+scalabilità, complessità e supportabilità, infatti
+sono spesso presenti all'interno di piccole
+aziende oppure dipartimenti aziendali.
 
 11)Che cosa si intende per business continuity?
 
@@ -149,3 +210,18 @@ Server, Transaction Server, Domain Server, ecc.) e
 gli standard architetturali (come l’ISO 42010)
 permettono di strutturare il sistema in entità
 logiche specializzate
+
+Tabella degli esempi di Server
+
+| **Tipo di Server**        | **Funzione principale**                             | **Esempi concreti (software / tecnologie)**                     |
+| ------------------------- | --------------------------------------------------- | --------------------------------------------------------------- |
+| **File Server**           | Condivisione file e cartelle, gestione permessi     | SMB (Windows Server), NFS (Linux), Samba, NAS Synology/QNAP     |
+| **Print Server**          | Gestione code di stampa e stampanti di rete         | CUPS (Linux), Windows Print Server, PaperCut                    |
+| **Domain Server**         | Autenticazione centralizzata, permessi, domini      | Active Directory (Windows), OpenLDAP, FreeIPA                   |
+| **Web Server**            | Fornisce pagine web e API via HTTP/HTTPS            | Apache, Nginx, IIS, LiteSpeed                                   |
+| **Database Server**       | Gestione dati, query, transazioni                   | MySQL, PostgreSQL, Oracle DB, SQL Server, MongoDB               |
+| **Groupware Server**      | Strumenti collaborativi: email, calendari, chat     | Microsoft Exchange, Zimbra, Google Workspace, Lotus Domino      |
+| **Transaction Server**    | Gestione transazioni ACID e integrità dei dati      | CICS (IBM), Tuxedo (Oracle), transaction managers di Java EE    |
+| **Object Server**         | Espone oggetti/metodi remoti via rete               | CORBA ORB, Java RMI Server, DCOM, EJB container (JBoss/WildFly) |
+| **Application Server**    | Esegue logica applicativa (API, servizi business)   | WildFly/JBoss, WebLogic, GlassFish, Tomcat*, Node.js, .NET Core |
+| **Administration Server** | Gestione, monitoraggio e configurazione dei sistemi | Windows Admin Center, Cockpit (Linux), Nagios, Zabbix, vCenter  |

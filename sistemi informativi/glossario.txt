@@ -1,6 +1,8 @@
 Glossario Acronimi
 
+WBS = Work Breakdown Structure
+OBS = Organization Breakdown Structure
+RAM = Responsability Assignment Matrix
+RACI = Responsible, Accountable, Consulted, Informed
+TOGAF = The Open Group Architecture Framework
 
-WBS
-OBS
-TOGAF
