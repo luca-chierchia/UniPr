@@ -127,21 +127,41 @@ Esistono diverse funzionalità server:
 
 5)In base a quali criteri si procede alla scelta
 di un'applicazione entro un sistema informatico?
-Risposta:
+La scelta del software viene compiuta ad un
+livello funzionale, verificando che il software
+soddisfi le eseigende del business e supporti
+adeguatamente i processi aziendali. A questo
+possiamo aggiungere ulteriori criteri, quali:
+
+ - Usabilità e qualità dell'interfaccia utente
+ - Compatibilità tecnologica
+ - Scalabilità
+ - Interoperabilità
+ - Costo totale di proprietà
+ - Sicurezza
 
 6)Che cosa si intende per interfaccia utente di un
 programma applicativo? Quali problematiche sono
 legate all'interfaccia utente? Come essa
 interviene nel lavoro quotidiano?
-Una delle principali problematiche legate
-all'interfaccia utente è la supportabilità della
-stessa, infatti ogni sistema è dotato di librerie
-grafiche proprie ciò comporta differenze tra
-interfacce grafiche di una stessa applicazione ed
-eventuali modifiche devono essere effettuate
-singolarmente su ogni sistema.
+L'interfacci utente come ogni componenete
+applicativo ha vincoli di compatibilità con le
+architetture hardware e software
+sottostanti. Infatti un interfaccia utente
+possiede un look-and-feel determinato dalle
+librerie grafiche e window manager di sistema.
 
-7)Che cosa sono le matrici di compatibilità del software?
+7)Che cosa sono le matrici di compatibilità del
+software?
+Una matrice di compatibilità è una tabella che
+mette in relazione un software con i possibili
+ambienti di esecuzione (OS, browser, hardware,
+librerie) indicandone compatibilità, versioni
+supportate e limitazioni. Serve a garantire
+portabilità e corretto funzionamento all’interno
+del sistema informatico.
+
+
 
 8)Quali sono i vincoli tecnologici a cui
 l'inserimento di un nuovo componenete è soggetto?
@@ -172,11 +192,30 @@ sono spesso presenti all'interno di piccole
 aziende oppure dipartimenti aziendali.
 
 11)Che cosa si intende per business continuity?
+La business continuity è la capacità di un sistema
+informatico di garantire continuità di servizio,
+talvolta viene anche utilizzato il termine
+24x7x365.
+
 
 12)Che cosa sono i configuration item di ITIL?
+I configuration item sono tutti gli elementi  che
+contribuiscono al funzionamento ed alla business
+continuity di un sistema, tra essi possiamo
+trovare: l'hardware del PC, i vari tipi di
+software, server, componenti di rete,
+documentazione, procedure, servizi IT, altri
+servizi business, etc.
 
 13)Che cos'è la catena delle dipendeza attraverso
 gli strati dell'architettura TOGAF?
+La mappatura precisa delle dipendenze del livello
+business dai livelli applicativi che a loro volta
+dipendono dal livello tecnologico (infrastruttura
+IT), ci permette di stabilire graficamente quali
+elementi sono dipendono da altri, in questo modo
+si possono prendere decisioni mirate su che cosa
+intervenire in caso di migliorie del sistema.
 
 14)Perchè si dovrebbe conoscere l'architettura
 generale di un sistema per poterlo gestire?
