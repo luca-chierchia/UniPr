@@ -1,5 +1,6 @@
 Glossario Acronimi
 
+
 WBS	   = Work Breakdown Structure
 OBS	   = Organization Breakdown Structure
 RAM	   = Responsability Assignment Matrix
