@@ -1,0 +1,15 @@
+Basi di dati e DBMS (concetto introduttivo di
+DBSM)
+
+Una base di dati è un insieme di dati strutturati
+e coerenti, organizzati secondo un modello
+(relazionali ad esempio), memorizzati in modo
+permanente e condivisi tra più utenti.
+
+Le basi di dati vengono gestite da un DBMS
+(Database Management System), il DBMS è un
+software che permette di creare e gestire una base
+di dati. Offre inoltre meccanismi per l'accesso
+concorrente ai dati, il controllo dell'integrità
+dei dati, un sistema di recovery in caso di
+malfuzionamenti e guasti.

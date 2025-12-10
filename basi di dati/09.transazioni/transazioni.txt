@@ -1,0 +1,48 @@
+Transazioni
+
+Una transazione identifica un'unita elementare di
+lavoro svolta dall'applicazione, può anche essere
+vista come un insieme di azioni atomiche
+inscindibili, dove ogni azione deve andare a buon
+fine "commit" oppure vengono tutte interrotte
+"abort". (approccio o tutto o niente).
+
+Le transazioni godono di particolari proprietà,
+chiamate ACID, rispettivamente Atomiticity,
+Constintency, Isolation, Durable (Atomicità,
+Consistenza, Isolamento, Persistenza/Durabilità)
+
+- Atomicità: l'atomicità rappresenta il fatto che
+  una transazione è un'entità indivisibile di
+  esecuzione, o tutto o niente.
+  
+
+- Consistenza: la proprietà di consistenza deve
+  garantire che la transazione non violi i vincoli
+  di integrità, la verifica dei vincoli può
+  avvenire in due modi differenti, immediato
+  oppure differito.
+  - immediato: alla violazione del vincolo di
+    integrità l'aborto della transazione è
+    immediato.
+  - differito: se durante l'esecuzione della
+    transazione avviene una violazione del vincolo
+    di integrità si deve attendere la fine del
+    "commit", se anche alla fine del commit work
+    la violazione permane allora la transazione
+    viene abortita.
+
+
+- Isolamento: la proprietà di isolamento della
+  transazione garantisce l'esecuzione di
+  transazioni multiple ma indipendenti l'una
+  dall'altra, in tal modo viene garantito che il
+  fallimento di una transazione non pregiudichi
+  l'esecuzine delle altre transazioni.(effetto
+  domnino)
+
+
+- Persistenza/Durabilità: la persistenza richiede
+  che al termine della transazione i dati vengano
+  salvati correttamente ed in modo che non venga
+  più perso.
