@@ -7,9 +7,9 @@ In questo contesto interviene la **progettazione concettuale**, dove si definisc
 ## Metodologia generale
 
 1. **Analisi dei requisiti**.
-   (a) costruire un glossario dei termini.
-   (b) analizzare i requisiti ed eliminare le ambiguità presenti.
-   (c) raggruppare i requisiti in insiemi omogenei.
+   (a) costruire un glossario dei termini. 
+   (b) analizzare i requisiti ed eliminare le ambiguità presenti. 
+   (c) raggruppare i requisiti in insiemi omogenei. 
 2. **Passo base**.
    (a) individuare i concetti più rilevanti e rappresentarli in uno schema scheletro.
 3. **Passo di decomposizione**. (se necessario)
