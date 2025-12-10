@@ -4,7 +4,7 @@ La progettazione di un database inizia prima della reale definizione delle tabel
 
 In questo contesto interviene la **progettazione concettuale**, dove si definiscono tramite analisi i requisiti degli utenti (clienti). Questo processo comprende:
 
-**metodologia generale
+## Metodologia generale
 
 1. **Analisi dei requisiti**.
    (a) costruire un glossario dei termini.
@@ -18,9 +18,11 @@ In questo contesto interviene la **progettazione concettuale**, dove si definisc
    (a) raffinare i concetti presenti sulla base delle loro specifiche.
    (b) aggiungere i nuovi concetti allo schema per descrivere le specifiche non ancora descritte.
 5. **Passo di integrazione**. (se necessario)
-   (a)
-   
-
-
+   (a) integrare i vari sottoschemi ottenuti con la decomposizioni.
+6. **Analisi di qualità**.
+   (a) verifica della correttezza dello schema.
+   (b) verifica della completezza dello schema.
+   (c) verifica leggibilità dello schema
+   (d) integrazione di documentazione ove non è stato possibile specificare requisiti con lo        schema grafico.
 
 
