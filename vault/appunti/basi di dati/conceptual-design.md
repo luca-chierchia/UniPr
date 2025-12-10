@@ -4,6 +4,12 @@ La progettazione di un database inizia prima della reale definizione delle tabel
 
 In questo contesto interviene la **progettazione concettuale**, dove si definiscono tramite analisi i requisiti degli utenti (clienti). Questo processo comprende:
 
+1. Raccolta dei requisiti.
+2. Analisi dei requisiti.
+3. Costruzione del glossario.
+4. Identificazione delle entità, attributi, relazioni e generalizzazioni o specializzazioni.
+5. Strategie di modellazione: top-down, bottom-up, inside-out, mista.
+
 ## Metodologia generale
 
 1. **Analisi dei requisiti**.
