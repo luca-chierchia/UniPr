@@ -1,0 +1,37 @@
+Introduzione alla Progettazione Concettuale dei Database
+
+La progettazione di un database inizia molto prima
+della definizione delle tabelle:
+parte dalla comprensione di ciò che deve essere
+rappresentato. Prima di scegliere come salvare i
+dati, bisogna capire quali dati servono e come
+sono collegati tra loro nel mondo reale.
+
+In questa fase non si parla ancora di SQL, tabelle
+o indici si descrive il significato
+dell'informazione, non la sua implementazione tecnica.
+
+Il processo comprende:
+
+ - la raccolta e analisi dei requisiti, spesso
+   tramite  interviste, documenti e chiarimenti.
+
+ - la costruzione di un glossario, per evitare
+   ambiguità  sui termini.
+
+ - l’individuazione delle entità, relazioni,
+   attributi e  delle generalizzazioni.
+
+ - l’uso di pattern di modellazione, utili per
+   problemi ricorrenti.
+
+ - la scelta di una strategia di progettazione
+   (top-down, bottom-up, inside-out).
+
+ - l’integrazione e la verifica dello schema finale.
+
+La progettazione concettuale ha uno scopo preciso
+creare un modello chiaro, coerente e completo
+della realtà che il database deve
+rappresentare. Questo modello sarà poi trasformato
+in schema logico e infine in database fisico.
