@@ -1,0 +1,50 @@
+Modello ER
+
+Il modello Entità-Relazioni è un modello
+concettuale di dati e fornisce una serie di
+costrutti per la realizzazione degli schemi che
+descrivono l'organizzazione e la struttura delle
+occorrenze (istanze o insiemi di tuple).
+
+I costrutti principali sono:
+
+Entità: rappresentano classi di oggetti,
+vengono rappresentate da rettangoli.
+
+Relazioni: rappresentano i legami logici tra
+entità, vengono rappresentate con dei rombi
+che si collegano alle entità.
+
+Cardinalità delle relazioni: vengono
+specificate per ciascuna partecipazione di
+entità a una relazione e descrivono il numero
+minimo e massimo di occorrenze. Le cardinalità
+possono essere:
+molti a molti, uno a molti, uno a uno.
+
+Attributi: descrivono le proprietà elementari
+di entità o relazioni.
+
+Cardinalità degli attributi: spesso questi
+valori vengono omessi dato che la cardinalità
+degli attributi è pari a (1,1).
+
+Identificatore delle entità: ci permette di
+identificare in maniera univoca le occorrenze
+dell'entità.
+Ci sono due tipi di identificatori:
+quello interno e quello esterno.
+L'identificatore interno può includere più
+attributi dell'entità.
+L'identificatore esterno coinvolge anche altre
+entità.
+
+Generalizzazione o Specializzazione: è un
+costrutto che permette di rappresentare
+gerarchie tra entità. Si parla di
+generalizzazione quando da più entità si
+individua una super-entità che raggruppa
+tutte le caratteristiche comuni (bottom-up).
+Si parla di specializzazione quando da
+un'entità generale si derivano entità che
+possiedono attributi più specifici (top-down).

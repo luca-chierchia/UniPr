@@ -1,0 +1,36 @@
+Introduzione alla Progettazione Concettuale dei Database
+
+La progettazione concettuale tramite modello ER
+avviene dopo una fase di raccolta ed analisi dei
+requisiti, la raccolta dei requisiti avviene
+principalmente in 3 modi:
+
+ - tramite interviste agli utenti
+   dell'applicazione.
+
+ - eventuali realizzazzioni preesistenti.
+
+ - documentazione esistente.
+
+Dalla raccolta dei requisiti otteniamo delle
+specifiche dei requisiti, per analizzare queste
+specifiche vi sono delle regole generali da
+seguire:
+
+ - scegliere il corretto livello di astrazione.
+
+ - risoluzione delle ambiguità derivate
+   dall'analisi, quindi ambiguità testuali e di
+   documentazione esistente.
+
+ - realizzazione di un glossario dei termini, un
+   glossario dei termini può essere composto ad
+   esempio da questi campi:
+   termini / descrizione / sinonimi / collegamenti
+
+
+La realizzazione del modello ER inizia in questa
+fase,si possono adottare diversi strategie di
+realizzazione (top-down, bottom-up, inside-out,
+mista) ed utilizzare anche pattern di
+modello.
