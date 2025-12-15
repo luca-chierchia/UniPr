@@ -1,0 +1,118 @@
+Domande capitolo 8
+
+1. Quali sono i problemi di sicurezza rispetto
+ad eventi accidentali? Come si può porvi rimedio?
+In linea generale per prevenire la perdita dei
+dati (bene essenziale) si attuano politiche di
+backup che garantiscono la conservazione dei dati
+e del servizio. Principalmente si adottano due
+tipi di backup: incrementale o differenziale
+oppure totale, il backup di tipo incrementale o
+differenziale salva sui dispositi di storage solo
+i dati effettivamente modificati rispetto al
+precedente backup, mentre il backup totale ad ogni
+salvataggio, salva l'intera base di dati, entrambe
+le tecniche sono da valutare in base alla
+dimensioni e complessità della base di dati.
+Inoltre un ruolo fondamentale viene rivestito
+dai dispositi di storage, spesso per garantire la
+business continuty e una maggiore sicurezza
+vengono effettuati backup su più storage dislocati
+in differenti parti del globo e i dati sono
+aggiornati in sincrono per tutti i dispositivi di
+storage, ciò ha un costo molto alto ma garantisce
+che in causa di danno ambientale per calamità
+naturali ad una struttura fisica ove risiedono i
+dati si ha sempre un alternativa( salvo
+nuclearizzazione mondiale xD), menziona array di
+nastri...
+
+
+2. Quali sono i problemi di security?
+
+3. Quando la sicurezza può diventare un problema
+per il business?
+La sicurezza è fondamentale per il business per
+diversi motivi, l'organizzazione è responsabile
+legale della sicurezza dei dati, una perdita dei
+dati da parte di un attacco può compromettere la
+fiducia dei clienti con successive ripercussioni
+sull'attività, inoltre un attacco informatico ai
+danni dell'organizzazione può causare blocchi
+all'attività aziendale oppure frodi di tipo
+economico.
+
+4. Come si può proteggere una comunicazione su una
+rete pubblica?
+
+5. Che cosa si intende per intrusione in un
+sistema?
+L'intrusione in un sistema è una tecnica di
+attacco che ha come obiettivo il sistema di un
+client  o molto più spesso il sistema di un
+server, l'intrusione sul client prevede
+l'installazione di un keylogger in modo da
+l'attaccante posso leggere gli input (tra cui
+credenziali o altri dati sensibili) e usarli a
+scopo fraudolento, prendere il possesso della
+macchina oppure leggere i file dove vengono
+memorizzate le password nel sistema operativo.
+Le intrusioni in un server prevedono:
+installazione di trojan per aprire delle backdoor,
+connessione a risorsa condivisa oppure un DoS.
+
+6. Che cosa si intende per "impersonificazione"?
+L'impersonificazione è l'assunzione di una
+identità digitale non autorizzata a scopi
+fraudolenti.
+
+7.Che cos'è il Denial-Of-Service?
+Il DoS è un sovraccarico delle richieste di
+connessione ad un servizio o applicazione server
+che ne causa il blocco.
+
+8.Quali sono i pericoli che minacciano il servizio
+di posta elettronica?
+Principalmente i pericoli possono essere i
+seguenti: spam, impersonificazinoe e-mail e mail
+overflow. Il mail overflow ha l'obiettivo di
+saturare la posta elettronica bloccando la
+possibilità di ricevere altre email, lo spam può
+si saturare la casella di posta ma principalmente
+è posta indesiderato che contiene pubblicità o
+possibile truffe, infine l'impersonificazione
+dell'email è una tecnica informatica che falsica
+l'indirizzo del mittente facendo credere al
+ricevente che l'email provenga da una fonte
+affidabile.
+
+9.Quali sono i pericoli che minacciano le
+applicazione Web?
+I protocolli di comunicazione Web, HTTP o
+HTTPS(protocollo di trasferimento degli ipertesti)
+è constituito da uno scambio di stringhe per
+comunicare tra client e server, queste stringhe
+contengono sia comandi che dati, se non si
+effettuano controlli sulla lunghezza delle
+stringhe è possibile abbattere la memoria
+riservata al programma e ad accedere ad altre aree
+del server causando dann, prendendo il controllo
+della macchina, accesso ai servizi di back-end,
+accesso al DBMS e ai relativi dati.
+
+10.In base a quali criteri si devono definire le
+regole di un firewall?
+
+11.Che cosa si intende per virus mutante? Che
+preicoli comporta per un sistema?
+
+12.Che cos'è lo standard ISO27000?
+
+13.E sufficiente l'uso della tecnologia per
+prevenire i problemi di sicurezza?
+
+14.Quali sono le problematiche legate all'identità
+elettronica?
+
+15.Come la legge definisce la firma elettronica?
+Come definisce la firma digitale?

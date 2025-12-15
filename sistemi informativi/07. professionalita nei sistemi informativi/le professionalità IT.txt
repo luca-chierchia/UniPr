@@ -1,0 +1,176 @@
+07. Professionalità nell'IT
+
+Le risorse umane nell'ambito dei processi
+aziendali sono una componente fondamentale. Nello
+specifico nel settore IT esistono molteplici
+figure con diverse specializzazioni che operano
+per creare o garantire dei servizi.
+
+Principalmente possiamo fare due principali
+distinzioni, tra dimensioni aziendali e servizi
+offerti. Generalmente infatti se le dimensioni
+dell'organizzazione sono:
+
+DIVISIONI PER DIMENSIONE AZIENDALI
+
+ - Azienda piccola: spesso una sola figura ricopre
+   più ruoli se non tutti, ma per nulla
+   specializzati.
+  
+ - Azienda media: in questo tipo di azienda è
+   possibile trovare diverse risorse che riescono
+   a suddividersi più compiti, ma non sono
+   altamente specializzati.
+
+ - Azienda Grande: nelle aziende di grandi
+   dimensioni è possibile trovare un reparto IT
+   con una maggiore suddivisione dei compiti e
+   specializzazioni diverse. Se non si ha un
+   reparto IT interno allora ci si appoggia ad un
+   fornitore di servizio IT di diverso
+   tipo(sistemistico,software,rete).
+
+ - Aziende Grandissime dimenisoni o Enterprise: in
+   questo tipo di organizzazioni troviamo le
+   figure più specializzate e con divisioni
+   specifiche per ogni responsabilità.
+
+
+DIVISIONI PER SERVIZI
+
+In questo contesto vediamo due tipi di
+organizzazione, l'azienda che fornisce servizi e
+l'azienda che si occupa di sviluppo.
+Nelle aziende che forniscono servizi le risorse
+umane che si occupano del sistema IT hanno la
+responsabilità principale di garantire la business
+continuity.
+Nelle aziende che si occupano di sviluppo il core
+business è produrre software, quindi per sua
+stessa natura in questo tipo di attivià vi sono
+molte più figure e più specializzate.
+
+
+Ambienti orientati all'esercizio:
+
+Attori non IT
+ - Utenti: sono gli utilizzatori finali
+ dell'applicazione o del sistema software spesso
+ non hanno competenze IT.
+
+Admin
+ - Amministratore di rete: l'amministratore di
+ rete si occupa di gestire le infrastrutture di
+ rete come apparati e impianti, deve garantire il
+ funzionamento degli canali di comunicazione dei
+ flussi informativi.
+
+ - Amministratore DB: l'amministratore della base
+   di dati si occupa della gestione del DBMS,
+   della sicurezza dei dati e della prevenzione
+   degli stessi con sistemi di backup.
+
+ - Amministratore di sistema: lo specialista dei
+   sistemi operativi in azienda, configura e
+   controlla i sistemi.
+
+Ambienti orientati allo sviluppo:
+
+Attori non IT
+ - Utenti: sono gli utilizzatori finali
+ dell'applicazione o del sistema software spesso
+ non hanno competeze IT
+
+ - Venditore: figura che ha interesse nel vendere
+   applicativi, spesso ha competenze tecniche.
+
+ - Acquirente: figura interna all'azienda,
+   interessata all'acquisto di un sistema software
+   o applicativo, può essere il responsabile
+   dell'ufficio acqusiti.
+
+ - Cliente: rappresentante dell'azienda cliente finale.
+
+
+Analista
+ - Analista funzionale: l'analista funzionale
+ scrive le specifiche funzionali che il programma
+ deve soddisfare, viene coinvolto con le figure
+ che operano sul processo.
+
+ - Analista di processo: questa figura opera nei
+   contesti più grandi dell'analista funzionale,
+   viene coinvolto nei processi di BPR(business
+   process reeginering)
+ 
+Progettista
+ - Progettista alto livello(Architetto del
+ software): trasforma i flussi informativi in
+ flussi informatici definendo l'architettura del
+ sistema. 
+
+ - Progettista di dettaglio: trasforma le
+   specifiche funzinoali in specifiche tecniche ed
+   istruzioni realizzate per i programmatori.
+
+ - Specialista ERP: definisce modifiche o
+   personalizzazioni che il software deve subire
+   per inserirsi proficuamente nel processo.
+
+ - UX Designer: si occupa di progettare le
+   interfacce utente sia software che Web.
+
+Sviluppatore
+ - programmatore: figura che scrive e verifica il
+codice in un linguaggio di programmazione.
+
+ - programmatore web: come il programmatore ma
+   specializzato sulle tecnologie web.
+
+ - Tester: si occupa di effettuare test e
+   documentare, spesso il tester non è la stessa
+   persona che scrive il codice.
+
+Admin: valgono le stesse considerazioni fatte
+nelle organizzazioni di servizio, ma nelle aziende
+di sviluppo queste figure vengono coinvolte anche
+in fase di progettazione di basi di dati,
+infrastrutture di rete e scelta dei sistemi.
+   
+Responsabile
+ - Capo area: questa figura ha responsabilità
+ funzionale, come ad esempio capo area
+ sviluppatori, capo area tester,etc
+
+ - Capo progetto: il capo progetto è responsabile
+   dell'intero progetto, può essere alla guida dei
+   vari capi area oppure collaborare con loro e
+   gestirne le risorse.
+
+ - Responsabile qualità: si assicura del rispetto
+   dello standard di qualità del codice.
+
+ - Responsabile sicurezza: supervisore della
+   sicurezza aziendale
+
+Altro
+ - Consulente: figura esterna all'organizzazione
+
+ - Solution provider: simile al consulente
+   acquisti, è un fortnitore che si occupa di
+   produrre o reperire sul mercato il prodotto
+   software che soddisfi le esigenze aziendali.
+   
+CWA DOCUMENTI TECNICI EUROPEI
+
+CWA 16234 definisce l'e-Competence Framework, ed
+introduce 5 macro-aree di competenza ICT:
+
+ - Plan, pianificazione strategica e progettazione.
+ - Build, sviluppo e implementazione
+ - Run, esecuzione.
+ - Enable,supporto.
+ - Manage, gestione.
+
+CWA 16458 va a consolidere il CW 16234 arricchendo
+le professioni IT.

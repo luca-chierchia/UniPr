@@ -1,0 +1,83 @@
+Domande capitolo 7
+
+1)Chi sono gli attori e quali sono le relazioni
+tra loro durante lo sviluppo si una applicazione
+informatica?
+1a(prima risposta possible).
+Da un punto di vista classico abbiamo diversi
+ruoli e specializzazioni che cooperano per
+produrre un software più o meno complesso. Se
+dovessi stabilire un flusso di lavoro di sviluppo
+di un software si potrebbe stabilire la seguente
+gerarchia:
+- Analisti funzionali o di processo: la
+distinzione tra i due tipi di analisti è data
+dalle competenze richieste per modellare le
+specifiche funzionali di un processo.
+- Progettista di alto livello (architetto del
+software): trasforma le i flussi informativi
+aziendali in flussi digitali realizzando
+l'architettura del sistema software.
+-  Progettista di dettaglio: trasforma le
+specifiche funzionali in specifiche tecniche e
+realizzative che i programmatori devono seguire.
+- Progettista UX Designer: figura che progetta
+l'interfaccia utente.
+Programmatori: scrivono il codice secondo le
+specifiche in un linguaggio di programmazione.
+- Altre figure necessarie: amministratori DB,
+Sistemisti, esperti di rete, che possono
+collaborare alla realizzazione o ad altre
+specifiche che il software dovrebbe supportare.
+- Capia area e Capi progetto: i capi area
+supervisionano alle funzioni aziendali ad esempio
+il capo area dei programmatori coordina il lavoro
+della scrittura del codice, il capo progetto
+invece supervisiona e coordina l'intero progetto
+dagli analisti ai tester.
+- Tester: figura che svolge test con
+documentazione sul software.
+1b(possibile alternativa di risposta).
+Per avere un quadro completo di tutte le figure
+coinvolte nelle diverse fasi della realizzazione
+di un software si fa riferimento al documento CWA
+16458, che va a rico
+
+2)Che ruolo deve svolgere il responsabile acquisti
+del cliente?
+Il responsabile acquisti dell'azienda cliente e la
+figura incaricato di stabilire gli accordi
+commerciali nell'acquisto di un software.
+
+3)Che ruolo svolge l'analista funzionale?
+L'analista funzionale è la figura che opera a
+stretto contatto con le figure dell'azienda per
+stabilire le specifiche funzionali che il sistema
+applicativo o software deve soddisfare.
+
+4)Che ruolo svolge il capo progetto entro un
+progetto informatico?
+Il capo progretto è la figura a capo dei capi area
+e coordina le varie funzioni aziendali oppure può
+semplicemente collaborare con i capi area e
+gestire le risorse umane del progetto.
+
+5) Che ruolo svolge il programmatore entro un
+progetto informatico?
+Il programmatore è colui che trasforma in codice
+di uno specifico linguaggio di programmazione le
+specifiche tecniche secondo le istruzioni del
+progettista di dettaglio.
+
+6)Che ruolo svolgono gli amministratori di
+sistema?
+L'amministratore di sistema è lo specialista di
+sistemi operativi, ha il compito di garantire il
+buon funzionamento dei sistemi dell'azienda e
+suggerire le migliori soluzioni per risolvere le
+imcompatibilità tra applicativi e sistemi.
+
+7)Che cos'è l'European E-Competence Framework?
+Documento CWA 16234 che definisce le macro aree
+dedicate di competenza IT, queste sono:
+Plan, Build, Run, Enable, Manage.
