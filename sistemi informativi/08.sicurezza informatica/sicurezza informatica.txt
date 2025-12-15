@@ -1,0 +1,128 @@
+08.Sicurezza informatica (Appunti)
+
+La sicurezza informatica è una questione di
+rilevante importanza all'interno di un
+organizzazione, la rapida evoluzione delle
+tecnologie da cui ne consegue il rilascio di
+software non opportunamente testato e la
+diffusione delle reti wireless hanno reso i sistemi
+informatici più vulnerabili agli attacchi dei
+pirati informatici.
+
+Le organizzazioni incorrono in rischi quali:
+
+. perdita dei dati
+. furti di denaro
+. danneggiamento sistemi
+
+In particolare la perdita dei dati ed il
+danneggiamento dei sistemi comporta anche una
+perdita di produttività con conseguenze economiche
+per l'azienda.
+
+Le due principali aree di in cui si divide la
+sicurezza informatica sono:
+
+. prevenzione dei danni accidentali del sistema
+  informatico
+. prevenzione dagli attacchi al sistema
+  informatico
+
+PREVENZIONE DEI DANNI ACCIDENTALI
+
+I punti critici alla prevenzione dei danni
+accidentali sono i seguenti:
+
+ . usura di parti meccaniche
+ . usare di componenti elettroniche
+ . interruzione dell'alimentazione dei dispositivi
+ . errori umano non previsti
+ . errori del software non previsti
+
+Per garantire la business continuity è la
+sicurezza dei dati si adottano contromisure che
+spesso risultano utili anche in caso di attacchi
+di pirati informatici.
+
+Tipicamente i dati da salvaguardare sono i dati
+contenuti nel DBMS, configurazioni di lavoro,
+archivi documentali , Directory Service, etc.
+Come prevenzione lo strumento usato è il BACKUP.
+Il modo in cui salviamo i dati può dipendere dalla
+mole di dati da salvare, dalla frequenza di
+salvataggio, dalla tipologia di storage su cui
+effettuiamo il salvataggio e che tecnica si
+utilizza per salvare i dati. Principalmente
+possiamo salvare i dati in due modalità:
+
+ . incrementale o differenziale: ovvero non
+   vengono salvati sempre tutti i dati, ma solo
+   quelli che hanno subito modifiche dall'ultimo
+   backup
+ . totale: ogni qual volta si effettua un backup,
+   si salveranno interamente tutti i dati
+
+
+Per garantire la business continuity i backup
+vengono effettuati su differenti storage
+disclocati in diversi luoghi geografici e su
+ognuno di esso viene effettuato il backup degli
+stessi dati, in caso di malfuzionamento di uno
+storage c'è sempre l'atra struttura a garantire
+servizio.
+
+MINACCE UMANE
+(alcune delle minacce umane sono state
+schematizzate nel pdf)
+
+La difesa da un attacco informatico umano inizia
+dalla conoscenza di diverse informazioni, quali:
+
+ . chi sta effettuando l'attacco?
+ . qual'è l'obiettivo
+ . di un attacco e che tipo di attacco è stato effettuato?
+
+CHI EFFETTUA L'ATTACCO?
+In genere l'attaccante è un hacker che tenta di
+accedere a dati o risorse su un computer client o
+server, da poter utilizzare a scopo fraudolento, è
+possibile anche che un attacco informatico serve
+semplicemente a mettersi in mostra e a dimostrare
+le capacità dell'attaccante o le vulnerabilità di
+un sistema.
+
+CHE TIPO DI ATTACCHI?
+Possiamo elencare 6 macro categorie di attacco:
+
+ . intrusione, prendere il possesso di una
+   macchina server oppure client
+
+ . impersonificazione, utilizzare un'identità
+   elettonica senza autorizzazione
+
+ . abuso, utilizzare una rete aziendale per
+   scaricare illegalmente file protetti
+
+ . DoS, Denial-Of-Service attacco che mira a
+   sovraccaricare  un server per causarne il
+   blocco
+
+ . interccettazione, è la cattura dei dati in
+   transito lungo una rete che vengono copiati
+
+
+VIRUS
+
+Un virus è in un insieme di istruzioni che svolge
+attività dannosa o fraudolenta, si mimetizza nei
+file o nei programmi, di solito viene usato come
+agente per altri attacchi. Non è facile rilevare
+un virus, dato che attualmente sui PC moderni vi
+sono innumerevoli programmi in esecuzione e
+praticamente impossibile rilevare la loro traccia
+se non con opportuni software che analizzano le
+impronte virali, come i software anti-virus.
+Un anti-virus tuttavia non sempre riesce a
+ricostruire un programma o un file compromesso da
+un virus, infatti la miglior garanzia di
+protezione dei dati è data come al solito dal backup.
