@@ -1,10 +1,17 @@
 Glossario Acronimi
 
 
-WBS	   = Work Breakdown Structure
-OBS	   = Organization Breakdown Structure
-RAM	   = Responsability Assignment Matrix
-RACI 	   = Responsible, Accountable, Consulted, Informed
-TOGAF 	   = The Open Group Architecture Framework
-ITIL 	   = Information Technology Infrastructure Library
-PMO	   = Project Managment Office
+WBS	   	= Work Breakdown Structure
+OBS	   	= Organization Breakdown Structure
+RAM	   	= Responsability Assignment Matrix
+RACI 	   	= Responsible, Accountable, Consulted, Informed
+TOGAF 	   	= The Open Group Architecture Framework
+ITIL 	   	= Information Technology Infrastructure Library
+PMO	   	= Project Managment Office
+
+Sicurezza
+SSL		= Security Socket Layer
+TLS		= Transport Layer Security
+SSH		= Security Shell
+EFS		= Encrypted File System
+PGP		= Pretty good privacy
