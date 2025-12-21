@@ -1,0 +1,61 @@
+* Compilazione separata e linkage
+
+Se vogliamo utilizzare più file per suddividere il codice secondo criteri
+coerenti con le metodologie di programmazione, possiamo ricorrere alla
+*compilazione separata* e al *linkage* di più file sorgente per ottenere il
+programma finale.
+
+In una prima fase interviene il *preprocessore*, che si occupa di:
+- espandere le direttive =#include=
+- sostituire le macro definite con =#define=
+
+Successivamente ogni file sorgente viene compilato separatamente, producendo
+delle *unità di traduzione*.
+
+Infine entra in gioco il *linker*, il modulo che ha il compito di collegare
+(linkare) tra loro le varie unità di traduzione per generare l’eseguibile
+finale.
+
+Durante la fase di linkaggio è necessario prestare particolare attenzione a
+come dichiariamo e definiamo le entità (variabili, funzioni, classi) nei diversi
+file. Alcuni errori, infatti, *non vengono rilevati dal compilatore*, ma
+emergono solo in fase di linkaggio (ad esempio simboli duplicati o non
+definiti).
+
+* Tipi di linkage
+
+Esistono principalmente due tipi di linkage:
+- linkage interno
+- linkage esterno
+
+** Linkage interno
+
+Un’entità con *linkage interno* è visibile *solo all’interno dell’unità di
+traduzione* in cui è definita e non può essere utilizzata da altri file.
+
+Il linkage interno si ottiene dichiarando l’entità:
+- con la parola chiave =static=
+- oppure dichiarando una variabile =const= a livello di namespace globale
+  (comportamento predefinito in C++)
+
+Questo meccanismo permette di evitare conflitti di nomi tra file diversi.
+
+** Linkage esterno
+
+Un’entità con *linkage esterno* è visibile e utilizzabile anche da altre unità
+di traduzione.
+
+Per ottenere il linkage esterno:
+- la definizione dell’entità deve essere unica
+- le altre unità di traduzione devono dichiarare l’entità tramite la parola
+  chiave =extern=
+
+Il linkage esterno è tipicamente utilizzato per funzioni e variabili globali
+condivise tra più file.
+
+* Nota metodologica
+
+La corretta gestione del linkage è fondamentale per:
+- favorire la modularità del codice
+- evitare dipendenze non controllate
+- prevenire errori difficili da individuare in fase di sviluppo

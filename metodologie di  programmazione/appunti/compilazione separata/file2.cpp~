@@ -1,0 +1,20 @@
+#include <iostream>
+// file2.cpp
+
+double d = 2.34;
+extern char c2;
+extern char c;
+extern double b;
+extern int x;         
+int f();
+
+void g(){
+  x += f();
+  std::cout << x << "\n" ;
+};
+
+int main(){
+  std::cout << "Tutto ok" << "\n" ;
+  std::cout << c2 << "\n" << d << "\n" ;
+  return 0;
+}

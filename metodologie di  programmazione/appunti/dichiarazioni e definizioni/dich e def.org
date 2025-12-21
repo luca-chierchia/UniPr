@@ -1,0 +1,119 @@
+* Dichiarazioni e definizioni in C++
+** Concetto di dichiarazione
+
+Prima di poter usare un nome (*identificatore*) in un programma C++, è necessario
+* dichiararlo*, cioè informare il compilatore:
+- dell'esistenza dell'entità
+- del tipo di entità (variabile, funzione, struct, ecc.)
+
+Una dichiarazione *non fornisce necessariamente un'implementazione*.
+
+Esempi di dichiarazione:
+- una funzione senza corpo
+- una struct dichiarata ma non usata
+- un `extern` per una variabile
+
+---
+
+** Concetto di definizione
+
+Una *definizione* è l'implementazione concreta di una dichiarazione.
+
+Essa:
+- fornisce tutto ciò che serve per usare l'entità
+- *accantona memoria* quando necessario
+
+Ogni entità deve essere *definita una sola volta* in tutto il programma.
+
+---
+
+** Perché distinguere dichiarazioni e definizioni
+
+La distinzione permette di:
+- separare *interfaccia* e *implementazione*
+- usare file diversi (`.h` per le dichiarazioni, `.cpp` per le definizioni)
+- migliorare organizzazione e manutenibilità del codice
+
+---
+
+* Esempi pratici in C++
+
+** Inclusione di una libreria
+
+#+begin_src cpp
+#include <iostream>
+#+end_src
+
+L'istruzione `#include` importa *dichiarazioni* già esistenti.
+
+---
+
+** Dichiarazione e definizione di una struct
+
+#+begin_src cpp
+// Date è una struct con tre membri
+struct Date {
+    int d;
+    int m;
+    int y;
+};
+#+end_src
+
+Questa è *sia una dichiarazione che una definizione*.
+
+---
+
+** Dichiarazione e definizione di una funzione
+
+#+begin_src cpp
+int day(Date* p) {
+    return p->d;
+}
+#+end_src
+
+La funzione:
+- è dichiarata tramite la sua firma
+- è definita tramite il corpo `{ ... }`
+
+---
+
+* Funzione main e allocazione della memoria
+
+#+begin_src cpp
+int main() {
+
+    // accantona memoria per un char
+    char c;
+
+    // accantona memoria per un intero
+    // inizializzato a 1
+    auto count = 1;
+
+    // puntatore a char
+    // la stringa è allocata in memoria statica
+    const char* name = "Nihal";
+
+    return 0;
+}
+#+end_src
+
+---
+
+** Osservazioni importanti
+
+- Le variabili locali vengono allocate *sullo stack*
+- Le stringhe letterali sono memorizzate in *memoria statica*
+- `auto` deduce il tipo a compile-time
+- Dichiarare una `struct` dentro `main` limita il suo scope
+
+---
+
+* Riepilogo
+
+| Concetto        | Scopo |
+|-----------------|-------|
+| Dichiarazione   | Dice *cosa* esiste |
+| Definizione     | Dice *come* è fatta |
+| Header (`.h`)   | Interfacce |
+| Source (`.cpp`) | Implementazioni |
+

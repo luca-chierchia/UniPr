@@ -1,0 +1,9 @@
+// file1.cpp 
+
+static double d = 2.33;
+extern const char c2 = 'c';
+extern char c;
+int b = 2;
+int x = 1;     
+int f(){return 6;};
+
