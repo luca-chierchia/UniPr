@@ -1,0 +1,136 @@
+* Organizzazione fisica e gestione delle interrogazioni
+(Basi di dati)
+
+Le interrogazioni di un DBMS a livello logico vengono progettate in SQL,
+ma affinché il DBMS possa elaborarle è necessario che esistano dei
+meccanismi che gestiscano ed ottimizzino le interrogazioni.
+
+---
+
+* Schema generale
+
+#+begin_example
+            +------------------------------+
+            | Gestore delle interrogazioni |
+            +------------------------------+
+                           |
+                           v
+            +------------------------------+
+            | Gestore dei metodi di accesso|
+            +------------------------------+
+                           |
+                           v
+            +------------------------------+
+            | Gestore del buffer           |
+            +------------------------------+
+                           |
+                           v
+            +------------------------------+
+            | Gestore memoria secondaria   |
+            +------------------------------+
+                           |
+                           v
+                 Memoria secondaria
+#+end_example
+
+---
+
+* Compiti dei componenti
+
+** Gestore delle interrogazioni
+- Traduce le interrogazioni SQL in un piano di esecuzione
+- Ottimizza le interrogazioni scegliendo l’ordine delle operazioni
+- Riduce il costo complessivo di esecuzione
+
+** Gestore dei metodi di accesso
+- Implementa strutture di accesso ai dati (es. file, indici)
+- Trasforma le richieste logiche in operazioni di lettura e scrittura (I/O)
+- Determina quali pagine devono essere caricate in memoria
+
+** Gestore del buffer
+- È un’area di memoria centrale
+- Mantiene in RAM le pagine più utilizzate
+- Riduce il numero di accessi alla memoria secondaria
+- Maschera la lentezza della memoria secondaria
+
+** Gestore della memoria secondaria
+- Gestisce l’organizzazione fisica dei dati su disco
+- Minimizza le operazioni di I/O fisico
+
+** Memoria secondaria
+- Memoria persistente in cui i dati risiedono stabilmente
+
+---
+
+* Organizzazione fisica
+
+** Memoria secondaria
+
+La memoria secondaria ha il compito di garantire la *persistenza dei dati*.
+
+Rispetto alla memoria principale:
+- è meno costosa
+- è molto più lenta
+- le operazioni di I/O dipendono dalla posizione fisica dei dati
+
+Per questo motivo l’accesso diretto al disco deve essere ridotto il più
+possibile.
+
+---
+
+** Buffer e pagine
+
+I dati sono trasferiti tra memoria secondaria e memoria principale sotto
+forma di *pagine* (blocchi di dimensione fissa).
+
+Il buffer è suddiviso in *frame*, ciascuno dei quali può contenere una
+pagina.
+
+---
+
+** Ruolo del buffer
+
+Il *buffer* è un’area di memoria centrale che consente di interfacciare
+componenti che operano a velocità differenti.
+
+Il suo utilizzo si basa sul *principio di località dei dati*:
+- località temporale: dati usati di recente verranno riutilizzati
+- località spaziale: dati vicini vengono spesso usati insieme
+
+In pratica:
+- una piccola parte dei dati viene usata molto frequentemente
+- mantenere tali dati in RAM riduce drasticamente le I/O
+
+---
+
+** Politiche di rimpiazzamento
+
+Quando il buffer è pieno, il DBMS deve scegliere quale pagina sostituire.
+
+Questa scelta è effettuata tramite *politiche di rimpiazzamento*, ad
+esempio:
+- LRU (Least Recently Used)
+- FIFO (First In First Out)
+
+L’obiettivo è minimizzare il numero di accessi al disco.
+
+---
+
+** Operazioni primitive sul buffer
+
+- *fix*  
+  → carica una pagina nel buffer  
+  → incrementa il contatore di utilizzo
+
+- *unfix*  
+  → rilascia la pagina  
+  → decrementa il contatore di utilizzo
+
+- *flush*  
+  → scrive una pagina modificata su disco
+
+- *mark dirty*  
+  → marca una pagina come modificata (dirty bit)
+
+---
+
