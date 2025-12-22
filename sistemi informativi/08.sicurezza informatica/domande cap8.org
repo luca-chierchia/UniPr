@@ -1,0 +1,140 @@
+* Domande – Capitolo 8
+
+** 1) Quali sono i problemi di sicurezza rispetto ad eventi accidentali? Come si può porvi rimedio?
+Gli eventi accidentali comprendono guasti hardware, errori software,
+errori umani, interruzioni di alimentazione e calamità naturali.
+Il principale rischio associato a tali eventi è la perdita dei dati, che
+rappresentano un bene essenziale per l’organizzazione.
+
+Per prevenire la perdita dei dati si adottano politiche di backup che
+garantiscono la conservazione delle informazioni e la continuità del
+servizio.
+I principali tipi di backup sono il backup incrementale o
+differenziale e il backup totale.
+Il backup incrementale o differenziale salva solo i dati modificati
+rispetto all’ultimo backup, mentre il backup totale salva ogni volta
+l’intera base di dati.
+La scelta della tecnica dipende dalla dimensione, dalla complessità e
+dalla frequenza di aggiornamento dei dati.
+
+Un ruolo fondamentale è svolto anche dai dispositivi di storage.
+Per garantire la business continuity, i backup vengono spesso
+effettuati su più supporti dislocati in diverse aree geografiche, con
+dati sincronizzati.
+Questa soluzione ha costi elevati ma garantisce la disponibilità dei
+dati anche in caso di disastro che colpisca una singola struttura.
+In alcuni contesti vengono utilizzati anche array di nastri magnetici
+per l’archiviazione e il disaster recovery.
+
+** 2) Quali sono i problemi di security?
+I principali problemi di security riguardano l’accesso non autorizzato
+ai sistemi, la perdita o il furto dei dati, la compromissione
+dell’integrità delle informazioni, l’interruzione dei servizi e
+l’abuso delle risorse informatiche.
+Tali problemi possono derivare sia da attacchi informatici intenzionali
+sia da comportamenti negligenti o non consapevoli degli utenti.
+
+** 3) Quando la sicurezza può diventare un problema per il business?
+La sicurezza diventa un problema per il business quando non viene
+adeguatamente gestita.
+Un’organizzazione è legalmente responsabile della protezione dei dati e
+una loro perdita può compromettere la fiducia dei clienti e dei
+partner.
+Inoltre, un attacco informatico può causare blocchi dell’attività
+aziendale, danni economici diretti, frodi e costi legati al ripristino
+dei sistemi.
+
+** 4) Come si può proteggere una comunicazione su una rete pubblica?
+Una comunicazione su una rete pubblica può essere protetta utilizzando
+tecniche di crittografia e autenticazione.
+In particolare, si possono cifrare i dati trasmessi tramite protocolli
+sicuri come SSL/TLS e SSH oppure utilizzare VPN che creano tunnel
+cifrati su Internet, garantendo riservatezza, integrità e autenticità
+della comunicazione.
+
+** 5) Che cosa si intende per intrusione in un sistema?
+L’intrusione in un sistema è una tecnica di attacco che ha come
+obiettivo un computer client o, più frequentemente, un server.
+L’intrusione su un client può prevedere l’installazione di keylogger
+per intercettare input come credenziali o dati sensibili, la presa di
+controllo della macchina o l’accesso ai file che contengono password.
+
+Le intrusioni su un server possono includere l’installazione di trojan
+per creare backdoor, l’accesso a risorse condivise non autorizzate e
+attacchi di tipo Denial of Service.
+
+** 6) Che cosa si intende per impersonificazione?
+L’impersonificazione è una tecnica di attacco che consiste
+nell’assunzione di un’identità digitale non autorizzata, allo scopo di
+ottenere accesso a risorse o informazioni in modo fraudolento.
+
+** 7) Che cos’è il Denial of Service (DoS)?
+Il Denial of Service è un attacco che mira a sovraccaricare un servizio
+o un server con un numero elevato di richieste, causandone il
+rallentamento o il blocco e rendendolo indisponibile agli utenti
+legittimi.
+
+** 8) Quali sono i pericoli che minacciano il servizio di posta elettronica?
+I principali pericoli sono lo spam, l’impersonificazione dell’e-mail e
+il mail overflow.
+Lo spam consiste nell’invio massivo di posta indesiderata, spesso
+contenente pubblicità o tentativi di truffa.
+Il mail overflow ha l’obiettivo di saturare la casella di posta per
+impedirne l’uso.
+L’impersonificazione dell’e-mail falsifica l’indirizzo del mittente,
+inducendo il destinatario a credere che il messaggio provenga da una
+fonte affidabile.
+
+** 9) Quali sono i pericoli che minacciano le applicazioni Web?
+Le applicazioni Web comunicano tramite protocolli come HTTP o HTTPS,
+basati sullo scambio di stringhe contenenti comandi e dati.
+Se non vengono effettuati adeguati controlli sul contenuto e sulla
+lunghezza di tali stringhe, un attaccante può sfruttare vulnerabilità
+per accedere a memoria non autorizzata o ad altri servizi del server,
+causando la presa di controllo della macchina, l’accesso ai servizi di
+back-end o al DBMS e ai relativi dati.
+
+** 10) In base a quali criteri si devono definire le regole di un firewall?
+Le regole di un firewall devono essere definite in base al principio
+del minimo privilegio, consentendo solo il traffico strettamente
+necessario.
+I criteri principali riguardano indirizzi IP, porte, protocolli,
+direzione del traffico e tipologia di servizio, tenendo conto delle
+esigenze operative e del livello di rischio accettabile.
+
+** 11) Che cosa si intende per virus mutante? Che pericoli comporta?
+Un virus mutante è una particolare categoria di virus, tipica dei macro
+virus, che modifica il proprio codice durante l’infezione per eludere i
+sistemi di rilevamento.
+In alcuni casi può verificarsi il crossover, ovvero la fusione di virus
+diversi in documenti a infezione multipla, generando nuovi virus con
+caratteristiche combinate.
+Questo rende più difficile l’individuazione e la rimozione del malware.
+
+** 12) Che cos’è lo standard ISO 27000?
+La famiglia di standard ISO/IEC 27000 definisce le linee guida e le best
+practice per la gestione della sicurezza delle informazioni.
+In particolare, fornisce un modello per l’implementazione di un sistema
+di gestione della sicurezza delle informazioni (ISMS).
+
+** 13) È sufficiente l’uso della tecnologia per prevenire i problemi di sicurezza?
+No, la tecnologia da sola non è sufficiente.
+È fondamentale formare e sensibilizzare le risorse umane a un uso
+consapevole e regolamentato degli strumenti informatici, poiché molti
+incidenti di sicurezza derivano da errori umani o comportamenti non
+corretti.
+
+** 14) Quali sono le problematiche legate all’identità elettronica?
+Una delle principali problematiche dell’identità elettronica è la
+difficoltà di garantire con certezza l’autenticità del soggetto che
+firma o utilizza un’identità digitale, soprattutto nel caso della
+firma elettronica semplice.
+
+** 15) Come la legge definisce la firma elettronica e la firma digitale?
+La firma elettronica è definita come un insieme di dati in forma
+elettronica allegati o connessi a un documento e ha un valore legale
+limitato.
+La firma digitale, invece, utilizza certificati digitali e crittografia
+asimmetrica all’interno di una PKI, garantendo integrità, autenticità e
+non ripudio del documento firmato ed è giuridicamente equivalente alla
+firma autografa.

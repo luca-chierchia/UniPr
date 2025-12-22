@@ -1,0 +1,104 @@
+* Analisi e modellazione dei processi di business
+
+** 1) Che cos'è l'analisi di business?
+Risposta:
+Per analisi di business si intende l'insieme di attività, tecniche e conoscenze per migliorare i processi aziendali.
+
+** 2) Che cos'è il Business Process Management (BPM)?
+Risposta:
+Il BPM è l'insieme di attività che mira a comprendere gli elementi critici da migliorare un processo aziendale senza stravolgerlo, cercando di abbattere i costi e velocizzare il processo.
+
+** 3) Che cosa significa modellizzare un processo di business?
+Risposta:
+Per modellizzare un processo di business si intende l'attività di rappresentare i processi di un'organizzazione che comprende:
+- analisi,
+- individuazione delle aree critiche ed aree migliorabili,
+- monitoraggio di efficacia ed efficienza,
+- miglioramento del funzionamento del processo.
+
+** 4) Che cosa si intende per Business Process Reegineering (BPR)? E che significato ha nel contesto di un'evoluzione aziendale?
+Risposta:
+Il Business Process Reegineering è l'attività di re-ingegnerizzazione dei processi che stravolge le vecchie attività introducendo nuovi metodi di lavoro e integrando nuove tecnologie.
+Talvolta questo processo potrebbe non essere pienamente digerito dagli utenti del processo stesso.
+
+** 5) Che cosa si intende per Business Process Improvement (BPI)?
+Risposta:
+Per BPI si intende l'attività di costante miglioramento del processo senza la sua totale rivoluzione.
+Questo tipo di attività è continua nel tempo.
+
+** 6) Che cos'è il linguaggio UML e come può essere utile per descrivere i processi?
+Risposta:
+L'UML (Unified Model Language) è un linguaggio semi-grafico che permette di rappresentare graficamente:
+- concetti,
+- entità,
+- relazioni che intercorrono tra esse.
+
+Può essere utile nel descrivere i processi perché fornisce una vista, anche se incompleta, sui vari elementi costitutivi dei processi grazie a diversi diagrammi:
+- diagramma delle attività,
+- diagramma dei casi d'uso,
+- diagramma delle classi,
+- diagramma di sequenza,
+- diagramma di stato.
+
+** 7) Che cosa significa descrivere il processo come successione di attività?
+Risposta:
+Un processo può essere scomposto in molteplici sotto-processi collegati tra loro secondo legami logico-temporali.
+Con il diagramma delle attività (activity diagram) possiamo rappresentare graficamente questi flussi.
+
+Un diagramma delle attività permette di rappresentare con precisione:
+- l'attività,
+- l'azione,
+- lo stato di attività,
+- lo stato dell'azione,
+- l'oggetto,
+- lo stato dell'oggetto,
+- la transizione,
+- lo swimlane.
+
+** 8) Che cosa significa descrivere il processo come successione di fasi di interazione fra elementi coinvolti?
+Risposta:
+All'interno dei processi sono coinvolti attori, di solito umani (ma non solo), che possono essere attivi o passivi.
+Essi interagiscono con il processo stesso.
+
+Grazie al diagramma dei casi d'uso (Use Case Diagram) è possibile descrivere come l'attore interagisce con il processo.
+
+** 9) Perché è utile definire le entità coinvolte in un processo e i loro legami logici?
+Risposta:
+Per rappresentare le entità coinvolte nel processo possiamo usare il diagramma delle classi (class diagram), che permette di rappresentare:
+- le entità,
+- le loro caratteristiche con più o meno dettaglio,
+- le relazioni che intercorrono tra esse.
+
+Inoltre sono rappresentabili:
+- i legami logici,
+- le cardinalità dei legami,
+- eventuali derivazioni,
+- ereditarietà di classe,
+- specializzazioni.
+
+** 10) Perché è utile inserire l'elemento dinamico descrivendo le interazioni fra le entità?
+Risposta:
+Le interazioni analizzate in precedenza sono statiche e ad alto livello.
+Grazie al diagramma di sequenza (sequence diagram) possiamo rappresentare dinamicamente e in dettaglio il flusso informativo tra le varie entità.
+
+Esistono anche:
+- diagramma di collaborazione,
+- diagramma di comunicazione.
+
+Essi sono semanticamente equivalenti, ma il diagramma di sequenza ordina temporalmente la sequenza dei messaggi.
+
+** 11) Che cosa significa descrivere il processo come successione di stati?
+Risposta:
+I diagrammi di stato (statechart diagram) focalizzano l'attenzione sui cambiamenti di stato delle singole entità coinvolte nel processo.
+Questi diagrammi vengono usati per definire nel tempo il comportamento di un particolare elemento o oggetto.
+
+** 12) Qual è il legame fra i vari modelli?
+Risposta:
+Tutti questi modelli permettono di rappresentare lo stesso processo da prospettive diverse:
+
+- Attività → vista operativa
+- Interazione → vista comunicativa
+- Stati → vista temporale
+- UML e BPM → strumenti per integrare tutti i modelli
+
+Tutti questi modelli, insieme, forniscono una vista completa del processo.

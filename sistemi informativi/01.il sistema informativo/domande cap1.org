@@ -1,0 +1,71 @@
+* 1. Informazioni e organizzazioni: il sistema informativo
+
+** 1) Che cos’è un sistema? In che modo la nozione di sistema è utile?
+Risposta:
+Un *sistema* è un insieme di componenti che concorrono al raggiungimento
+di un obiettivo comune.
+La nozione di sistema è utile perché consente di analizzare la realtà
+come un insieme strutturato di elementi interdipendenti, facilitandone
+la comprensione, la scomposizione e la modellazione.
+
+** 2) Che cos’è un modello e come aiuta a capire la realtà?
+Risposta:
+Un *modello* è ciò che si ottiene dalla modellazione della realtà.
+Esso permette di rappresentare un sistema in modo semplificato,
+mettendone in evidenza gli aspetti rilevanti e riducendone la
+complessità, al fine di comprenderne meglio il funzionamento.
+
+** 3) Che cos’è un modello a scatola nera? Come aiuta a capire meglio la struttura dei sistemi?
+Risposta:
+Un *modello a scatola nera (black-box)* è un tipo di modello di cui non è
+nota l’implementazione interna.
+Dato un input, il sistema produce un output; a parità di input,
+l’output non varia.
+Questo approccio consente di studiare il comportamento di un sistema
+senza conoscerne i dettagli interni, concentrandosi sulle relazioni tra
+ingressi e uscite.
+
+** 4) Che cos’è un organigramma?
+Risposta:
+L’*organigramma* è la rappresentazione della struttura gerarchica di
+un’azienda, impresa o ente.
+Esso descrive i ruoli, le responsabilità e le relazioni di dipendenza
+tra le diverse figure organizzative, spesso tramite una
+rappresentazione grafica.
+
+** 5) Che cosa si intende per core business di un’azienda?
+Risposta:
+Il *core business* di un’azienda è il bene o servizio primario che
+l’azienda produce per generare ricavi.
+Rappresenta la principale attività operativa dell’organizzazione e ne
+definisce l’identità economica.
+
+** 6) Che cos’è il sistema informativo di un’azienda e quali sono le sue componenti?
+Risposta:
+Il *sistema informativo* di un’azienda è l’insieme di persone,
+apparecchiature, procedure e regole organizzative il cui compito è
+produrre, gestire, archiviare e distribuire informazioni utili al
+funzionamento e alla gestione dell’impresa.
+
+** 7) Che differenza esiste tra il sistema informativo e il sistema informatico?
+Risposta:
+Il *sistema informatico* è un sottoinsieme del sistema informativo.
+Il sistema informativo comprende procedure, regolamenti, informazioni e
+processi a supporto delle attività aziendali o degli enti; il sistema
+informatico ha il compito di automatizzare i flussi informativi e di
+agevolare i processi tramite strumenti tecnologici.
+
+** 8) Che cosa significa granularità?
+Risposta:
+La *granularità* è il livello di dettaglio con cui si osserva un
+determinato componente di un sistema o un suo modello.
+
+** 9) Come si può evolvere un sistema informativo?
+Risposta:
+Un sistema informativo può evolvere in diversi modi:
+- *Imperativo tecnologico*: l’evoluzione è guidata
+  dall’introduzione e integrazione di nuove tecnologie.
+- *Imperativo organizzativo*: i cambiamenti organizzativi
+  dell’azienda guidano l’evoluzione del sistema informativo.
+- *Prospettiva emergente*: l’evoluzione è indotta dalla continua
+  interazione tra l’IT, gli utenti e il contesto operativo.

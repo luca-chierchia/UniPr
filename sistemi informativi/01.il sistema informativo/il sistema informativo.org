@@ -1,0 +1,87 @@
+* 01. Il sistema informativo
+
+** Definizione di sistema informativo
+Il *sistema informativo* è l’insieme di risorse, processi, tecnologie e
+norme che ha lo scopo di produrre, raccogliere, elaborare, archiviare e
+distribuire dati e informazioni rilevanti, supportando le attività
+operative e i processi decisionali dell’organizzazione.
+
+** Definizione di sistema
+Un *sistema* è l’insieme di elementi o componenti distinti che
+interagiscono tra loro per raggiungere uno scopo comune.
+
+** Definizione di sistema informatico
+Il *sistema informatico* è l’insieme delle componenti tecnologiche del
+sistema informativo che si occupano della gestione automatizzata dei
+dati digitali.
+Il sistema informatico rappresenta una *parte* del sistema informativo.
+
+** Scomposizione e modellazione dei sistemi
+Data la definizione di sistema, è possibile effettuare alcune
+considerazioni.
+Un sistema può essere suddiviso nelle sue componenti in sottoinsiemi,
+che a loro volta possono essere ulteriormente scomposti in altri
+sottoinsiemi, ricorsivamente, fino al livello di dettaglio desiderato.
+Generalmente, un sistema AS-IS rappresenta lo stato attuale del sistema
+ed è spesso complesso da descrivere; tuttavia, attraverso la
+modellizzazione della realtà e l’utilizzo di opportune strategie di
+analisi (top-down, bottom-up, inside-out o mista), è possibile ottenere
+modelli che descrivono un sistema TO-BE, ovvero lo stato futuro
+desiderato.
+
+** Il sistema azienda
+Il sistema azienda può essere visto come la modellazione della realtà
+aziendale, composta da elementi interdipendenti impegnati nel
+raggiungimento di determinati obiettivi.
+L’azienda è un *sistema aperto*, in quanto interagisce costantemente con
+l’ambiente esterno.
+Esistono diversi tipi di sistema azienda, che si distinguono in base a
+obiettivi e scopi:
+- aziende orientate al profitto
+- enti pubblici
+- organizzazioni non profit
+
+** Caratteristiche dell’azienda
+
+*** Caratteristiche strategiche e identitarie
+- *Mission*: definisce l’identità dell’azienda e i valori, i principi e
+  gli obiettivi di breve e medio periodo
+- *Vision*: rappresenta la direzione futura dell’azienda e gli
+  obiettivi di lungo periodo, di natura ideologica e ispirazionale
+
+*** Caratteristiche strutturali
+
+**** Risorse
+- dirigenza centrale
+- dirigenza intermedia
+- dirigenza operativa
+- reparti e unità operative
+
+**** Processi
+- attività
+- processi
+- progetti
+
+**** Prodotti e servizi
+- ciò che l’organizzazione offre all’esterno
+
+** Evoluzione del sistema informatico
+Il sistema informatico è fortemente influenzato dall’evoluzione
+tecnologica, motivo per cui è in continua evoluzione e rappresenta
+spesso un fattore critico di competitività per l’azienda.
+Le principali motivazioni che ne determinano il cambiamento sono tre:
+- *motivazioni tecnologiche*: nascita di nuove tecnologie che migliorano
+  l’efficienza e le prestazioni
+- *motivazioni organizzative*: cambiamenti imposti da nuove esigenze
+  organizzative dell’azienda
+- *prospettiva emergente*: il cambiamento nasce dall’interazione tra
+  tecnologia e risorse umane, come nel caso dei social network o dei
+  software collaborativi
+
+** Ruolo attuale del sistema informatico
+Attualmente il sistema informatico è diventato così rilevante da
+rappresentare il vero e proprio sistema nervoso dell’azienda,
+estendendo il suo ruolo oltre i confini tradizionali del sistema
+informativo e diventando un elemento strategico per il funzionamento e
+lo sviluppo dell’organizzazione.
+

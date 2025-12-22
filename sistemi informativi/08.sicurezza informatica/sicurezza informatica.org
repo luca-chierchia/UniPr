@@ -1,0 +1,315 @@
+* 08. Sicurezza informatica
+:contentReference[oaicite:0]{index=0}
+
+La sicurezza informatica rappresenta una questione di grande rilevanza
+all’interno di un’organizzazione.
+La rapida evoluzione delle tecnologie informatiche, che spesso comporta
+il rilascio di software non adeguatamente testato, unita alla crescente
+diffusione delle reti wireless, ha reso i sistemi informatici sempre più
+vulnerabili agli attacchi dei pirati informatici.
+
+Di conseguenza, le organizzazioni si trovano ad affrontare rischi
+significativi, tra cui:
+- perdita dei dati
+- furti di denaro
+- danneggiamento dei sistemi informatici
+
+In particolare, la perdita dei dati e il malfunzionamento dei sistemi
+comportano una riduzione della produttività, con conseguenze economiche
+rilevanti per l’azienda.
+
+** Ambiti della sicurezza informatica
+
+La sicurezza informatica può essere suddivisa in due grandi aree
+principali:
+- prevenzione dei danni accidentali al sistema informatico
+- prevenzione e difesa dagli attacchi informatici intenzionali
+
+** Prevenzione dei danni accidentali
+
+I principali punti critici legati ai danni accidentali riguardano:
+- l’usura delle parti meccaniche e dei componenti elettronici
+- le interruzioni dell’alimentazione dei dispositivi
+- gli errori umani non previsti
+- gli errori software imprevisti
+
+Per garantire la continuità operativa dell’azienda (business continuity)
+e la sicurezza dei dati, vengono adottate specifiche contromisure.
+Tali soluzioni risultano spesso efficaci anche nel caso di attacchi
+informatici deliberati.
+
+** Protezione dei dati e backup
+
+I dati che tipicamente devono essere salvaguardati includono:
+- dati contenuti nei sistemi di gestione dei database
+- configurazioni di lavoro
+- archivi documentali
+- servizi di directory
+
+Lo strumento principale per la protezione di questi dati è il backup.
+Le modalità con cui viene effettuato dipendono da diversi fattori, tra
+cui:
+- la quantità di dati da salvare
+- la frequenza del salvataggio
+- la tipologia di storage utilizzata
+- la tecnica di backup adottata
+
+Esistono principalmente due modalità di backup:
+- backup incrementale o differenziale, in cui vengono salvati solo i dati
+  modificati rispetto all’ultimo salvataggio
+- backup totale, in cui tutti i dati vengono salvati integralmente a
+  ogni operazione
+
+Per garantire la business continuity, i backup vengono spesso eseguiti
+su più sistemi di storage collocati in aree geografiche differenti.
+In questo modo, in caso di malfunzionamento di uno storage, un’altra
+struttura può garantire la continuità del servizio.
+
+** Minacce di origine umana
+
+Accanto ai danni accidentali, un’altra categoria fondamentale di rischio
+è rappresentata dalle minacce di origine umana.
+La difesa da un attacco informatico inizia dalla conoscenza di alcune
+informazioni chiave:
+- l’identità dell’attaccante
+- l’obiettivo perseguito
+- la tipologia di attacco messa in atto
+
+Generalmente, l’attaccante è un hacker che tenta di accedere senza
+autorizzazione a dati o risorse presenti su computer client o server,
+con lo scopo di utilizzarli in modo fraudolento.
+In alcuni casi, tuttavia, l’attacco non è motivato da un guadagno
+economico, ma dal desiderio di mettersi in mostra o di dimostrare le
+vulnerabilità di un sistema.
+
+** Tipologie di attacco informatico
+
+Le principali tipologie di attacco informatico possono essere ricondotte
+alle seguenti macro-categorie:
+- attacchi di intrusione, finalizzati al controllo di una macchina
+  client o server
+- attacchi di impersonificazione, basati sull’uso non autorizzato di
+  un’identità elettronica
+- attacchi di abuso, come l’utilizzo illecito della rete aziendale per
+  scaricare file protetti
+- attacchi Denial of Service (DoS), che mirano a sovraccaricare un server
+  fino a causarne il blocco
+- intercettazione dei dati, consistente nella cattura e copia delle
+  informazioni in transito sulla rete
+
+** Virus informatici
+
+Un ruolo importante nel panorama delle minacce informatiche è svolto
+dai virus.
+Un virus è un insieme di istruzioni che esegue attività dannose o
+fraudolente e tende a mimetizzarsi all’interno di file o programmi
+legittimi.
+Spesso viene utilizzato come strumento per facilitare altri tipi di
+attacco.
+
+La loro individuazione non è semplice, poiché sui moderni computer sono
+in esecuzione numerosi programmi ed è praticamente impossibile
+rilevarne la presenza senza software specifici, come gli antivirus,
+che analizzano le impronte virali.
+Tuttavia, anche l’utilizzo di un antivirus non garantisce sempre il
+completo recupero di file o programmi compromessi.
+Per questo motivo, la miglior garanzia per la protezione dei dati
+rimane ancora una volta il backup, che consente di ripristinare le
+informazioni in caso di compromissione o perdita.
+
+* 08. Protezione dei dati
+
+La protezione dei dati è un aspetto fondamentale della sicurezza
+informatica.
+Gli attacchi informatici hanno spesso come obiettivo il furto o la
+modifica delle informazioni a scopo fraudolento; per questo è
+necessario garantire la sicurezza dei dati, in particolare durante la
+loro trasmissione sui canali di comunicazione.
+
+Una delle principali garanzie di protezione è fornita dalla
+crittografia.
+La crittografia è una tecnica che rende i dati illeggibili a chi non
+possiede la corretta chiave di decifratura.
+Essa si basa su modelli matematici e logici implementati tramite
+algoritmi.
+
+Le principali tecniche crittografiche sono:
+- crittografia a chiave simmetrica
+- crittografia a chiave asimmetrica
+
+La crittografia a chiave simmetrica utilizza un’unica chiave segreta
+condivisa tra mittente e destinatario per proteggere i dati in transito.
+Il principale punto debole di questa tecnica è la distribuzione della
+chiave: se la chiave viene intercettata, la sicurezza del messaggio è
+compromessa.
+La gestione sicura della chiave rappresenta quindi l’aspetto più
+critico di questo approccio.
+
+La crittografia a chiave asimmetrica utilizza invece due chiavi
+distinte, generate insieme e matematicamente correlate:
+- una chiave privata, segreta e sotto il controllo del proprietario
+- una chiave pubblica, liberamente distribuibile
+
+I messaggi cifrati con la chiave pubblica possono essere decifrati solo
+con la corrispondente chiave privata.
+Questo meccanismo risolve il problema della distribuzione della chiave e
+rende la crittografia asimmetrica adatta alle comunicazioni su reti non
+fidate.
+
+La crittografia garantisce la riservatezza dei dati, ma non permette di
+verificare se essi siano stati modificati durante la trasmissione.
+Per questo si utilizza la tecnica dell’hashing, che consente di
+verificare l’integrità delle informazioni.
+
+L’hashing associa a un messaggio un codice di lunghezza fissa, detto
+digest o impronta digitale, ottenuto a partire dai byte del messaggio.
+
+Le principali caratteristiche del digest sono:
+- è deterministico: lo stesso messaggio produce sempre lo stesso valore
+- è monodirezionale: dal digest non si può risalire al messaggio
+  originale
+- è sensibile alle variazioni: anche una minima modifica del messaggio
+  produce un digest completamente diverso
+
+Se il digest cambia, significa che il messaggio è stato alterato.
+
+Un primo scenario di utilizzo dell’hashing è la verifica dell’integrità
+senza autenticazione.
+Il mittente invia il messaggio insieme al digest; il destinatario
+ricalcola il digest del messaggio ricevuto e lo confronta con quello
+originale.
+Se coincidono, il messaggio è integro, ma non vi è alcuna garanzia
+sull’identità del mittente né sulla riservatezza del contenuto.
+
+Per garantire anche autenticità e non ripudio si utilizza la firma
+digitale, una particolare forma di firma elettronica.
+
+Il funzionamento prevede che:
+- il mittente calcoli il digest del messaggio
+- il digest venga cifrato con la chiave privata del mittente, generando
+  la firma
+- il messaggio in chiaro e la firma vengano inviati al destinatario
+
+Il destinatario calcola il digest del messaggio ricevuto, decifra la
+firma con la chiave pubblica del mittente e confronta i due digest.
+Se coincidono, il messaggio è integro e proviene effettivamente dal
+mittente.
+
+Un’altra tecnica crittografica rilevante è il message enveloping (busta
+digitale), che combina crittografia simmetrica e asimmetrica per
+garantire la riservatezza del messaggio.
+
+Il procedimento prevede che:
+- il messaggio venga cifrato con una chiave simmetrica
+- la chiave simmetrica venga cifrata con la chiave pubblica del
+  destinatario
+
+Il destinatario utilizza la propria chiave privata per decifrare la
+chiave simmetrica e successivamente il messaggio.
+
+La firma cieca è una tecnica che consente di ottenere una firma valida
+senza rivelare il contenuto del messaggio al firmatario.
+Il mittente maschera il messaggio prima di inviarlo; il firmatario lo
+firma senza conoscerne il contenuto e il mittente rimuove l’accecamento
+ottenendo una firma valida.
+
+Questa tecnica è utilizzata in ambiti come:
+- sistemi di pagamento elettronico
+- voto elettronico
+- sistemi di anonimato verificabile
+
+L’uso della crittografia asimmetrica, della firma digitale e della busta
+digitale richiede un meccanismo affidabile per associare una chiave
+pubblica a un’identità.
+Questo ruolo è svolto dai certificati digitali e dalla PKI.
+
+Un certificato digitale è un documento elettronico che associa una
+chiave pubblica a un soggetto (persona, azienda o servizio).
+Contiene le informazioni identificative del soggetto e la sua chiave
+pubblica ed è garantito dalla firma digitale di un’Autorità di
+Certificazione.
+Il certificato non cifra né firma, ma rende affidabile l’uso della
+chiave pubblica.
+
+La PKI (Public Key Infrastructure) è l’insieme di strutture, regole e
+tecnologie che gestiscono:
+- verifica dell’identità dei soggetti
+- emissione dei certificati
+- controllo della validità nel tempo
+- revoca dei certificati compromessi o scaduti
+
+Grazie alla PKI si stabilisce una catena di fiducia tra le parti.
+
+I certificati digitali sono utilizzati:
+- nella firma digitale, per verificare l’identità del mittente
+- nel message enveloping, per ottenere la chiave pubblica del
+  destinatario
+- insieme all’hashing, per garantire l’integrità dei messaggi
+
+Dal punto di vista giuridico, in Italia le firme elettroniche sono
+classificate in:
+- firma elettronica, categoria generale con valore legale limitato
+- firma elettronica avanzata, che identifica il firmatario e rileva
+  modifiche al documento
+- firma digitale, basata su crittografia asimmetrica, certificati
+  qualificati e PKI, equivalente alla firma autografa
+
+In conclusione, la protezione dei dati si ottiene combinando
+crittografia, hashing e firma digitale, supportate da certificati
+digitali e PKI, per garantire riservatezza, integrità, autenticità e
+valore legale delle comunicazioni elettroniche.
+
+* 08. Applicazioni della crittografia
+
+Grazie ai metodi di crittografia e autenticazione è possibile proteggere
+i dati trasmessi sui canali di comunicazione, impedendo a soggetti non
+autorizzati di leggerli o modificarli.
+
+La protezione può avvenire in due modi principali:
+- cifrando direttamente i file
+- cifrando il canale di comunicazione attraverso protocolli sicuri come
+  SSL/TLS e SSH
+
+Per la protezione dei file e delle cartelle all’interno di un
+calcolatore è possibile utilizzare strumenti specifici come OpenPGP ed
+EFS.
+
+PGP, acronimo di Pretty Good Privacy, è un sistema di crittografia molto
+diffuso che consente di proteggere file e messaggi attraverso
+crittografia e firma digitale.
+Nel tempo PGP è stato standardizzato con il nome di OpenPGP ed è
+tuttora ampiamente utilizzato.
+
+EFS, Encrypting File System, è invece uno strumento integrato nei sistemi
+operativi Microsoft a partire da Windows 2000.
+Esso consente di cifrare file e cartelle direttamente a livello di file
+system, rendendo i dati accessibili solo agli utenti autorizzati.
+
+Per quanto riguarda la comunicazione tra due calcolatori, esistono
+protocolli che permettono di garantire sia la protezione dei dati sia
+l’identità delle parti coinvolte.
+Tra questi, i più importanti sono SSL/TLS e SSH.
+
+SSL, Secure Sockets Layer, oggi sostituito da TLS, è un protocollo di
+sicurezza che non appartiene formalmente al modello OSI ma si colloca
+logicamente tra il livello di Trasporto e il livello Applicazione.
+Esso fornisce servizi di autenticazione, cifratura e integrità dei dati,
+utilizzando meccanismi come l’handshake e lo scambio di certificati
+digitali.
+Grazie a SSL/TLS è possibile rendere sicuri protocolli applicativi come
+HTTP, dando origine a HTTPS.
+
+SSH, Secure Shell, è un protocollo che permette di stabilire una
+connessione remota sicura tra un client e un server.
+Tutta la comunicazione tra i due dispositivi avviene in forma cifrata,
+garantendo riservatezza, integrità e autenticazione.
+SSH viene utilizzato principalmente per l’accesso remoto a sistemi e
+per il trasferimento sicuro di file.
+
+Un’altra importante applicazione della crittografia è rappresentata
+dalle VPN, Virtual Private Network.
+Una VPN è una rete privata virtuale che simula una rete privata pur
+utilizzando una rete pubblica come Internet.
+Questo risultato viene ottenuto creando un tunnel cifrato tra i
+dispositivi coinvolti, consentendo una comunicazione sicura come se i
+sistemi fossero collegati all’interno della stessa rete privata.

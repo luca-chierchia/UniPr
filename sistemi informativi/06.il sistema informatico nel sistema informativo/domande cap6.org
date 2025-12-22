@@ -1,0 +1,152 @@
+* 6. Il sistema informatico entro il sistema informativo
+
+** 1) Quali sono i componenti principali di un'applicazione?
+Risposta:
+Nelle applicazioni di tipo interattivo (uomo-macchina), i componenti principali sono:
+
+- l'interfaccia utente, che permette all'uomo di interagire con l'elaboratore;
+- le regole funzionali, insieme di funzioni che svolgono un determinato compito dopo l'interazione con gli utenti;
+- i dati, elemento su cui si compie l'elaborazione.
+
+** 2) Qual è il ruolo delle reti entro i sistemi informatici odierni?
+Risposta:
+Le reti sono una componente fondamentale nei sistemi informatici in quanto permettono lo scambio di informazioni
+grazie a un'architettura distribuita, ovvero un insieme di calcolatori che comunicano tra di loro.
+Esse sono contrapposte alle architetture centralizzate, che spesso erano soluzioni proprietarie
+e presentavano problemi di compatibilità.
+
+** 3) Cos'è il modello ISO/OSI e quale concetto importante introduce?
+Risposta:
+Il modello ISO/OSI (Open System Interconnection) è un modello concettuale che introduce
+la stratificazione e l'indipendenza tra livelli.
+Descrive come deve avvenire la comunicazione tra due sistemi in rete ed è suddiviso in sette livelli:
+
+1. Livello fisico: strutture che permettono il transito dei dati (cavi, segnali elettrici o ottici).
+2. Livello data-link: organizza i bit in frame, gestisce errori e accesso al canale.
+3. Livello rete: responsabile dell'instradamento (routing), ad esempio il protocollo IP.
+4. Livello trasporto: suddivide i dati in pacchetti, ne stabilisce l'ordine e verifica l'arrivo;
+   il protocollo più utilizzato è il TCP (Transport Control Protocol).
+   I dati possono viaggiare su percorsi diversi ma vengono riassemblati correttamente a destinazione.
+5. Livello sessione: garantisce il controllo del flusso delle informazioni dall'inizio alla chiusura della comunicazione.
+6. Livello presentazione: definisce la corretta conversione dei dati
+   (codifiche, compressione, cifratura) per renderli comprensibili ai sistemi coinvolti.
+7. Livello applicazione: software che stabilisce la comunicazione tra sorgente e destinatario.
+
+** 4) Che cos'è il modello client-server? Che importanza ha nei sistemi informatici moderni?
+Risposta:
+Il modello client-server è utilizzato dalle architetture distribuite.
+Il server è un elaboratore che fornisce risorse o servizi,
+mentre il client è l'elaboratore che richiede tali servizi.
+In alcuni casi un sistema può fungere sia da client sia da server, come nei sistemi P2P.
+
+Esistono diverse tipologie di server:
+
+- File server: mette a disposizione file e cartelle condivise e gestisce accessi e permessi.
+- Print server: gestisce le code di stampa di più computer.
+- Domain server: gestisce utenti, permessi e autenticazioni in una rete aziendale.
+- Database server: ospita e gestisce database ed esegue query.
+- Web server: fornisce pagine e servizi web tramite HTTP/HTTPS.
+- Terminal server: permette l'accesso remoto a desktop o applicazioni.
+- Groupware server: fornisce strumenti per il lavoro collaborativo.
+- Application server: ospita ed esegue la logica applicativa.
+- Administration server: gestisce e monitora altri server o servizi.
+- Object server: espone oggetti applicativi accessibili da remoto.
+
+** 5) In base a quali criteri si procede alla scelta di un'applicazione entro un sistema informatico?
+Risposta:
+La scelta del software viene compiuta a livello funzionale, verificando che il software soddisfi
+le esigenze del business e supporti i processi aziendali.
+Ulteriori criteri sono:
+
+- usabilità e qualità dell'interfaccia utente;
+- compatibilità tecnologica;
+- scalabilità;
+- interoperabilità;
+- costo totale di proprietà;
+- sicurezza.
+
+** 6) Che cosa si intende per interfaccia utente di un programma applicativo?
+Quali problematiche sono legate all'interfaccia utente?
+Risposta:
+L'interfaccia utente, come ogni componente applicativo, ha vincoli di compatibilità
+con le architetture hardware e software sottostanti.
+Essa possiede un look-and-feel determinato dalle librerie grafiche
+e dal window manager del sistema.
+
+** 7) Che cosa sono le matrici di compatibilità del software?
+Risposta:
+Una matrice di compatibilità è una tabella che mette in relazione un software
+con i possibili ambienti di esecuzione (sistemi operativi, browser, hardware, librerie),
+indicandone compatibilità, versioni supportate e limitazioni.
+
+** 8) Quali sono i vincoli tecnologici a cui l'inserimento di un nuovo componente è soggetto?
+
+** 9) Che cosa si intende per problemi di manutenibilità di un software?
+Risposta:
+La manutenibilità del software è una delle principali problematiche dopo l'entrata in servizio.
+Si distinguono:
+
+- Manutenzione evolutiva: adattamenti a nuove specifiche.
+- Manutenzione ordinaria: correzione di errori presenti dopo il rilascio.
+
+** 10) Che cos'è un sistema informatico distribuito?
+In quali situazioni si trova e quali problematiche presenta?
+Risposta:
+Un sistema informatico distribuito opera su due o più nodi collegati in rete.
+I modelli più comuni sono client-server e multi-tier.
+Il modello client-server presenta problematiche di scalabilità, complessità e supportabilità,
+ed è spesso utilizzato in piccole aziende o dipartimenti.
+
+** 11) Che cosa si intende per business continuity?
+Risposta:
+La business continuity è la capacità di un sistema informatico di garantire continuità di servizio,
+spesso indicata come 24x7x365.
+
+** 12) Che cosa sono i configuration item di ITIL?
+Risposta:
+I configuration item sono tutti gli elementi che contribuiscono al funzionamento
+e alla business continuity di un sistema, come hardware, software, server,
+componenti di rete, documentazione, procedure e servizi IT.
+
+** 13) Che cos'è la catena delle dipendenze attraverso gli strati dell'architettura TOGAF?
+Risposta:
+La mappatura delle dipendenze tra livello business, applicativo e tecnologico
+permette di individuare gli elementi critici e supportare decisioni mirate
+in caso di interventi di miglioramento del sistema.
+
+** 14) Perché si dovrebbe conoscere l'architettura generale di un sistema per poterlo gestire?
+
+** 15) Che cosa si intende per EAI? Che problematiche comporta?
+
+** 16) Che cos'è la SOA? Quali vantaggi produce nei sistemi informativi?
+
+** 17) Che cosa si intende per grid computing? Quali vantaggi comporta?
+
+** 18) Che cos'è il virtual computing? Quali vantaggi comporta?
+
+** 19) Che cos'è il cloud computing?
+Quali vantaggi comporta e che cosa lo può limitare?
+
+* Alcune osservazioni utili
+
+Nella progettazione di un sistema informatico moderno è essenziale comprendere
+come i diversi componenti dell'architettura interagiscono per garantire
+scalabilità, affidabilità e flessibilità.
+Le architetture distribuite client-server, i diversi tipi di server
+e gli standard architetturali permettono di strutturare il sistema
+in entità logiche specializzate.
+
+* Tabella degli esempi di server
+
+| Tipo di Server            | Funzione principale                             | Esempi concreti (software / tecnologie)                     |
+|--------------------------+--------------------------------------------------+-------------------------------------------------------------|
+| File Server              | Condivisione file e gestione permessi           | SMB, NFS, Samba, NAS Synology/QNAP                          |
+| Print Server             | Gestione code di stampa                         | CUPS, Windows Print Server, PaperCut                        |
+| Domain Server            | Autenticazione e domini                         | Active Directory, OpenLDAP, FreeIPA                         |
+| Web Server               | Pagine web e API HTTP/HTTPS                    | Apache, Nginx, IIS, LiteSpeed                               |
+| Database Server          | Gestione dati e transazioni                     | MySQL, PostgreSQL, Oracle DB, SQL Server, MongoDB           |
+| Groupware Server         | Strumenti collaborativi                         | Exchange, Zimbra, Google Workspace, Lotus Domino            |
+| Transaction Server       | Gestione transazioni ACID                      | CICS, Tuxedo, Java EE Transaction Managers                  |
+| Object Server            | Oggetti remoti                                  | CORBA, Java RMI, DCOM, EJB Container                         |
+| Application Server       | Logica applicativa                              | WildFly, WebLogic, GlassFish, Tomcat, Node.js, .NET Core    |
+| Administration Server    | Monitoraggio e gestione                         | Windows Admin Center, Cockpit, Nagios, Zabbix, vCenter      |

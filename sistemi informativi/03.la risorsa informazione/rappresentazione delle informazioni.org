@@ -1,0 +1,378 @@
+* Rappresentazione dell’informazione
+
+Rappresentazione nel mondo fisico dell’informazione avviene in modo fisico come
+
+↓
+variazione di grandezze fisiche
+
+- livelli di tensione
+- onde sonore
+- onde di pressione
+- colori che formano simboli
+
+L’informazione viene immagazzinata e trasmessa tramite supporti fisici come archivi cartacei oppure informatici
+(posta, parole scritte su carta, fax, telefono, ecc.).
+
+** Rappresentazione mentale dell’informazione
+
+L’uomo tratta informazioni, conoscenze e esperienze in forma di rappresentazioni mentali.
+
+- informazione + conoscenza = rappresentazione mentale
+- ogni individuo è consapevole di sé
+- trasmissione ad altri tramite linguaggio ed esempio
+- accumulazione propria rappresentazione mentale
+* Rappresentazione digitale dell’informazione
+
+Le informazioni hanno bisogno di un opportuno *CODIFICA*.
+Accanto all’informazione esiste la meta informazione, senza questa l’informazione stessa non è decodificabile.
+
+** Rappresentazione digitale dell’informazione
+
+I dati sono la materia grezza; l’organizzazione, l’elaborazione e l’aggregazione dei dati genera l’informazione.
+
+Informazione  
+Dato → insieme di byte
+
+** Simboli e testo
+
+La rappresentazione testuale più diffusa è il codice ASCII.
+
+- ASCII:
+  - ASCII 7 bit
+    - lettere inglesi maiuscole/minuscole, numeri
+  - ASCII 8 bit (estensione di ASCII 7 bit)
+    - caratteri accentati ed altri alfabeti europei
+  - 2^8 = 256 simboli rappresentabili
+  - lingue germaniche, neolatine
+
+- UNICODE:
+  - UTF-8 (1 byte)
+  - UTF-16 (2 byte)
+  - UTF-32 (4 byte)
+  - standard internazionale
+
+NB:
+- UTF-32 occupa molta memoria e necessita l’allineamento dei caratteri
+- UTF-8 è retrocompatibile con ASCII
+* Rappresentazione testo formattato
+
+Lo standard ASCII non rappresenta formattazioni di testo come ad esempio testo corsivo, grassetto, dimensioni differenti tra paragrafi e titoli.
+
+ASCII o UNICODE  
++  
+bit aggiuntivi di formattazione  
+⇒ TESTI FORMATTATI
+
+- HTML
+- TeX
+
+Formato .doc → Word  
+Formato .odt → OpenOffice  
+
+⇒ generano testi formattati
+
+* Rappresentazione delle immagini
+
+Esistono due modi per rappresentare digitalmente le immagini tramite bit:
+
+- Modo vettoriale: vettori entro un piano a partire da un’origine
+- Modo bitmap: matrice rettangolare di punti (pixel)
+  - ogni pixel contiene le informazioni della luminosità
+  - e del colore in quel punto
+
+Componenti del colore del pixel:
+
+- Bianco e nero:
+  - 1 bit (0–1)
+  - 0 = nero
+  - 1 = bianco
+
+- Scala di grigi:
+  - 1 byte (0–255)
+  - 0 = nero
+  - 128 = grigio medio
+  - 255 = bianco
+
+- RGB:
+  - 3 byte
+    - 1 byte Red
+    - 1 byte Green
+    - 1 byte Blue
+
+Sistema additivo (RGB)  
+Sistema sottrattivo (CMY: Ciano, Magenta, Giallo)
+* Modello RGB
+
+
+#+CAPTION: Modello RGB rappresentato come cubo
+[[file:../risorse/cuborgb.jpg]]
+
+Sistema additivo:
+- geometricamente distante dallo 0
+
+Sistema sottrattivo:
+- geometricamente distante dal punto bianco
+
+Dalla percezione soggettiva del colore (e pertanto dal cervello umano)
+si dà origine ad un altro modello di colore: HSI.
+
+HSI:
+- Hue
+- Saturation
+- Intensity
+
+(rappresenta meglio il modo umano di percepire i colori)
+
+Utilizzato nei programmi di fotoritocco ed elaborazione immagini.
+
+* Rappresentazione bitmap in memoria
+
+Un’immagine in formato bitmap è rappresentata dentro il computer o in altro dispositivo digitale
+come un vettore di pixel, composto dalle successione di pixel di una riga,
+da sinistra a destra, seguito dalla riga successiva
+dal pixel fino all’ultimo.
+
+Esempio:
+vettore di pixel Bianco e Nero 2×3 pixel
+
+|    | col1 | col2 | col3 |
+|----+------+------+------|
+| r1 |  1   |  0   |  1   |
+| r2 |  0   |  0   |  1   |
+* Esempio: scala di grigi 2x3 pixel
+
+|     | C1 | C2  | C3  |
+|-----+----+-----+-----|
+| R1  | 0  | 128 | 255 |
+| R2  | 64 | 192 | 100 |
+
+(R = righe, C = colonne)
+
+* Rappresentazione in memoria (vettore di pixel)
+
+- R1: 00000000 10000000 11111111
+- R2: 01000000 11000000 01100100
+
+* Esempio: RGB 2x2 pixel
+
+|     | C1           | C2              |
+|-----+--------------+-----------------|
+| R1  | (255, 0, 0)  | (0, 255, 0)     |
+| R2  | (0, 0, 255)  | (255, 255, 255) |
+
+* Vettore pixel
+
+- R1: [11111111 00000000 00000000] [00000000 11111111 00000000]
+- R2: [00000000 00000000 11111111] [11111111 11111111 11111111]
+
+* A scopo di esempio, per capire quanto occupa in memoria un’immagine bitmap
+
+** Immagine 2x3 pixel
+
+- 1 bit (monocromatica):  
+  6 × 1 = 6 bit  (< 1 byte)
+
+- 8 bit (scala di grigi):  
+  6 × 8 = 48 bit = 6 byte
+
+- 24 bit (RGB):  
+  6 × 24 = 144 bit = 18 byte
+
+** Immagine 100x400 pixel
+
+- 1 bit:  
+  100 × 400 × 1 = 40000 bit ≃ 5 kByte
+
+- 8 bit:  
+  100 × 400 × 8 = 320000 bit ≃ 40 kByte
+
+- 24 bit (RGB):  
+  100 × 400 × 24 = 960000 bit = 120 kByte
+
+** Immagine 1024x1024
+
+- 1 bit: ≃ 128 kByte  
+- 8 bit: ≃ 1 MByte  
+- 24 bit: ≃ 3 MByte
+
+* Nota
+
+Il valore finale è sempre diviso per 8 dato che possiamo scrivere il valore in byte  
+(8 bit = 1 byte).
+* Metodi per ridurre le dimensioni delle immagini bitmap
+
+Esistono metodi per ridurre le dimensioni delle immagini bitmap, ovvero è possibile mappare i colori dell’immagine cercando di individuare i colori presenti.  
+Se per esempio abbiamo un’immagine composta soltanto da 7 colori allora è possibile per ogni pixel usare 3 bit.  
+Se l’immagine è un’immagine RGB, questo metodo è chiamato *color map* (detto anche *meta-informazione*), ovvero informazione che contiene altra informazione.
+
+* Esempio
+
+Immagine RGB composta soltanto da questi colori:
+
+| Indice | Colore RGB     |
+|-------+----------------|
+| 0     | (12, 255, 0)   |
+| 1     | (0, 200, 100)  |
+| 2     | (15, 100, 100) |
+| 3     | (65, 0, 28)    |
+| 4     |                |
+| 5     |                |
+| 6     |                |
+| 7     |                |
+
+Ogni colore viene rappresentato con 3 bit.
+
+* Esempio di mappatura
+
+| Bit |
+|-----|
+| 101 |
+
+(3 bit)
+
+* Confronto occupazione memoria
+
+Supponiamo sempre un’immagine 100x400 px.
+
+** Color map (struttura color map e indicizzazione di 7 colori)
+
+- 100 × 400 = 40 kByte × 3 bit  
+- ≃ 120000 bit ≃ 15 kByte
+
+** RGB
+
+- 40 kByte × 24 bit = 960000 bit  
+- 960000 : 8 = 120 kByte
+
+La stessa immagine presenta un’enorme differenza di spazio:
+
+- 15 kByte << 120 kByte
+
+* Nota
+
+Gli indici mappati sui colori vengono separati dal resto dei dati dell’immagine.
+* Formula generale per calcolare le dimensioni di un’immagine non compressa in memoria
+
+G = l · h · b
+
+- l = larghezza immagine
+- h = altezza
+- b = bit per ogni pixel
+
+Esempi:
+- monocromatica: 1 bit
+- scala di grigi: 8 bit (1 byte)
+- RGB: 24 bit (3 byte)
+
+* Rappresentazione dei suoni
+
+Il suono è una vibrazione di un mezzo materiale come aria, acqua, ecc.; in pratica è una successione di onde di pressione.
+
+Un suono può essere periodico; questo presenta due caratteristiche fondamentali:
+- ampiezza (A)
+- periodo (P)
+
+* Rappresentazione sinusoidale
+
+Formula generale sinusoidale nel dominio del tempo:
+
+v(t) = A sin(2πt / P)
+
+dove:
+- f = 1 / P
+- quindi: v(t) = A sin(2π f t)
+
+Inoltre, se il segnale all’istante 0 non è 0, allora la formula va corretta con φ (fase):
+
+v(t) = A sin(2π f t + φ)
+* Rappresentazione dei segnali nel dominio della frequenza
+
+La rappresentazione di segnali nel dominio della frequenza, anziché del tempo, determina lo spettro del segnale.
+
+Dalle figure ottenute dallo spettro dei segnali si può notare che la frequenza ha un limite, ovvero una frequenza massima.
+
+Da questo risultato si può concludere che il segnale è formato da componenti sinusoidali con frequenze diverse.
+
+Questo è una proprietà fondamentale nei sistemi di comunicazione.
+
+Il segnale può essere trasformato digitalmente, discretizzando i valori e usando campionamento.
+
+* Campionamento dei segnali
+
+Dalle leggi di Shannon e il teorema di Nyquist si afferma che:
+è possibile riprodurre fedelmente un segnale nel tempo solo quando la frequenza di campionamento è strettamente maggiore del doppio della componente con frequenza massima del segnale.
+
+f_c ≥ 2 · f_M
+
+dove:
+- f_M = frequenza massima
+- f_c = frequenza di campionamento
+
+* Esempi
+
+Infatti sappiamo che l’orecchio umano può udire da 20 Hz a 20 kHz.
+
+Ed infatti:
+f_c ≥ 2 · f_M  ⇒  2 · 20 kHz = 40 kHz
+
+I CD vengono registrati alla frequenza di 44.100 Hz.
+
+- Segnale telefonico: 4 kHz  
+  ⇒ campionamento a 8 kHz
+
+* Quantizzazione
+
+Inoltre ogni valore discreto del campionamento può contenere più o meno informazione in base al numero di bit utilizzati.
+
+- CD: 16 bit
+- Telefono: 8 bit
+* Memorizzazione dei suoni
+
+Per gli effetti di modalità della percezione sonora (riconoscimento di suoni da più punti), ciò contribuisce di più a occupare in memoria la registrazione digitale di un suono.
+
+Può essere formulata con:
+
+#+begin_center
+G = C · f · b · s
+#+end_center
+
+dove:
+- C = canali
+- f = frequenza
+- b = bit per campione
+- s = durata in secondi della registrazione
+
+* Rappresentazione dei filmati
+
+Un filmato è composto da tracce audio e video.
+
+L’occhio umano trattiene un’immagine per circa 1/25 di secondo; se si susseguono sotto questo soglia più immagini, non riesce a distinguerle tra loro dando l’effetto di continuità tra le due.
+
+Il movimento nei filmati si ottiene proiettando immagini fisse più di 25 al secondo (frame).
+
+- fps = frame per second
+
+Il calcolo dello spazio in memoria di un video si ottiene dalla formula:
+
+#+begin_center
+G = l · h · f · b · s
+#+end_center
+
+dove:
+- l = larghezza in pixel del frame
+- h = altezza in pixel del frame
+- f = fps
+- b = bit per pixel
+- s = durata in secondi
+
+Video  
++  
+Suono  
+=  
+Totale
+
+Per l’audio vale ancora:
+
+#+begin_center
+G = C · f · b · s
+#+end_center

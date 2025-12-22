@@ -1,0 +1,217 @@
+* 08. Sicurezza informatica
+
+La sicurezza informatica rappresenta una questione di grande rilevanza
+all’interno di un’organizzazione.
+La rapida evoluzione delle tecnologie informatiche, spesso accompagnata
+dal rilascio di software non adeguatamente testato, e la crescente
+diffusione delle reti wireless hanno reso i sistemi informatici sempre
+più vulnerabili agli attacchi dei pirati informatici.
+
+Di conseguenza, le organizzazioni si trovano ad affrontare rischi
+significativi, tra cui:
+- perdita dei dati
+- furti di denaro
+- danneggiamento dei sistemi informatici
+
+La perdita dei dati e il malfunzionamento dei sistemi comportano una
+riduzione della produttività, con conseguenze economiche rilevanti per
+l’azienda.
+
+** Ambiti della sicurezza informatica
+
+La sicurezza informatica può essere suddivisa in due grandi aree
+principali:
+- prevenzione dei danni accidentali al sistema informatico
+- prevenzione e difesa dagli attacchi informatici intenzionali
+
+** Prevenzione dei danni accidentali
+
+I principali punti critici legati ai danni accidentali riguardano:
+- usura delle parti meccaniche e dei componenti elettronici
+- interruzioni dell’alimentazione dei dispositivi
+- errori umani non previsti
+- errori software imprevisti
+
+Per garantire la continuità operativa dell’azienda (*business
+continuity*) e la sicurezza dei dati, vengono adottate specifiche
+contromisure, spesso efficaci anche contro attacchi informatici
+deliberati.
+
+** Protezione dei dati e backup
+
+I dati che devono essere salvaguardati includono:
+- dati contenuti nei sistemi di gestione dei database
+- configurazioni di lavoro
+- archivi documentali
+- servizi di directory
+
+Lo strumento principale per la protezione dei dati è il *backup*.
+Le modalità di esecuzione dipendono da:
+- quantità di dati da salvare
+- frequenza del salvataggio
+- tipologia di storage utilizzata
+- tecnica di backup adottata
+
+Le principali modalità di backup sono:
+- *backup incrementale o differenziale*: vengono salvati solo i dati
+  modificati rispetto all’ultimo salvataggio
+- *backup totale*: tutti i dati vengono salvati integralmente a ogni
+  operazione
+
+Per garantire la business continuity, i backup vengono spesso eseguiti
+su più sistemi di storage collocati in aree geografiche differenti.
+
+** Minacce di origine umana
+
+Oltre ai danni accidentali, un’importante categoria di rischio è
+rappresentata dalle minacce di origine umana.
+La difesa da un attacco informatico inizia dalla conoscenza di:
+- identità dell’attaccante
+- obiettivo perseguito
+- tipologia di attacco
+
+Generalmente l’attaccante è un hacker che tenta di accedere senza
+autorizzazione a dati o risorse presenti su sistemi client o server.
+In alcuni casi l’attacco non è motivato da un guadagno economico, ma dal
+desiderio di dimostrare le vulnerabilità di un sistema.
+
+** Tipologie di attacco informatico
+
+Le principali tipologie di attacco informatico sono:
+- *attacchi di intrusione*: mirano al controllo di una macchina client o
+  server
+- *attacchi di impersonificazione*: basati sull’uso non autorizzato di
+  un’identità elettronica
+- *attacchi di abuso*: utilizzo illecito della rete aziendale
+- *attacchi Denial of Service (DoS)*: sovraccaricano un server fino a
+  causarne il blocco
+- *intercettazione dei dati*: cattura e copia delle informazioni in
+  transito sulla rete
+
+** Virus informatici
+
+Un virus è un insieme di istruzioni che esegue attività dannose o
+fraudolente e tende a mimetizzarsi all’interno di file o programmi
+legittimi.
+Spesso viene utilizzato per facilitare altri tipi di attacco.
+
+La loro individuazione è complessa e richiede software specifici come
+gli *antivirus*, che analizzano le impronte virali.
+Tuttavia, l’antivirus non garantisce sempre il recupero dei file
+compromessi; per questo motivo il backup rimane la principale garanzia
+per la protezione dei dati.
+
+* 08. Protezione dei dati
+
+La protezione dei dati è un aspetto fondamentale della sicurezza
+informatica.
+Gli attacchi informatici hanno spesso come obiettivo il furto o la
+modifica delle informazioni, rendendo necessaria la protezione dei dati
+durante la trasmissione sui canali di comunicazione.
+
+** Crittografia
+
+La *crittografia* rende i dati illeggibili a chi non possiede la corretta
+chiave di decifratura.
+Si basa su modelli matematici e algoritmi logici.
+
+Le principali tecniche crittografiche sono:
+- crittografia a chiave simmetrica
+- crittografia a chiave asimmetrica
+
+*** Crittografia a chiave simmetrica
+Utilizza un’unica chiave segreta condivisa tra mittente e destinatario.
+Il principale punto debole è la distribuzione della chiave.
+
+*** Crittografia a chiave asimmetrica
+Utilizza due chiavi matematicamente correlate:
+- chiave privata, segreta
+- chiave pubblica, liberamente distribuibile
+
+I messaggi cifrati con la chiave pubblica possono essere decifrati solo
+con la corrispondente chiave privata.
+
+** Hashing e integrità
+
+La crittografia garantisce la riservatezza ma non l’integrità.
+L’*hashing* associa a un messaggio un codice di lunghezza fissa detto
+*digest*.
+
+Caratteristiche del digest:
+- deterministico
+- monodirezionale
+- sensibile alle variazioni
+
+** Firma digitale
+
+La *firma digitale* garantisce autenticità, integrità e non ripudio.
+Il funzionamento prevede:
+- calcolo del digest
+- cifratura del digest con la chiave privata
+- invio del messaggio in chiaro con la firma
+
+Il destinatario verifica il digest usando la chiave pubblica del
+mittente.
+
+** Message enveloping
+
+La *busta digitale* combina crittografia simmetrica e asimmetrica:
+- il messaggio è cifrato con una chiave simmetrica
+- la chiave simmetrica è cifrata con la chiave pubblica del destinatario
+
+** Firma cieca
+
+La *firma cieca* consente di ottenere una firma valida senza rivelare il
+contenuto del messaggio al firmatario.
+È utilizzata in:
+- sistemi di pagamento elettronico
+- voto elettronico
+- sistemi di anonimato verificabile
+
+** Certificati digitali e PKI
+
+Un *certificato digitale* associa una chiave pubblica a un soggetto ed è
+garantito da un’Autorità di Certificazione.
+La *PKI (Public Key Infrastructure)* gestisce:
+- verifica dell’identità
+- emissione dei certificati
+- controllo della validità
+- revoca dei certificati
+
+** Valore legale delle firme elettroniche
+
+In Italia le firme elettroniche sono classificate in:
+- firma elettronica
+- firma elettronica avanzata
+- firma digitale
+
+La firma digitale è equivalente alla firma autografa.
+
+* 08. Applicazioni della crittografia
+
+La crittografia può essere applicata:
+- ai file
+- ai canali di comunicazione
+
+** Protezione dei file
+
+Strumenti principali:
+- *OpenPGP*: standard derivato da PGP per cifratura e firma digitale
+- *EFS (Encrypting File System)*: cifratura a livello di file system nei
+  sistemi Windows
+
+** Protezione delle comunicazioni
+
+*** SSL/TLS
+Protocollo di sicurezza che si colloca tra il livello di Trasporto e
+Applicazione.
+Fornisce autenticazione, cifratura e integrità dei dati.
+Consente l’uso di HTTPS.
+
+*** SSH
+Protocollo per connessioni remote sicure tra client e server.
+Garantisce riservatezza, integrità e autenticazione.
+
+*** VPN
+Una *Virtual Private Network* crea un tunnel cifrato su una rete
+pubblica, simulando una rete privata sicura.

@@ -1,0 +1,150 @@
+* Soluzioni informatiche per l'impresa
+
+** 1) Che cos'è un programma software?
+Risposta:
+Un programma software è un'applicazione informatica con una sua precisa identità.
+Alcuni esempi di programmi software sono Word, Excel, ecc.
+
+** 2) Che cos'è un DBMS?
+Risposta:
+Un DBMS (Database Managment System) è un software che permette di memorizzare ed elaborare dati.
+Inoltre fornisce strumenti per la sicurezza e l'integrità dei dati.
+
+** 3) Che cos'è una base di dati?
+Risposta:
+Una base di dati è una collezione strutturata di dati organizzata in base a specifiche esigenze.
+
+** 4) Che cos'è una transazione?
+Risposta:
+Una transazione è un insieme di azioni sul DB che richiedono la completezza e la correttezza
+(commit) di ognuna di esse, senza errori (abort), pena l'annullamento dell'intera transazione.
+In pratica è un concatenamento di azioni: se fallisce una, l'intera transazione viene annullata.
+
+** 5) Che cosa sono le proprietà ACID?
+Risposta:
+Le proprietà ACID sono l'acronimo di Atomicità, Consistenza, Isolamento e Durabilità.
+Sono proprietà riferite alle basi di dati e ai DBMS.
+
+- *Atomicità*: tutte le operazioni della sequenza terminano con successo.
+- *Consistenza*: ogni transazione trasforma correttamente lo stato del DB.
+- *Isolamento*: garantisce l'esecuzione concorrente di più transazioni.
+- *Durabilità*: capacità di conservare i dati e permetterne il recupero in caso di guasti o malfunzionamenti.
+
+** 6) Come si può espandere la stratificazione del sistema informatico?
+Risposta:
+Un sistema informatico si può espandere su cinque livelli:
+
+1. Livello applicativo, composto dagli applicativi software con cui gli utenti interagiscono.
+2. Livello hardware, formato dall'hardware dei computer come PC, workstation e server.
+3. Livello di rete, costituito dalle infrastrutture di rete che collegano gli apparati di trasmissione.
+4. Livello dei sistemi operativi, che fungono da interfaccia tra utente e hardware.
+5. Livello del software infrastrutturale, composto da software che offrono servizi al livello applicativo,
+   come web server e DBMS.
+
+** 7) Come si dividono i livelli applicativi?
+Risposta:
+Il livello applicativo può essere suddiviso in quattro strati, pensabili come un'evoluzione
+della piramide di Anthony:
+
+1. Livello strategico, tratta le informazioni destinate al top management ed è formato
+   dagli applicativi che supportano i processi strategici.
+2. Livello manageriale, tratta le informazioni del middle management ed è formato
+   dagli applicativi che supportano i processi tattici.
+3. Livello operativo, tratta le informazioni fornite dai processi operativi ed è formato
+   dagli applicativi che supportano operai e impiegati.
+4. Livello di gestione della conoscenza, tratta l'informazione gestita dagli operatori della conoscenza
+   ed è formato dagli applicativi che supportano i processi di connessione tra livello operativo e tattico.
+
+** 8) Come sono le relazioni fra i livelli di applicazione?
+Risposta:
+
+** 9) Che cos'è un ERP? Che ruolo svolge entro l'azienda?
+Risposta:
+L'ERP (Enterprise Resource Plannig) è un sistema IT integrato che permette di centralizzare
+tutte le informazioni delle funzioni e dei processi aziendali
+(risorse umane, vendite, acquisti, operativo, logistica, contabilità).
+
+L'ERP deve avere caratteristiche importanti come:
+- flessibilità,
+- scalabilità,
+- possibilità di personalizzazione,
+- capacità di fornire report.
+
+Molti produttori forniscono anche un ambiente di sviluppo che permette all'azienda di integrare
+o creare moduli personalizzati.
+
+L'ERP consente una completa integrazione gestionale grazie alla centralità dei dati e delle informazioni,
+permettendo ai processi di comunicare tra loro.
+
+** 10) Che cos'è un sistema di CRM? Che importanza ha entro l'azienda?
+Risposta:
+Il CRM (Customer Relational Managment) è un software di supporto al reparto vendite e marketing
+che ha il compito di gestire la soddisfazione del cliente e fornire dati per campagne di vendita.
+
+Un CRM permette di migliorare la comprensione dei bisogni del cliente e l'analisi dei fabbisogni.
+
+** 11) Che cos'è un sistema di SCM?
+Risposta:
+SCM è l'acronimo di Supply Chain Managment ed è il software che permette di gestire
+le funzioni di logistica, acquisti e produzione.
+
+** 12) Che cosa si intende per business intelligence?
+Risposta:
+La business intelligence è l'insieme di applicazioni e tecnologie utilizzate per elaborare i dati
+delle applicazioni a livello operativo come CRM e SCM.
+
+Alcuni esempi di applicativi di business intelligence sono:
+- DSS (Decision Support System),
+- OLAP,
+- sistemi di interrogazione e reportistica,
+- modelli previsionali.
+
+Un ruolo fondamentale è svolto dai data warehouse, ovvero database che conservano ed elaborano
+grandi moli di dati con lo scopo di semplificarne il contenuto per il livello tattico-strategico.
+
+Il data warehouse può essere suddiviso in data mart, database che coprono una specifica
+funzione o processo.
+
+** 13) Che cos'è un data warehouse? Come viene normalmente usato entro l'azienda?
+Risposta:
+Un data warehouse è un grande archivio di dati ottimizzato per l'analisi e il supporto alle decisioni.
+Raccoglie dati da diverse funzioni aziendali.
+
+** 14) Che cos'è un data mart?
+Risposta:
+I data mart sono una versione ridotta e specializzata del data warehouse progettata
+per una singola funzione o reparto, come produzione o logistica.
+
+** 15) Che cosa sono i cubi di OLAP?
+Risposta:
+OLAP (Online Analytical Processing) è una tecnologia per eseguire query complesse ad alta velocità.
+
+Permette di estrapolare dati bidimensionali da data warehouse e data mart e di riorganizzarli
+in strutture multidimensionali, dette cubi di OLAP.
+
+Alcune caratteristiche sono:
+- entità denormalizzate,
+- schema del database più semplice,
+- interrogazioni con meno join,
+- dati aggregati,
+- ottimizzazione per grandi quantità di dati.
+
+** 16) Che cos'è un Decision Support System (DSS)?
+Risposta:
+Un Decision Support System è un applicativo che supporta il top management
+nell'analisi dei dati e nel processo decisionale.
+
+** 17) Che cos'è il commercio elettronico o e-commerce?
+Risposta:
+Il commercio elettronico è l'insieme di attività che prevedono lo scambio di beni o servizi
+tramite transazioni telematiche.
+
+Si distinguono principalmente tre categorie:
+
+- *B2B* (Business to Business): scambio di beni o servizi tra aziende.
+- *B2C* (Business to Customer): scambio tra azienda e consumatore finale.
+- *C2C* (Customer to Customer): scambio di beni o servizi tra privati, diffuso tramite
+  piattaforme come eBay e siti di vendita online.
+
+** 18) Quale evoluzione sta avvenendo nel settore IT?
+Risposta:
