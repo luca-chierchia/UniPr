@@ -1,0 +1,52 @@
+* 02. Processi aziendali
+
+In maniera generale si può definire *processo aziendale* l’insieme
+delle attività operative e decisionali che hanno l’obiettivo
+di realizzare un output.
+
+** Definizione di Processo Business (BP)
+
+Un *processo business* è l’insieme delle attività decisionali e
+operative che l’organizzazione svolge per realizzare un determinato
+output, materiale (prodotto) o immateriale (servizio).
+
+Il processo business può essere visto come una tupla con composizione:
+
+BP (A, I, O, C)
+
+dove:
+- A: attività necessarie, operative e manageriali
+- I: input del processo business
+- O: output del processo business
+- C: customer, ovvero il cliente destinatario dell’output
+
+** Parametri per identificare un processo business
+
+Per identificare un processo business bisogna conoscere diversi
+parametri:
+
+- Input: entità trasformate dal processo stesso
+- Output: il prodotto realizzato dal processo stesso
+- Risorse umane: risorse operative e manageriali coinvolte nel processo
+- Risorse ausiliarie: le risorse non umane coinvolte nel processo
+- Risorse organizzative: regole e modalità di esecuzione
+- Costi del processo: la somma dei costi per realizzare il BP
+- Trigger: evento scatenante
+- Destinatario dell’output: cliente finale
+
+** Schema del processo business
+
+#+begin_example
+          COSTI DEL PROCESSO
+                 |
+               TRIGGER
+                 |
+               SIGMA
+                 |
+INPUT ----> [  BP  ] ----> OUTPUT ----> CUSTOMER
+              ^  ^  ^
+              |  |  |
+      RISORSE AUSILIARI
+          RISORSE UMANE
+     RISORSE ORGANIZZATIVE
+#+end_example

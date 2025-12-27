@@ -1,0 +1,94 @@
+* Il modello ISO/OSI – Approfondimento dettagliato
+
+** Introduzione al modello ISO/OSI
+Il modello ISO/OSI (Open Systems Interconnection) è un modello di riferimento concettuale che descrive come avviene la comunicazione tra sistemi informatici in rete. Non definisce una tecnologia specifica, ma fornisce una struttura logica che consente di comprendere, progettare e analizzare i sistemi di comunicazione in modo modulare.
+
+L’idea centrale del modello è la suddivisione del processo di comunicazione in livelli indipendenti, ciascuno con responsabilità ben definite. Ogni livello fornisce servizi al livello superiore e utilizza i servizi del livello inferiore. Questo approccio consente interoperabilità, evoluzione tecnologica e semplificazione della progettazione.
+
+** Visione generale dei livelli
+Il modello ISO/OSI è composto da sette livelli, ordinati dal più vicino all’hardware (livello fisico) al più vicino all’utente e alle applicazioni (livello applicativo). I livelli inferiori si occupano della trasmissione dei segnali, quelli intermedi della comunicazione affidabile, quelli superiori della gestione dei dati e dei servizi applicativi.
+
+#+CAPTION:Modello ISO/OSI
+[[file:../risorse/modello-iso-osi.jpg]]
+
+** Livello 1 – Fisico
+Il livello fisico definisce come i bit vengono trasmessi sul mezzo di comunicazione. Si occupa esclusivamente della trasmissione dei segnali elettrici, ottici o radio, senza alcuna interpretazione del contenuto informativo.
+
+In questo livello vengono stabilite le caratteristiche del mezzo trasmissivo, come il tipo di cavo (rame, fibra ottica), i livelli di tensione, la velocità di trasmissione, la sincronizzazione dei segnali e la modalità di codifica dei bit.
+
+Il livello fisico non conosce il significato dei dati: per esso esistono solo sequenze di 0 e 1. Problemi a questo livello si manifestano come assenza di segnale o errori grossolani di trasmissione.
+
+
+
+** Livello 2 – Data Link
+Il livello di collegamento dati si occupa di rendere affidabile la comunicazione tra due nodi direttamente collegati. A differenza del livello fisico, qui i bit vengono organizzati in strutture chiamate frame.
+
+Questo livello gestisce il controllo degli errori di trasmissione, la rilevazione di collisioni e il controllo dell’accesso al mezzo. Inoltre, introduce l’indirizzamento locale tramite indirizzi fisici (come il MAC address nelle reti Ethernet).
+
+Il livello data link è fondamentale nelle reti locali, perché garantisce che i frame inviati arrivino correttamente al destinatario diretto prima di passare ai livelli superiori.
+
+
+
+** Livello 3 – Rete
+Il livello di rete si occupa dell’instradamento dei dati tra nodi non direttamente collegati. È il livello che consente la comunicazione su reti complesse, composte da più segmenti interconnessi.
+
+Qui i dati vengono organizzati in pacchetti e viene introdotto l’indirizzamento logico, che permette di identificare in modo univoco i nodi sulla rete (come gli indirizzi IP). Il livello di rete decide quale percorso devono seguire i pacchetti per raggiungere la destinazione.
+
+A questo livello possono verificarsi problemi di congestione o perdita di pacchetti. Il livello di rete, tuttavia, non garantisce necessariamente l’affidabilità della trasmissione: si limita a “tentare” la consegna.
+
+
+
+** Livello 4 – Trasporto
+Il livello di trasporto ha il compito di garantire una comunicazione affidabile end-to-end tra i processi applicativi che risiedono sui nodi sorgente e destinazione.
+
+Questo livello si occupa della suddivisione dei dati in segmenti, del controllo degli errori, della gestione del flusso e della ricomposizione dei dati in ricezione. Inoltre, introduce il concetto di porte, che consente di indirizzare i dati alla corretta applicazione.
+
+Un esempio tipico è il protocollo TCP, che garantisce affidabilità, e il protocollo UDP, che privilegia la velocità sacrificando il controllo degli errori. La scelta del protocollo di trasporto ha un impatto diretto sulle prestazioni e sull’affidabilità del sistema informativo.
+
+
+
+** Livello 5 – Sessione
+Il livello di sessione gestisce il dialogo tra due applicazioni. Il suo compito principale è stabilire, mantenere e terminare una sessione di comunicazione.
+
+Questo livello controlla chi può trasmettere in un dato momento, gestisce i punti di sincronizzazione e consente il recupero della comunicazione in caso di interruzioni temporanee.
+
+Anche se spesso è integrato nei livelli superiori nelle implementazioni reali, il livello di sessione è concettualmente importante per comprendere come vengono mantenute comunicazioni persistenti tra applicazioni distribuite.
+
+
+
+** Livello 6 – Presentazione
+Il livello di presentazione si occupa della rappresentazione dei dati. Il suo obiettivo è garantire che i dati scambiati siano comprensibili tra sistemi eterogenei.
+
+Questo livello gestisce la conversione dei formati, la codifica dei caratteri, la compressione dei dati e la cifratura. In pratica, trasforma i dati da un formato interno a un formato standard per la trasmissione, e viceversa.
+
+La sicurezza dei dati, in particolare la cifratura delle informazioni sensibili, è fortemente legata a questo livello, anche se nelle implementazioni moderne le funzionalità sono spesso distribuite.
+
+
+
+** Livello 7 – Applicazione
+Il livello applicativo è il più vicino all’utente finale. Fornisce servizi di rete direttamente utilizzabili dalle applicazioni, come la posta elettronica, il trasferimento di file e l’accesso a risorse remote.
+
+Questo livello non coincide con l’applicazione stessa, ma con i protocolli che permettono all’applicazione di utilizzare la rete. Esempi tipici sono HTTP, FTP, SMTP e DNS.
+
+Il livello applicativo è quello che traduce le esigenze del business in richieste di comunicazione, ed è quindi cruciale nei sistemi informativi aziendali.
+
+
+
+** Il modello ISO/OSI nella progettazione dei sistemi informativi
+In fase di progettazione, il modello ISO/OSI è uno strumento concettuale potente. Permette di separare i problemi: una modifica a un livello non dovrebbe propagarsi agli altri.
+
+Ad esempio, è possibile cambiare il mezzo trasmissivo senza modificare le applicazioni, oppure migliorare la sicurezza a livello di presentazione senza intervenire sulla logica applicativa.
+
+Il modello aiuta inoltre a individuare le cause dei problemi: errori di connessione, lentezza o perdita di dati possono essere analizzati identificando il livello coinvolto.
+
+
+
+** Relazione con il modello TCP/IP
+Nelle implementazioni reali il modello ISO/OSI non viene applicato rigidamente. Il modello TCP/IP, più diffuso, raggruppa alcuni livelli OSI, ma mantiene la stessa filosofia a strati.
+
+Il valore del modello ISO/OSI non risiede tanto nella sua applicazione pratica quanto nella sua capacità di fornire un linguaggio comune e una struttura concettuale per comprendere le reti.
+
+
+
+** Conclusione
+Il modello ISO/OSI rappresenta una mappa concettuale della comunicazione in rete. Comprenderlo in profondità consente di progettare sistemi informativi più robusti, scalabili e manutenibili, e di affrontare in modo sistematico i problemi legati alla comunicazione e all’integrazione dei sistemi.

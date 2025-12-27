@@ -376,3 +376,286 @@ Per l’audio vale ancora:
 #+begin_center
 G = C · f · b · s
 #+end_center
+
+* Standard per la rappresentazione dei dati
+
+La rappresentazione dei dati è un aspetto fondamentale dei sistemi
+informativi, poiché determina come le informazioni vengono memorizzate,
+interpretate, scambiate e riutilizzate da sistemi e applicazioni diverse.
+
+Per garantire interoperabilità, affidabilità e durata nel tempo, nel
+corso degli anni sono stati definiti *standard* di rappresentazione dei
+dati, ovvero convenzioni condivise che stabiliscono come le informazioni
+devono essere codificate.
+
+Gli standard permettono a produttori diversi di software e hardware di
+scambiarsi dati senza ambiguità, riducendo i costi di integrazione e i
+rischi di errore.
+
+** Standard pubblici e standard proprietari
+
+Gli standard possono essere distinti in due grandi categorie.
+
+Gli *standard pubblici* sono definiti da organismi internazionali o
+comunità aperte e sono liberamente utilizzabili. Esempi tipici sono il
+codice ASCII e Unicode per la rappresentazione dei caratteri, il formato
+TXT per i testi semplici, TIFF per le immagini, MP3 per l’audio o XML
+per i documenti strutturati.
+
+Gli *standard proprietari* sono invece definiti da singoli produttori di
+software e spesso legati a specifiche applicazioni. In questi casi la
+struttura interna dei dati non è sempre completamente documentata, e
+l’uso del formato può richiedere software specifici. Esempi sono i
+formati DOC e XLS delle versioni storiche di Microsoft Office.
+
+L’uso di standard pubblici è generalmente preferibile nei sistemi
+informativi aziendali, poiché riduce il rischio di dipendenza da un
+singolo fornitore (*vendor lock-in*).
+
+** Dati strutturati e non strutturati
+
+Dal punto di vista della rappresentazione, i dati possono essere
+distinti in:
+
+- dati non strutturati, come testi liberi, immagini o audio;
+- dati strutturati, organizzati secondo uno schema preciso che ne
+  definisce forma e significato.
+
+I sistemi informativi aziendali si basano prevalentemente su dati
+strutturati, poiché questi consentono elaborazioni automatiche,
+interrogazioni efficienti e controlli di coerenza.
+
+* I tracciati per la rappresentazione dei dati
+
+Prima della diffusione dei DBMS e dei formati strutturati evoluti,
+la rappresentazione dei dati nei sistemi informativi avveniva
+principalmente tramite *tracciati*, ovvero strutture sequenziali
+utilizzate per memorizzare e scambiare informazioni tra programmi.
+
+Un tracciato descrive come i dati sono organizzati all’interno di un
+supporto fisico o logico, specificando la suddivisione delle informazioni
+in record e campi.
+
+I tracciati sono ancora oggi utilizzati in contesti di integrazione,
+migrazione di sistemi legacy e scambio dati batch.
+
+** Tracciati a record con campi separati da delimitatori
+
+In questo tipo di rappresentazione ogni record corrisponde a una unità
+informativa elementare, come una fattura o un cliente, ed è delimitato
+da un carattere di fine record, tipicamente il “a capo”.
+
+All’interno del record, i singoli campi sono separati da un carattere
+speciale detto *delimitatore di campo*, come la virgola, il punto e
+virgola o il carattere di tabulazione.
+
+Un esempio tipico di questo approccio è il formato CSV (Comma Separated
+Values), in cui ogni riga rappresenta un record e ogni colonna un campo.
+
+Questo tipo di tracciato è semplice da generare e da leggere, anche con
+strumenti generici come fogli elettronici, ma presenta alcune criticità:
+la corretta interpretazione dei dati dipende dalla conoscenza preventiva
+del significato e dell’ordine dei campi, e la presenza di caratteri di
+delimitazione all’interno dei dati può richiedere meccanismi di escape.
+
+** Tracciati a record con campi a lunghezza fissa
+
+Nei tracciati a lunghezza fissa ogni campo occupa una porzione di record
+di dimensione prestabilita, espressa in numero di caratteri o byte.
+
+La struttura del record è quindi determinata dalla posizione dei campi
+e non da delimitatori espliciti. Questo consente una lettura molto
+efficiente, poiché il sistema sa esattamente dove trovare ogni
+informazione.
+
+Il principale limite di questo approccio è lo spreco di spazio quando i
+dati reali occupano meno caratteri rispetto alla lunghezza assegnata al
+campo. Inoltre, qualsiasi modifica alla struttura del tracciato richiede
+un aggiornamento coordinato di tutti i programmi che lo utilizzano.
+
+Questo tipo di tracciato è stato largamente utilizzato nei sistemi
+mainframe e in ambienti legacy.
+
+** Tracciati binari
+
+I tracciati binari rappresentano i dati direttamente in forma binaria,
+senza una codifica testuale leggibile dall’uomo.
+
+Questa soluzione è molto efficiente in termini di spazio e prestazioni,
+ma rende i dati difficilmente interpretabili senza una conoscenza
+precisa della struttura interna e dei tipi di dato utilizzati.
+
+Con l’evoluzione dei DBMS e dei formati strutturati, l’uso diretto dei
+tracciati binari per lo scambio dati è progressivamente diminuito, anche
+a causa delle difficoltà di interoperabilità.
+
+** Limiti dei tracciati tradizionali
+
+I tracciati pongono un vincolo forte sull’utilizzo dei dati, poiché la
+loro struttura deve essere nota a priori per poter interpretare
+correttamente le informazioni contenute.
+
+In assenza di una descrizione formale associata al tracciato, i dati
+risultano opachi e richiedono attività di *ricostruzione del tracciato*,
+che possono essere lunghe, costose e soggette a errori.
+
+Questo problema è meno evidente nei DBMS, in particolare in quelli
+relazionali, dove la struttura dei dati è esplicitata nello schema ed è
+accessibile ai programmi che interrogano il sistema.
+
+** Tracciati e formati strutturati evoluti
+
+Formati come XML possono essere visti come un’evoluzione concettuale dei
+tracciati tradizionali.
+
+In XML, la struttura del dato non è implicita nella posizione o nella
+lunghezza dei campi, ma è resa esplicita tramite i tag, che descrivono il
+significato delle informazioni.
+
+In questo modo, il documento XML incorpora al suo interno una parte
+della descrizione del tracciato, rendendo i dati auto-descrittivi e più
+facilmente interpretabili da sistemi diversi.
+
+** Tracciati e flussi informativi
+
+Nei sistemi informativi aziendali, i tracciati sono spesso utilizzati
+all’interno dei flussi informativi, soprattutto nei casi di scambio
+batch o di integrazione tra sistemi eterogenei.
+
+La scelta del tipo di tracciato influisce direttamente sull’efficienza,
+sull’affidabilità e sulla manutenibilità del flusso informativo.
+
+Per questo motivo, nelle architetture moderne si tende a preferire
+formati standardizzati e auto-descrittivi, riducendo l’uso dei tracciati
+rigidi ai soli casi in cui siano richieste prestazioni o compatibilità
+con sistemi legacy.
+
+* XML: eXtended Markup Language
+
+XML è uno standard aperto per la rappresentazione e lo scambio di dati
+strutturati, progettato per descrivere il *contenuto semantico* delle
+informazioni piuttosto che il loro aspetto grafico.
+
+XML non nasce come linguaggio di presentazione, ma come *metalinguaggio*,
+ovvero un linguaggio che consente di definire altri linguaggi e formati
+di dati.
+
+** Caratteristiche fondamentali di XML
+
+Un documento XML è composto da elementi delimitati da *tag*, che
+identificano semanticamente le informazioni contenute. Ogni elemento può
+contenere testo, attributi o altri elementi, formando una struttura
+gerarchica ad albero.
+
+XML impone una sintassi rigorosa: un documento è detto *well-formed*
+quando rispetta le regole sintattiche di base, come la corretta chiusura
+dei tag e la corretta nidificazione degli elementi.
+
+Questa rigidità sintattica rende XML facilmente interpretabile da
+programmi diversi, anche sviluppati indipendentemente.
+
+** XML, DTD e Schema
+
+Per garantire non solo la correttezza sintattica ma anche quella
+strutturale, è possibile associare a un documento XML una definizione
+formale del suo formato.
+
+Il *DTD* (Document Type Definition) specifica quali elementi sono
+ammessi, il loro ordine e le loro relazioni. Tuttavia, non essendo
+basato su XML stesso, il DTD è oggi progressivamente sostituito dallo
+*XML Schema*.
+
+Lo *XML Schema* è anch’esso scritto in XML e consente una definizione
+più ricca e precisa della struttura dei dati, includendo tipi di dato,
+vincoli e cardinalità.
+
+** XML e trasformazioni
+
+Poiché XML descrive il contenuto e non la presentazione, è spesso
+necessario trasformare un documento XML in altri formati.
+
+A questo scopo si utilizza XSL (eXtensible Stylesheet Language), che
+permette di associare una rappresentazione grafica a un documento XML o
+di convertirlo in altri formati, come HTML, PDF o documenti Office.
+
+Questa separazione tra contenuto e presentazione è uno dei principali
+punti di forza di XML.
+
+** Vantaggi e limiti di XML
+
+Il principale vantaggio di XML è la sua capacità di rendere esplicito il
+significato dei dati, facilitando l’integrazione tra sistemi eterogenei.
+
+Uno svantaggio evidente è l’aumento delle dimensioni dei file dovuto
+alla presenza dei tag, che può rendere XML meno efficiente rispetto a
+formati binari compatti.
+
+Nonostante ciò, XML è ampiamente utilizzato nei sistemi informativi,
+nelle architetture orientate ai servizi e nei protocolli di integrazione
+tra applicazioni.
+
+* Comunicazione dell’informazione
+
+Comunicare significa trasferire informazione da una sorgente a una
+destinazione. In ogni processo di comunicazione sono sempre presenti
+alcuni elementi fondamentali.
+
+** Il modello teorico della comunicazione
+
+Un processo di comunicazione prevede una *sorgente*, che genera il
+messaggio, una *destinazione*, che lo riceve, e un *canale*, attraverso
+il quale il messaggio viene trasmesso.
+
+Il messaggio deve essere codificato in una forma adatta al canale
+utilizzato e successivamente decodificato dal destinatario.
+
+Se anche uno solo di questi elementi viene a mancare, la comunicazione
+non può avere luogo.
+
+** Canali reali, disturbi e alterazioni
+
+Nei canali reali la comunicazione è soggetta a disturbi, che possono
+alterare o sovrapporsi al segnale trasmesso.
+
+I disturbi possono derivare da rumore interno, dovuto ai componenti
+fisici dei dispositivi, o da rumore esterno, causato da interferenze
+ambientali o elettromagnetiche.
+
+Oltre ai disturbi, il segnale può subire alterazioni come attenuazioni o
+distorsioni, che possono modificare il contenuto informativo del
+messaggio.
+
+** Rapporto segnale/rumore
+
+Per valutare la qualità di una comunicazione è fondamentale il rapporto
+segnale/rumore (SNR), che esprime il rapporto tra la potenza del segnale
+utile e quella del rumore.
+
+L’informazione è correttamente interpretabile solo quando questo
+rapporto rimane al di sopra di una certa soglia critica.
+
+** Comunicazione digitale
+
+Nella comunicazione digitale l’informazione viene rappresentata tramite
+sequenze di bit, che devono poter essere ricostruite integralmente dal
+destinatario.
+
+Testi, immagini, suoni e video sono tutti rappresentati come sequenze
+di byte, che vengono trasmessi attraverso il canale e ricostruiti
+all’arrivo.
+
+Le tecnologie di rete e Internet si basano su questo principio, che ha
+reso possibile la comunicazione su scala globale.
+
+* Ruolo della rappresentazione nei sistemi informativi
+
+Nei sistemi informativi aziendali, la corretta rappresentazione dei dati
+e la qualità della comunicazione dell’informazione sono fattori
+determinanti per l’efficienza dei processi.
+
+Ogni conversione tra formato digitale e formato fisico introduce costi,
+ritardi e possibilità di errore.
+
+Per questo motivo le organizzazioni tendono a progettare sistemi in cui
+i flussi informativi siano il più possibile digitali, standardizzati e
+integrati.

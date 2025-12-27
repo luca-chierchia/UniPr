@@ -35,6 +35,15 @@ aziendale, composta da elementi interdipendenti impegnati nel
 raggiungimento di determinati obiettivi.
 L’azienda è un *sistema aperto*, in quanto interagisce costantemente con
 l’ambiente esterno.
+
+All’interno del sistema azienda è possibile individuare il *core
+business*, ovvero l’insieme delle attività fondamentali che
+caratterizzano l’identità dell’organizzazione e che generano valore
+economico o istituzionale.
+Il core business rappresenta l’attività principale su cui l’azienda
+concentra risorse, competenze e investimenti, ed è il riferimento
+centrale per la definizione dei processi primari.
+
 Esistono diversi tipi di sistema azienda, che si distinguono in base a
 obiettivi e scopi:
 - aziende orientate al profitto
@@ -84,4 +93,3 @@ rappresentare il vero e proprio sistema nervoso dell’azienda,
 estendendo il suo ruolo oltre i confini tradizionali del sistema
 informativo e diventando un elemento strategico per il funzionamento e
 lo sviluppo dell’organizzazione.
-

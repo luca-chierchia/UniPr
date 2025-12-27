@@ -1,0 +1,59 @@
+* Capitolo 6 – Il sistema informatico entro il sistema informativo
+
+** 6.1 Introduzione
+Nel capitolo viene analizzato il sistema informatico come componente tecnologica che rende operativo il sistema informativo aziendale. Se nel capitolo precedente l’attenzione era rivolta alle applicazioni e ai servizi informativi, qui l’attenzione si sposta sull’infrastruttura che consente a tali applicazioni di funzionare in modo affidabile ed efficiente.
+
+Il sistema informatico è composto da più livelli: software applicativo, software di base, sistemi operativi, hardware e reti. Questi livelli non sono indipendenti, ma cooperano strettamente. Comprendere le relazioni tra di essi è fondamentale soprattutto in fase di progettazione, perché le scelte architetturali influenzano prestazioni, scalabilità e manutenzione del sistema informativo.
+
+** 6.2 La struttura di un’applicazione software
+Le applicazioni software all’interno dei sistemi informativi possono essere classificate in base alla modalità di esecuzione e al tipo di interazione prevista.
+
+Alcune applicazioni sono interattive: prevedono un operatore umano che dialoga direttamente con il sistema, impartendo comandi e ricevendo risposte. Rientrano in questa categoria i programmi di produttività, i gestionali aziendali e i browser web. In questi casi l’usabilità e la chiarezza dell’interfaccia assumono un ruolo centrale.
+
+Altre applicazioni operano in modalità macchina-macchina. In questo caso più sistemi software comunicano direttamente tra loro senza l’intervento costante di un operatore umano. Questo modello è tipico dei sistemi automatici di scambio dati, come quelli bancari, dove l’affidabilità e la continuità del servizio sono più importanti dell’interazione con l’utente.
+
+Infine, le applicazioni batch eseguono elaborazioni programmate in momenti prefissati. Queste applicazioni leggono grandi quantità di dati, li elaborano e producono risultati senza interazione diretta, come avviene spesso nei processi di fine giornata o di consolidamento dati.
+
+Dal punto di vista logico, un’applicazione è normalmente suddivisa in componenti funzionali. L’interfaccia utente si occupa dell’interazione con l’utente; la logica applicativa implementa le regole del dominio aziendale; la gestione dei dati garantisce la memorizzazione persistente e l’accesso alle informazioni. Questa separazione facilita l’evoluzione del software e la sua manutenzione.
+
+** 6.3 Le reti entro i sistemi informatici
+I sistemi informativi moderni sono fortemente basati sulle reti di comunicazione. La rete consente a sistemi diversi di scambiarsi dati e di condividere risorse, rendendo possibile l’uso di applicazioni distribuite.
+
+Nei sistemi informatici si distinguono architetture centralizzate e distribuite. Nei sistemi centralizzati l’elaborazione avviene in un unico punto, mentre nei sistemi distribuiti il carico è suddiviso tra più nodi collegati in rete. Le architetture distribuite offrono maggiore flessibilità e scalabilità, ma richiedono una progettazione più complessa.
+
+Le reti si classificano anche in base alla loro estensione geografica. Le reti locali (LAN) operano in aree limitate come edifici o campus; le reti metropolitane (MAN) coprono aree urbane; le reti geografiche (WAN) si estendono su grandi distanze, fino a comprendere reti globali come Internet.
+
+Un altro aspetto fondamentale è la topologia di rete, cioè la disposizione dei nodi e dei collegamenti. Le topologie influenzano affidabilità, prestazioni e costi dell’infrastruttura, e devono essere scelte in funzione delle esigenze del sistema informativo.
+
+** 6.4 Il modello ISO/OSI e la comunicazione in rete
+Per comprendere il funzionamento delle comunicazioni in rete viene introdotto il modello ISO/OSI, che descrive il processo di trasmissione dei dati suddividendolo in sette livelli.
+
+I livelli inferiori si occupano della trasmissione fisica dei segnali e del controllo dell’accesso al mezzo di comunicazione. I livelli intermedi gestiscono l’instradamento dei dati e la loro trasmissione affidabile, come avviene nel livello di trasporto con il protocollo TCP.
+
+I livelli superiori sono orientati alle applicazioni. Essi gestiscono la rappresentazione dei dati, il controllo delle sessioni di comunicazione e i servizi applicativi veri e propri. Questo modello a livelli consente di progettare sistemi modulari e interoperabili, semplificando l’evoluzione tecnologica.
+
+** 6.5 Evoluzione tecnologica dei sistemi informativi
+Storicamente, i primi sistemi informativi erano basati su architetture monolitiche e centralizzate, spesso realizzate su mainframe. Questo modello garantiva un elevato controllo, ma comportava costi elevati e scarsa flessibilità.
+
+Con l’evoluzione delle tecnologie si è passati al modello client-server, in cui le funzionalità vengono distribuite tra client e server. Questo approccio ha migliorato l’usabilità e la diffusione delle applicazioni.
+
+Successivamente si sono affermate architetture multi-tier, in cui l’interfaccia, la logica applicativa e la gestione dei dati sono collocate su livelli distinti. Questo modello facilita la manutenzione, migliora la scalabilità e consente una maggiore riusabilità delle componenti, ma introduce anche una maggiore complessità progettuale.
+
+** 6.6 Servizi tipici nelle reti aziendali
+All’interno delle reti aziendali sono presenti numerosi servizi specializzati. I file server e i print server permettono la condivisione centralizzata di file e dispositivi, semplificando la gestione delle risorse.
+
+I database server ospitano i DBMS e gestiscono grandi quantità di dati aziendali, garantendo coerenza, sicurezza e accesso concorrente. I web server consentono la pubblicazione di informazioni e applicazioni tramite il World Wide Web, rendendo possibile l’accesso remoto ai servizi.
+
+Accanto a questi servizi di base esistono servizi più avanzati, come i groupware server, che supportano la collaborazione tra utenti, e gli application server, che forniscono un ambiente di esecuzione per applicazioni complesse nelle architetture multi-tier. I server di amministrazione e monitoraggio permettono infine il controllo e la gestione dell’intera infrastruttura informatica.
+
+** 6.7 Il modello client-server e le applicazioni multi-tier
+Nel modello client-server il client si occupa dell’interazione con l’utente, mentre il server fornisce servizi e risorse condivise. Questo modello ha rappresentato una svolta rispetto ai sistemi monolitici, permettendo una migliore distribuzione del carico.
+
+Le applicazioni multi-tier estendono questo concetto introducendo uno o più livelli intermedi. La logica applicativa viene separata sia dall’interfaccia sia dalla gestione dei dati, migliorando sicurezza e prestazioni. Tuttavia, la corretta progettazione di questi sistemi è cruciale per evitare colli di bottiglia e problemi di comunicazione.
+
+** 6.8 Performance, scalabilità e complessità
+Uno dei problemi principali dei sistemi informativi è la gestione delle prestazioni al crescere del numero di utenti. L’aumento degli utenti comporta un incremento del carico computazionale e del traffico di rete.
+
+La scalabilità diventa quindi un requisito essenziale: il sistema deve poter crescere senza degradare eccessivamente le prestazioni. Allo stesso tempo aumenta la complessità complessiva del sistema, sia dal punto di vista tecnico sia gestionale.
+
+In fase di progettazione è quindi necessario trovare un equilibrio tra funzionalità, prestazioni, costi e semplicità architetturale, tenendo conto delle esigenze presenti e future dell’organizzazione.

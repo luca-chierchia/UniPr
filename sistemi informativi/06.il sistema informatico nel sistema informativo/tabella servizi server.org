@@ -1,0 +1,23 @@
+* Servizi Server per la progettazione di un sistema informatico
+
+#+CAPTION: Tabella di riferimento dei principali servizi server per l’analisi e la progettazione di sistemi informativi
+| Servizio Server | Funzione principale | Quando è necessario | Dipendenze principali | Note di progettazione |
+|-----------------|--------------------|---------------------|-----------------------|-----------------------|
+| Web Server | Gestisce richieste HTTP/HTTPS e fornisce contenuti web | Quando esiste un’interfaccia web o servizi accessibili via browser | Rete, OS, Application Server | Spesso primo punto di accesso; separarlo dall’application server migliora sicurezza e scalabilità |
+| Application Server | Esegue la logica applicativa e i processi di business | Essenziale per applicazioni enterprise e sistemi multi-tier | Web Server, DB Server, Middleware | Cuore del sistema applicativo; implementa regole di business |
+| Database Server (DBMS) | Gestisce dati strutturati persistenti | Sempre necessario se i dati sono condivisi o critici | Storage, OS, Rete | Nodo critico per prestazioni, sicurezza e affidabilità |
+| File Server | Fornisce archiviazione centralizzata di file | Utile per documenti, file condivisi, dati non strutturati | Storage, Rete | Spesso affianca il DBMS; importante la gestione dei permessi |
+| Print Server | Gestisce stampanti e code di stampa | Necessario in contesti aziendali con stampa condivisa | File Server, Rete | Riduce carico sulle workstation e centralizza il controllo |
+| Domain Server | Gestisce dominio, utenti e politiche di sicurezza | Fondamentale in ambienti aziendali strutturati | Directory Server, Authentication Server | Base per controllo accessi, policy e gestione centralizzata |
+| Directory Server | Mantiene informazioni su utenti, gruppi e risorse | Necessario per gestione centralizzata delle identità | Domain Server | Tipicamente LDAP o Active Directory |
+| Authentication Server | Gestisce autenticazione e autorizzazione | Indispensabile in sistemi multiutente | Directory Server, DB | Migliora sicurezza e tracciabilità degli accessi |
+| Terminal Server | Fornisce accesso remoto a sessioni applicative | Utile per postazioni leggere o lavoro remoto | Application Server, Rete | Centralizza l’esecuzione delle applicazioni |
+| Groupware Server | Supporta collaborazione (email, calendari, workflow) | Necessario per lavoro collaborativo | Mail Server, Directory | Migliora coordinamento e produttività |
+| Mail Server | Gestisce posta elettronica aziendale | Necessario per comunicazioni interne ed esterne | DNS, Storage, Rete | Spesso integrato con sistemi di alert |
+| Middleware / ESB | Orchestration e integrazione tra applicazioni | Necessario in sistemi distribuiti o eterogenei | Application Server, Rete | Fondamentale in architetture SOA |
+| API Server | Espone funzionalità tramite API REST/SOAP | Utile per integrazioni interne ed esterne | Application Server, Sicurezza | Favorisce modularità e riuso |
+| Message Broker / Queue | Gestisce comunicazioni asincrone | Utile per sistemi scalabili e a eventi | Application Server | Riduce accoppiamento tra componenti |
+| Backup Server | Gestisce backup e ripristino dati | Sempre necessario in sistemi critici | Storage, DB Server | Fondamentale per continuità operativa |
+| Administration / Monitoring Server | Monitora stato, prestazioni e configurazioni | Essenziale in produzione | Tutti i server | Supporta SLA, manutenzione e troubleshooting |
+| Virtualization Host | Ospita macchine virtuali o container | Necessario in ambienti virtualizzati | Hardware fisico | Migliora flessibilità e utilizzo risorse |
+| Cloud Management Server | Orchestrazione risorse cloud | Necessario in ambienti cloud o ibridi | Virtualization Host, Rete | Automatizza provisioning e scaling |

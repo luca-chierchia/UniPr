@@ -1,0 +1,170 @@
+* Capitolo 5 – Soluzioni informatiche per l’impresa
+
+** 5.1 Introduzione
+Le applicazioni informatiche nei sistemi informativi aziendali hanno il compito di elaborare informazioni e fornire servizi a supporto dei processi di business. Il loro ruolo non è limitato all’automazione operativa, ma si estende al supporto delle attività tattiche e strategiche dell’impresa. Un aspetto centrale è l’interfaccia utente, intesa come punto di contatto tra l’utente e l’applicazione: la qualità dell’interazione influisce direttamente sulla produttività complessiva.
+
+Accanto alle applicazioni tradizionali, orientate all’operatività quotidiana e al supporto decisionale, emergono applicazioni finalizzate alla gestione e valorizzazione della conoscenza. Queste consentono di trasformare la conoscenza tacita, spesso non formalizzata, in conoscenza esplicita e condivisibile, come avviene nei sistemi di gestione documentale e nei social network aziendali.
+
+** 5.2 Sistema informatico e applicazioni
+Il sistema informatico è costituito dall’insieme delle risorse tecnologiche utilizzate per raccogliere, elaborare, memorizzare e scambiare informazioni in formato digitale. Tali risorse comprendono tecnologie ICT come calcolatori, periferiche, reti di comunicazione e programmi software.
+
+Un programma software è un’applicazione con una funzione ben definita (ad esempio videoscrittura o fogli di calcolo). Un insieme coordinato di applicazioni può costituire un sistema software capace di supportare uno o più processi di business.
+
+Un processo informatico è un programma in esecuzione associato allo svolgimento di attività aziendali. Durante la sua esecuzione utilizza risorse hardware e software (CPU, memoria, disco, rete). I processi informatici operano sui dati, che sono gestiti in modo strutturato attraverso i DBMS.
+
+Il DBMS (Data Base Management System) è un sistema software che standardizza l’accesso ai dati e consente la condivisione delle informazioni tra più processi, garantendo al contempo l’indipendenza dei dati dalle applicazioni.
+
+Una base di dati (database) è un insieme organizzato di dati strutturati, gestiti in modo unitario dal DBMS. In ambito pratico, il termine database viene spesso usato come sinonimo di DBMS.
+
+La transazione rappresenta l’unità logica fondamentale di elaborazione: è una sequenza di operazioni che produce un effetto globale sul database ed è atomica, cioè o viene completata con successo o viene completamente annullata. Le transazioni rispettano le proprietà ACID: atomicità, consistenza, isolamento e durabilità, che garantiscono correttezza e affidabilità del sistema informativo.
+
+** 5.2.1 Stratificazione tecnica del sistema informatico
+Il sistema informatico può essere analizzato tramite una stratificazione tecnico-funzionale, che distingue diversi livelli interdipendenti.
+
+Il livello applicativo comprende le applicazioni con cui gli utenti interagiscono direttamente e che realizzano il trattamento dell’informazione. È il livello visibile all’utente finale.
+
+Il livello del software infrastrutturale fornisce servizi di base alle applicazioni, come i database server e i web server.
+
+Il livello dei sistemi operativi gestisce le risorse hardware e consente l’esecuzione dei programmi.
+
+Il livello hardware comprende le componenti fisiche dei sistemi di calcolo, distinguendo tra client (postazioni di lavoro degli utenti) e server (sistemi che forniscono servizi condivisi).
+
+Il livello della rete include l’infrastruttura di comunicazione che permette lo scambio di dati tra i sistemi, tramite dispositivi come router e hub.
+
+** 5.2.2 Stratificazione funzionale del livello applicativo
+Il livello applicativo può essere ulteriormente suddiviso in base alla Piramide di Anthony, che classifica i sistemi informativi secondo il livello decisionale supportato.
+
+Il livello operativo supporta le attività quotidiane e ripetitive dell’azienda.
+
+Il livello di gestione della conoscenza collega il livello operativo a quello manageriale, facilitando la creazione, l’organizzazione e la condivisione della conoscenza.
+
+Il livello manageriale supporta le attività di controllo e pianificazione di medio periodo.
+
+Il livello strategico fornisce informazioni aggregate e di lungo periodo ai vertici aziendali.
+
+** 5.3 Relazioni fra i livelli di applicazione
+I sistemi di livello operativo costituiscono la parte quantitativamente più rilevante del sistema informatico. Essi registrano le transazioni elementari che descrivono le attività quotidiane dell’azienda, come vendite, incassi, spedizioni o calcolo stipendi. Questi sistemi sono noti come Transaction Processing Systems (TPS) o sistemi OLTP e hanno il compito di registrare in modo affidabile il flusso delle transazioni.
+
+I sistemi di gestione per l’ufficio e di gestione della conoscenza supportano il lavoro degli impiegati e dei knowledge worker. I primi aumentano la produttività individuale attraverso strumenti come videoscrittura, fogli elettronici e posta elettronica. I secondi, noti come Knowledge Working Systems (KWS), supportano la creazione di nuova conoscenza tramite strumenti di progettazione, modellazione e gestione documentale.
+
+I sistemi informativi manageriali (MIS) forniscono report periodici e riepiloghi a supporto delle attività di pianificazione e controllo dei middle manager. Essi elaborano dati provenienti dai sistemi operativi e li presentano in forma aggregata.
+
+Tra il livello manageriale e quello strategico si collocano i Decision Support Systems (DSS), che supportano decisioni non strutturate o parzialmente strutturate. I DSS utilizzano modelli analitici, simulazioni e strumenti di analisi dei dati per esplorare scenari alternativi e supportare il processo decisionale.
+
+I sistemi di supporto direzionale (ESS) sono destinati ai senior manager e forniscono informazioni fortemente aggregate, spesso provenienti anche dall’esterno dell’azienda, per valutare l’andamento complessivo e le tendenze di lungo periodo.
+
+** 5.4 Integrazione dei sistemi informativi
+Storicamente, nelle aziende strutturate per funzioni, ogni reparto ha sviluppato sistemi informativi autonomi. Questa evoluzione ha portato alla nascita delle cosiddette “isole informatiche”, caratterizzate da scarsa integrazione e formati di dati eterogenei.
+
+L’evoluzione verso organizzazioni orientate ai processi richiede sistemi informativi flessibili e integrati, in grado di adattarsi rapidamente ai cambiamenti dei processi di business. L’integrazione avviene attraverso la condivisione dei dati e l’adozione di sistemi informativi integrati.
+
+A partire dagli anni Novanta si diffondono grandi applicazioni modulari a supporto dell’intera azienda, come gli ERP (Enterprise Resource Planning) e i sistemi di Supply Chain Management (SCM), che permettono di gestire in modo coordinato e coerente i principali processi aziendali.
+
+
+
+** Sistemi informativi integrati e applicazioni aziendali
+Le moderne imprese operano attraverso processi interconnessi che producono e utilizzano grandi quantità di informazioni. I sistemi informativi hanno il compito di supportare tali processi raccogliendo, elaborando, archiviando e distribuendo informazioni in modo coerente e tempestivo.
+
+Nel tempo si è passati da applicazioni isolate, sviluppate per singole funzioni aziendali, a sistemi integrati, capaci di supportare l’azienda nel suo complesso. Questa evoluzione è stata necessaria per superare il problema delle “isole informative”, ovvero sistemi eterogenei non comunicanti tra loro, basati su basi dati e formati differenti.
+
+L’azienda moderna è sempre più organizzata per processi e non per funzioni: di conseguenza, i sistemi informativi devono essere flessibili, integrabili e orientati alla gestione dei flussi informativi trasversali.
+
+** ERP – Enterprise Resource Planning
+Con il termine ERP (Enterprise Resource Planning) si indicano i sistemi informativi gestionali integrati, costituiti da insiemi di applicazioni software che condividono un’unica base dati centralizzata. L’obiettivo principale di un ERP è la gestione coordinata e integrata di tutte le attività rilevanti dell’azienda.
+
+Gli ERP nascono nei primi anni Novanta come evoluzione dei sistemi MRP e MRP II, inizialmente orientati alla pianificazione dei fabbisogni produttivi. Progressivamente si sono estesi fino a coprire l’intero spettro dei processi aziendali principali.
+
+Un sistema ERP copre tipicamente:
+- il ciclo attivo e il ciclo passivo (vendite e acquisti);
+- la contabilità e il controllo di gestione;
+- la logistica;
+- la gestione delle risorse umane;
+- la produzione.
+
+Il successo degli ERP è dovuto sia a fattori tecnologici sia a fattori di mercato. Dal lato dell’offerta, hanno inciso la standardizzazione dei sistemi operativi, la diffusione delle architetture client-server e la maggiore scalabilità dell’hardware. Dal lato della domanda, le aziende hanno avvertito la necessità di maggiore integrazione, rapidità decisionale e controllo dei processi in contesti sempre più globalizzati e dinamici.
+
+Nel tempo il termine ERP è diventato molto ampio: oggi un prodotto ERP è atteso offrire architetture flessibili e scalabili, strumenti di modellazione dei processi, possibilità di personalizzazione tramite parametrizzazione, supporto a contesti multinazionali e capacità di integrazione con altri sistemi aziendali.
+
+Gli ERP moderni sono spesso modulari e possono essere estesi tramite ambienti di sviluppo proprietari (ad esempio ABAP per SAP), middleware e servizi di integrazione.
+
+L’adozione di un ERP comporta spesso interventi significativi di reingegnerizzazione dei processi aziendali. Per questo motivo, mentre le grandi imprese tendono a adottare ERP industrializzati, le piccole e medie imprese possono preferire soluzioni ERP “lite” o sistemi gestionali meno complessi.
+
+** CRM – Customer Relationship Management
+Il CRM (Customer Relationship Management) è un sistema orientato alla gestione integrata delle relazioni con i clienti. Esso raccoglie e integra in un’unica base dati tutte le informazioni provenienti dai diversi canali di contatto tra azienda e cliente (vendite, marketing, assistenza, customer service).
+
+Il CRM non è solo una tecnologia, ma un insieme di strategia, processi, cultura organizzativa e strumenti informativi. Il suo obiettivo è migliorare la comprensione dei bisogni dei clienti, aumentare la qualità del servizio e incrementare il valore generato dalla relazione nel tempo.
+
+Il CRM si articola principalmente in due componenti:
+- CRM operativo, che supporta l’esecuzione delle attività quotidiane di contatto con il cliente (campagne di marketing, vendite, assistenza);
+- CRM analitico, che analizza i dati raccolti per segmentare i clienti, valutarne il valore attuale e prospettico e supportare decisioni tattiche e strategiche.
+
+Il funzionamento del CRM è basato su un ciclo virtuoso che comprende:
+- identificazione e segmentazione dei clienti;
+- valutazione del loro valore;
+- differenziazione delle offerte e delle campagne;
+- interazione con il cliente attraverso i canali appropriati;
+- apprendimento e personalizzazione basati sull’analisi delle risposte dei clienti.
+
+Questo approccio consente di passare da un marketing di massa a un marketing personalizzato (one-to-one), reso possibile dalla disponibilità di sistemi informativi integrati e strumenti di analisi avanzati.
+
+** SCM – Supply Chain Management
+Il Supply Chain Management (SCM) è l’insieme di metodologie e sistemi informativi orientati alla gestione integrata della catena di approvvigionamento. Esso si fonda sulla logistica e mira a ottimizzare i flussi di materiali, informazioni e servizi dal fornitore al cliente finale.
+
+A differenza della logistica tradizionale, limitata ai confini dell’azienda, lo SCM considera l’intera filiera come una rete di imprese interconnesse. In questa visione, fornitori, produttori, distributori e clienti partecipano congiuntamente alla creazione del valore.
+
+Lo SCM consente di:
+- migliorare la pianificazione della domanda;
+- ottimizzare la gestione degli ordini;
+- pianificare la capacità produttiva e l’uso degli impianti;
+- coordinare l’approvvigionamento e la distribuzione;
+- ridurre costi operativi e capitale immobilizzato;
+- aumentare il livello di servizio al cliente.
+
+Un aspetto centrale dello SCM è la gestione delle informazioni tramite le ICT, indispensabile per evitare distorsioni informative (come l’effetto bullwhip) e supportare decisioni coordinate lungo la filiera.
+
+Tra i principi fondamentali dello SCM rientrano:
+- segmentazione della clientela;
+- adattamento dei processi logistico-distributivi ai diversi segmenti;
+- pianificazione collaborativa basata sui segnali del mercato;
+- differenziazione tardiva dei prodotti;
+- approvvigionamento orientato all’efficienza globale;
+- misurazione delle prestazioni e dei costi di servizio.
+
+** Relazioni tra ERP, CRM e SCM
+ERP, CRM e SCM non sono sistemi isolati, ma componenti complementari di un’unica architettura informativa aziendale. L’ERP rappresenta il nucleo centrale di integrazione dei processi interni, il CRM estende il sistema verso il cliente, mentre lo SCM lo estende verso fornitori e partner.
+
+Insieme, questi sistemi consentono all’azienda di operare secondo una logica per processi, supportando la collaborazione interfunzionale e l’integrazione informativa necessaria per competere in mercati complessi e globali.
+
+
+** Sistemi di analisi dei dati: OLAP e Data Warehouse
+Nel passaggio dai sistemi transazionali (OLTP) ai sistemi di analisi, cambiano profondamente le caratteristiche dei dati e delle interrogazioni. I sistemi OLTP sono ottimizzati per inserimenti e aggiornamenti frequenti su pochi record alla volta, mentre i sistemi di analisi sono progettati per interrogazioni complesse su grandi moli di dati storici, generalmente in sola lettura.
+
+Il processo di Extract, Transform and Load (ETL) consente di estrarre i dati dai sistemi operativi, trasformarli in una struttura più adatta all’analisi e caricarli nei sistemi analitici. L’analisi vera e propria avviene tramite sistemi OLAP, che utilizzano basi di dati de-normalizzate, con strutture più semplici e dati aggregabili, al fine di facilitare la comprensione da parte dell’utente finale.
+
+Esistono due principali tipologie di basi dati analitiche. Il data warehouse rappresenta un “magazzino di dati” a livello aziendale, centralizzato, coerente e integrato, che supporta l’analisi strategica dell’intera impresa. Il data mart, invece, è una porzione del data warehouse focalizzata su una specifica area o funzione aziendale, come vendite o marketing, e consente tempi di realizzazione più rapidi e costi inferiori.
+
+** Modelli multidimensionali e OLAP
+La progettazione di data warehouse e data mart si basa su modelli multidimensionali, che organizzano i dati secondo il concetto di “fatto” e “dimensioni”. I fatti rappresentano eventi rilevanti per il processo decisionale (ad esempio una vendita), mentre le dimensioni sono le prospettive di analisi (tempo, prodotto, area geografica).
+
+Il modello multidimensionale può essere rappresentato come un iper-cubo, in cui ogni asse corrisponde a una dimensione di analisi. Le dimensioni sono spesso organizzate in gerarchie, che permettono di analizzare i dati a diversi livelli di dettaglio (ad esempio nazione → regione → città). Questo approccio consente di trasformare grandi quantità di dati grezzi in informazioni utili per il management.
+
+** DSS e strumenti di Business Intelligence
+Accanto ai sistemi OLAP, la Business Intelligence include strumenti di reportistica, data mining e sistemi di supporto alle decisioni (DSS). Il data mining permette di individuare associazioni, sequenze, classificazioni, raggruppamenti e previsioni a partire dai dati disponibili.
+
+I DSS sono sistemi progettati per supportare decisioni complesse, spesso basati su regole e conoscenze esperte memorizzate in apposite basi di conoscenza. Essi non sostituiscono il decisore umano, ma lo assistono nel processo decisionale.
+
+** Big Data
+Le dimensioni dei data warehouse tradizionali possono raggiungere decine di terabyte, ma l’evoluzione di Internet e dei social media ha portato alla nascita dei Big Data, caratterizzati da volumi enormi, varietà delle fonti e velocità di generazione. I Big Data includono dati provenienti da fonti eterogenee, come social network, sensori e log di navigazione, e consentono analisi avanzate sul comportamento degli utenti e sul sentiment del mercato.
+
+** E-business ed e-commerce
+Con il termine e-business si intende l’uso delle tecnologie Internet per supportare funzioni, processi e strategie aziendali, mentre l’e-commerce riguarda specificamente le transazioni commerciali online. L’evoluzione delle tecnologie Web ha reso possibile la gestione completa del processo di acquisto online, inclusi pagamento sicuro e tracciamento degli ordini.
+
+Si distinguono diverse tipologie di commercio elettronico. Il B2B riguarda le transazioni tra aziende ed è spesso integrato nei processi di supply chain. Il B2C riguarda il rapporto diretto tra azienda e consumatore finale e richiede funzionalità come cataloghi elettronici, carrelli virtuali, sistemi di pagamento e gestione degli ordini. Il C2C consente transazioni tra consumatori, tipicamente tramite piattaforme di intermediazione.
+
+** Fattori critici e problematiche del commercio elettronico
+Il successo di un’attività di e-commerce dipende da vari fattori, tra cui la capacità di creare valore per il cliente, garantire fiducia e sicurezza, curare l’usabilità del sito e fornire un adeguato supporto al cliente. Accanto a questi aspetti, possono emergere criticità legate alla comprensione del comportamento dei clienti, alla mancanza di coordinamento interno, alla sottovalutazione delle risorse necessarie e alla difficoltà di tradurre la strategia in azioni operative.
+
+** Impatto organizzativo e sociale delle tecnologie digitali
+Le tecnologie digitali hanno modificato profondamente le relazioni tra aziende, clienti e dipendenti. L’e-commerce e l’e-business hanno superato i confini organizzativi tradizionali, mentre l’integrazione con la telefonia mobile ha portato allo sviluppo dell’m-business, rendendo le interazioni sempre più pervasive e continue.
+
+La comunicazione in rete, amplificata dai social media, ha trasformato il modo in cui le aziende gestiscono la propria immagine, la reputazione e il rapporto con il mercato. Le conversazioni online diventano una fonte di dati e conoscenza, che può essere analizzata e integrata nei sistemi informativi aziendali per migliorare prestazioni, apprendimento organizzativo e competitività.

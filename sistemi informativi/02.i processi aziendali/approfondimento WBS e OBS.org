@@ -1,0 +1,57 @@
+* Arricchimento concettuale di WBS e OBS
+
+** Come nasce e come si costruisce una WBS
+
+Quando si inizia a costruire una Work Breakdown Structure (WBS), la prima operazione non riguarda la tecnica di scomposizione, ma la comprensione dello scopo.
+Una WBS nasce sempre da un obiettivo da raggiungere, che può essere un progetto oppure un processo da analizzare.
+È quindi necessario chiarire quale risultato finale si intende ottenere e quale deliverable rappresenta il completamento del lavoro.
+
+La WBS non parte dalle persone né dagli strumenti, ma dal lavoro da svolgere.
+Si tratta di una rappresentazione orientata al *che cosa deve essere fatto*, non al *chi* lo farà.
+
+Il punto di partenza corretto è il risultato complessivo.
+Da questo si procede con una scomposizione progressiva del lavoro in parti sempre più piccole, chiedendosi se ciascuna parte sia necessaria per ottenere il risultato finale e se possa essere ulteriormente suddivisa in sotto-attività più semplici, gestibili e misurabili.
+
+La scomposizione può ritenersi adeguata quando ogni elemento è sufficientemente chiaro da poter essere stimato in termini di tempo, costo e risultato.
+Quando queste tre dimensioni risultano valutabili, il livello di dettaglio è appropriato.
+
+Un principio fondamentale nella costruzione della WBS è quello della completezza.
+La struttura deve rappresentare l’intero lavoro necessario al raggiungimento dell’obiettivo, senza sovrapposizioni e senza omissioni.
+Questo concetto è spesso indicato come principio del “100%”, secondo cui la somma delle parti deve corrispondere esattamente al lavoro totale.
+
+Se una parte del lavoro non è rappresentata nella WBS, essa rischia di non essere pianificata, stimata o controllata, compromettendo l’efficacia della gestione.
+
+** Come nasce e come si costruisce una OBS
+
+La Organizational Breakdown Structure (OBS) nasce da una prospettiva differente rispetto alla WBS.
+In questo caso l’attenzione non è rivolta al lavoro da svolgere, ma alla struttura organizzativa che dovrà sostenerlo.
+
+Il punto di partenza non è il deliverable, ma l’organizzazione esistente o prevista.
+È necessario comprendere come l’organizzazione è suddivisa in unità, ruoli, funzioni e livelli di responsabilità.
+
+Costruire una OBS significa individuare i soggetti che possiedono autorità, competenza o responsabilità sulle diverse parti del lavoro.
+Non si tratta ancora di assegnare attività specifiche, ma di mappare la capacità organizzativa disponibile e le linee decisionali.
+
+La domanda che guida la costruzione della OBS riguarda la responsabilità.
+Occorre chiedersi chi risponde di una determinata area di lavoro, chi prende le decisioni e chi ha l’autorità necessaria per intervenire in caso di problemi.
+Questo consente di identificare ruoli chiave, centri di responsabilità e relazioni gerarchiche.
+
+Un aspetto cruciale è che la OBS deve rappresentare il funzionamento reale dell’organizzazione e non soltanto la sua struttura formale.
+Se esiste una discrepanza tra l’organigramma ufficiale e le modalità effettive di presa delle decisioni, la OBS deve riflettere la realtà operativa, altrimenti perde la sua utilità come strumento di governo.
+
+** Relazione tra WBS e OBS
+
+Il valore più significativo emerge quando WBS e OBS vengono analizzate congiuntamente.
+La WBS descrive il lavoro che deve essere svolto, mentre la OBS descrive chi è strutturalmente in grado di farsene carico.
+
+È nell’incrocio tra queste due strutture che si ottiene chiarezza gestionale.
+Da tale incrocio è possibile costruire strumenti come la matrice RACI, che rende esplicito chi esegue le attività, chi è responsabile del risultato, chi deve essere consultato e chi deve essere informato.
+
+Una WBS poco chiara rende la RACI vaga e inefficace.
+Una OBS non realistica rende la RACI impraticabile.
+Solo quando entrambe sono costruite correttamente è possibile ottenere una distribuzione delle responsabilità coerente e sostenibile.
+
+In sintesi, la WBS può essere interpretata come una mappa del lavoro, mentre la OBS rappresenta una mappa delle competenze, delle responsabilità e del potere decisionale.
+La prima nasce dalla domanda su ciò che è necessario fare per raggiungere un risultato, la seconda dalla domanda su chi è in grado di garantire tale risultato all’interno dell’organizzazione.
+
+Mantenere distinti questi due livelli e metterli in relazione solo in una fase successiva consente di utilizzare WBS e OBS in modo maturo ed efficace, in linea con i principi del project management e dei sistemi informativi.

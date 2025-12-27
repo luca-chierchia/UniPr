@@ -1,0 +1,254 @@
+* 02. Processi aziendali
+
+In maniera generale si può definire *processo aziendale* l’insieme
+delle attività operative e decisionali che hanno l’obiettivo
+di realizzare un output.
+
+** Definizione di Processo Business (BP)
+
+Un *processo business* è l’insieme delle attività decisionali e
+operative che l’organizzazione svolge per realizzare un determinato
+output, materiale (prodotto) o immateriale (servizio).
+
+Il processo business può essere visto come una tupla con composizione:
+
+BP (A, I, O, C)
+
+dove:
+- A: attività necessarie, operative e manageriali
+- I: input del processo business
+- O: output del processo business
+- C: customer, ovvero il cliente destinatario dell’output
+
+** Parametri per identificare un processo business
+
+Per identificare un processo business bisogna conoscere diversi
+parametri:
+
+- Input: entità trasformate dal processo stesso
+- Output: il prodotto realizzato dal processo stesso
+- Risorse umane: risorse operative e manageriali coinvolte nel processo
+- Risorse ausiliarie: le risorse non umane coinvolte nel processo
+- Risorse organizzative: regole e modalità di esecuzione
+- Costi del processo: la somma dei costi per realizzare il BP
+- Trigger: evento scatenante
+- Destinatario dell’output: cliente finale
+
+** Schema del processo business
+
+#+begin_example
+          COSTI DEL PROCESSO
+                 |
+               TRIGGER
+                 |
+               SIGMA
+                 |
+INPUT ----> [  BP  ] ----> OUTPUT ----> CUSTOMER
+              ^  ^  ^
+              |  |  |
+      RISORSE AUSILIARI
+          RISORSE UMANE
+     RISORSE ORGANIZZATIVE
+#+end_example
+ 
+Come possiamo valutare un processo?
+
+Possiamo ottenere delle valutazioni del processo tramite dei rapporti:
+
+- Efficienza: output effettivo / input
+- Efficacia: output effettivo / output atteso
+
+Inoltre è possibile valutare anche dei KPI (Key Performance Indicator),
+ovvero indicatori che chiariscono il funzionamento e misurano
+le prestazioni ottenute.
+
+I KPI sono metriche misurabili utilizzate per valutare
+l’efficacia di un processo rispetto a obiettivi prefissati.
+* Interno dell’organizzazione: classificazione dei processi
+
+Nelle organizzazioni è possibile individuare alcuni processi
+fondamentali. Tradizionalmente vengono utilizzate la catena del valore
+di Porter e la piramide di Anthony.
+
+** Catena del valore di Porter
+
+La catena del valore di Porter suddivide i processi in tre macro-aree:
+
+- Buy side :: acquisti e approvvigionamento
+- Inside :: processi primari (core business)
+- Sell side :: vendite, marketing e supporto post-vendita
+
+Rappresentazione logica:
+
+Buy side → Inside → Sell side
+
+#+CAPTION:Catena del valore di Porter
+[[file:../risorse/catena-di-porter.png]]
+
+
+** Piramide di Anthony
+
+La piramide di Anthony è una classificazione dei processi dal punto di
+vista gerarchico e decisionale. È suddivisa in tre livelli:
+
+- Processi strategici :: pianificazione a lungo termine
+- Processi tattici :: processi gestionali e amministrativi
+- Processi operativi :: attività operative quotidiane
+  
+#+CAPTION:Piramide di Anthony
+[[file:../risorse/piramide-anthony.png]]
+
+I tre livelli hanno obiettivi e orizzonti temporali differenti.
+
+** Altri processi fondamentali
+
+Dalla catena di Porter possono derivare altri processi importanti per
+l’organizzazione:
+
+- Ciclo attivo :: insieme delle attività legate alle vendite e ai clienti
+- Ciclo passivo :: insieme delle attività legate agli acquisti delle materie prime
+- Gestione magazzino e sistemi di approvvigionamento (SCM)
+- Produzione
+- Gestione amministrativa
+- Gestione risorse umane e clienti (CRM)
+- Manutenzione impianti e attrezzature
+- Attività di marketing
+
+* Scorrimento tra processo, progetto e organizzazione
+
+Un progetto è un insieme di attività organizzate e limitate nel tempo
+allo scopo di ottenere un prodotto o un servizio identificabile.
+
+Il progetto e il processo differiscono in quanto:
+- il processo è ripetitivo
+- il progetto è temporaneo e con un obiettivo definito
+
+Il project management è l’insieme delle conoscenze, skill e tecnologie
+necessarie per raggiungere un obiettivo progettuale.
+
+Molti concetti e metodi per scomporre ed analizzare un processo sono
+utilizzabili anche per i progetti.
+
+** Project Management Office (PMO)
+
+Il PMO coordina metodologie, strumenti e standard a supporto dei
+progetti e dell’organizzazione.
+
+Tra gli strumenti utilizzati troviamo:
+
+- WBS
+- OBS
+- RACI
+
+** WBS e OBS
+
+
+- WBS :: scomposizione strutturata del lavoro o del progetto
+- OBS :: scomposizione strutturata dell’organizzazione
+
+** Matrice RACI
+
+#+CAPTION:Matrice RACI
+[[file:../risorse/matrice-raci.png]]
+
+La matrice RACI definisce ruoli e responsabilità:
+
+- R :: Responsible, responsabile dell’esecuzione
+- A :: Accountable, responsabile del risultato finale
+- C :: Consulted, soggetti consultati
+- I :: Informed, soggetti informati
+
+Ogni parte della RACI può essere coperta da singoli ruoli o reparti.
+* Architettura aziendale e sistemi informativi
+
+L’azienda può essere vista come un sistema complesso, spesso descritto con il termine *enterprise architecture*.
+Il concetto di architettura, mutuato dall’architettura degli edifici, è utilizzato in ambito informatico e organizzativo con tre significati distinti:
+
+- struttura di un sistema (in particolare dei sistemi software), spesso a livello astratto;
+- disciplina che si occupa della progettazione di tale struttura;
+- documentazione che descrive la struttura del sistema.
+
+È fondamentale distinguere tra il sistema reale e la sua descrizione: come affermava Alfred Korzybski, *“la mappa non è il territorio”*.
+La descrizione dell’architettura è un *deliverable* concreto del project management, utile per condividere informazioni tra stakeholder diversi.
+
+L’architettura deve sempre essere analizzata nel suo contesto: per comprenderne le proprietà è necessario sapere:
+- in quale ambiente il sistema è collocato;
+- con quali altri sistemi interagisce.
+
+L’importanza delle caratteristiche di un sistema non è assoluta, ma dipende dal punto di vista degli stakeholder.
+
+* Standard ISO 42010 e concetto di vista
+
+Lo standard ISO 42010 (derivato dallo standard IEEE 1471) formalizza il concetto di *vista di un’architettura*.
+Una vista rappresenta il punto di vista di uno stakeholder sul sistema.
+
+Ogni vista genera un modello che mette in evidenza solo gli aspetti ritenuti rilevanti da quello stakeholder.
+Di conseguenza, la descrizione dell’architettura risulta “geometricamente” influenzata dal punto di vista adottato.
+
+* Le viste secondo Kruchten (modello 4+1)
+
+Nel caso dell’architettura software, Kruchten (1995) propone un modello basato su cinque viste:
+
+- *Vista logica*: descrive le funzionalità fornite dal sistema agli utenti finali.
+- *Vista di sviluppo*: rappresenta il sistema dal punto di vista degli sviluppatori, concentrandosi sull’organizzazione del software.
+- *Vista di processo*: analizza il comportamento dinamico del sistema e le interazioni tra i processi.
+- *Vista fisica*: descrive la distribuzione dei componenti software sull’hardware.
+- *Vista dei casi d’uso (+1)*: raccoglie gli scenari che mostrano come il sistema viene utilizzato nei processi business.
+
+Il concetto di vista è centrale nella modellazione e nell’analisi dei processi.
+
+* Il modello TOGAF
+
+TOGAF (*The Open Group Architecture Framework*) è un framework e una metodologia per lo sviluppo dell’architettura enterprise.
+L’ADM (*Architecture Development Method*) di TOGAF definisce le viste architetturali in conformità allo standard ISO 42010.
+
+Le viste TOGAF suddividono l’azienda in livelli principali:
+
+- *Livello Business*: comprende processi, attori, organizzazione e informazioni.
+- *Livello Applicazioni*: include le applicazioni che supportano i processi di business.
+- *Livello Tecnologia*: riguarda l’infrastruttura tecnologica che consente alle applicazioni di operare.
+
+* Vista business
+
+La vista business risponde alle esigenze degli utenti del sistema.
+Definisce:
+- la strategia dell’azienda;
+- l’organizzazione e la governance;
+- i processi business più rilevanti;
+- i flussi informativi tra persone e processi.
+
+* Vista del sistema informativo
+
+Segue il punto di vista di progettisti e amministratori IT.
+Si concentra su come il sistema è implementato e si suddivide in:
+
+- *Vista dei dati*: descrive la struttura logica e fisica dei dati e delle risorse informative.
+- *Vista delle applicazioni*: descrive le applicazioni, le loro interazioni e i servizi che forniscono ai processi business.
+
+* Vista tecnologica o infrastrutturale
+
+Rappresenta il punto di vista di chi gestisce infrastrutture e tecnologie.
+Include:
+- sistemi operativi;
+- middleware e librerie di servizio;
+- reti e apparati di comunicazione;
+- dispositivi di storage;
+- hardware di server e client;
+- standard di comunicazione e configurazione.
+
+* Viste composite
+
+Le viste composite coprono aspetti trasversali a più livelli, come:
+- *Enterprise Manageability Views*;
+- *Enterprise Security Views*.
+
+Servono a definire interfacce tra livelli e a mascherare la complessità implementativa dei servizi.
+
+* Processi e contenuto informativo
+
+I processi aziendali hanno sempre un contenuto informativo:
+- al loro interno;
+- come input e output verso l’esterno.
+
+Un esempio è la bolla di accompagnamento nel ciclo di approvvigionamento (*buy-side*).
+Per questo motivo, prima di analizzare i processi è fondamentale comprendere la risorsa informazione, che verrà approfondita nel capitolo successivo.

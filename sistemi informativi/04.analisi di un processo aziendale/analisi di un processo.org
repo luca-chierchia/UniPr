@@ -1,0 +1,121 @@
+* 04. Analisi dei processi e modellazione UML
+
+** Introduzione al capitolo
+L’analisi dei processi rappresenta una fase fondamentale nella progettazione
+dei sistemi informativi. Essa consente di descrivere il funzionamento del
+sistema da più punti di vista, mettendo in evidenza strutture, comportamenti,
+interazioni e stati degli elementi che lo compongono.
+I diagrammi UML costituiscono un insieme di modelli formali che permettono di
+rappresentare tali aspetti in modo standardizzato e comprensibile.
+
+** Class diagram
+I *class diagram* rappresentano il modello statico del sistema e descrivono le
+entità rilevanti del dominio di business, le loro proprietà e le relazioni che
+le collegano.
+Ogni classe rappresenta una categoria astratta di oggetti del mondo reale,
+mentre le istanze concrete di tali classi possono essere rappresentate tramite
+*object diagram*.
+
+Le classi possono essere rappresentate a diversi livelli di dettaglio:
+- come semplici entità prive di struttura interna;
+- come classi caratterizzate da attributi;
+- come classi complete di attributi e metodi, che rappresentano i servizi
+  offerti all’esterno.
+
+I class diagram costituiscono un’evoluzione dei diagrammi
+entità–relazione e vengono utilizzati anche nella progettazione delle basi di
+dati e delle strutture informative persistenti.
+
+** Relazioni tra classi
+Le relazioni tra classi esprimono legami logici e strutturali tra le entità.
+
+La *associazione* rappresenta un legame generico tra classi e può essere
+caratterizzata da ruoli, direzionalità e molteplicità.
+
+La *specializzazione* (o ereditarietà) consente di definire una relazione
+gerarchica tra una classe più generale e una o più classi specializzate, che
+eredita attributi e comportamenti.
+
+L’*aggregazione* rappresenta una relazione di inclusione debole, in cui gli
+elementi inclusi possono esistere indipendentemente dall’oggetto contenitore.
+
+La *composizione* rappresenta una relazione di inclusione forte: la vita degli
+oggetti contenuti dipende da quella dell’oggetto contenitore.
+
+** Object diagram
+Gli *object diagram* rappresentano istanze concrete delle classi e mostrano
+oggetti reali con il loro stato in un determinato istante temporale.
+Essi sono utili per chiarire esempi specifici e per verificare la correttezza
+del modello concettuale definito tramite i class diagram.
+
+** Analisi delle interazioni tra gli elementi operanti
+Per descrivere il comportamento dinamico del sistema è necessario analizzare le
+interazioni tra gli elementi che partecipano ai processi.
+
+Questa analisi consente di comprendere come le entità collaborano tra loro e
+come le informazioni vengono scambiate durante l’esecuzione delle attività.
+
+** Sequence diagram
+I *sequence diagram* descrivono l’evoluzione temporale delle interazioni tra
+oggetti, evidenziando la sequenza dei messaggi scambiati.
+Il tempo è rappresentato lungo l’asse verticale, mentre gli oggetti coinvolti
+sono disposti sull’asse orizzontale.
+
+I messaggi possono rappresentare:
+- invocazioni di servizi;
+- richieste sincrone o asincrone;
+- risposte;
+- scambi di informazione.
+
+I diagrammi di sequenza sono particolarmente efficaci per analizzare i flussi
+informativi e il coordinamento tra le componenti del sistema.
+
+** Communication diagram
+I *communication diagram* rappresentano le stesse informazioni dei sequence
+diagram, ma con enfasi sulle relazioni strutturali tra gli oggetti piuttosto che
+sulla dimensione temporale.
+Essi risultano utili per comprendere il ruolo di ciascun oggetto
+nell’interazione complessiva.
+
+** Activity diagram
+Gli *activity diagram* descrivono il flusso delle attività che compongono un
+processo.
+Essi permettono di rappresentare:
+- sequenze di attività;
+- condizioni di scelta;
+- esecuzioni parallele;
+- sincronizzazioni.
+
+Questo tipo di diagramma è particolarmente adatto alla rappresentazione dei
+processi aziendali e dei workflow operativi.
+
+** State diagram
+Gli *state diagram* descrivono l’evoluzione degli stati di un oggetto nel tempo
+in risposta a eventi.
+Uno stato rappresenta una condizione stabile dell’oggetto, mentre le transizioni
+rappresentano il passaggio da uno stato all’altro.
+
+I diagrammi di stato sono utili per analizzare:
+- il ciclo di vita degli oggetti;
+- i vincoli comportamentali;
+- le condizioni che determinano i cambiamenti di stato.
+
+** Caso di studio: il processo di spesa
+Un esempio completo di analisi è rappresentato dal processo di spesa in un
+supermercato.
+Il processo può essere analizzato da più punti di vista:
+- come insieme di attività svolte dall’utente e dal sistema;
+- come interazione tra attori e componenti;
+- come successione di stati attraversati dagli oggetti coinvolti.
+
+L’utilizzo combinato di activity diagram, sequence diagram, class diagram e
+state diagram consente di ottenere una visione completa e coerente del processo.
+
+** Quadro d’insieme
+I diversi diagrammi UML rappresentano viste complementari dello stesso sistema.
+Il processo costituisce il sistema reale da analizzare, mentre i diagrammi sono
+modelli che consentono di focalizzare l’attenzione su specifiche caratteristiche
+del sistema stesso.
+
+La scelta del diagramma più adatto dipende dagli obiettivi dell’analisi e dal
+livello di dettaglio richiesto.

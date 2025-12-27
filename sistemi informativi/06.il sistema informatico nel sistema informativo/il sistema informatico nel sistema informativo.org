@@ -1,0 +1,194 @@
+* Capitolo 6 – Il sistema informatico entro il sistema informativo
+
+** 6.1 Introduzione
+Nel capitolo viene analizzato il sistema informatico come componente tecnologica che rende operativo il sistema informativo aziendale. Se nel capitolo precedente l’attenzione era rivolta alle applicazioni e ai servizi informativi, qui l’attenzione si sposta sull’infrastruttura che consente a tali applicazioni di funzionare in modo affidabile ed efficiente.
+
+Il sistema informatico è composto da più livelli: software applicativo, software di base, sistemi operativi, hardware e reti. Questi livelli non sono indipendenti, ma cooperano strettamente. Comprendere le relazioni tra di essi è fondamentale soprattutto in fase di progettazione, perché le scelte architetturali influenzano prestazioni, scalabilità e manutenzione del sistema informativo.
+
+** 6.2 La struttura di un’applicazione software
+Le applicazioni software all’interno dei sistemi informativi possono essere classificate in base alla modalità di esecuzione e al tipo di interazione prevista.
+
+Alcune applicazioni sono interattive: prevedono un operatore umano che dialoga direttamente con il sistema, impartendo comandi e ricevendo risposte. Rientrano in questa categoria i programmi di produttività, i gestionali aziendali e i browser web. In questi casi l’usabilità e la chiarezza dell’interfaccia assumono un ruolo centrale.
+
+Altre applicazioni operano in modalità macchina-macchina. In questo caso più sistemi software comunicano direttamente tra loro senza l’intervento costante di un operatore umano. Questo modello è tipico dei sistemi automatici di scambio dati, come quelli bancari, dove l’affidabilità e la continuità del servizio sono più importanti dell’interazione con l’utente.
+
+Infine, le applicazioni batch eseguono elaborazioni programmate in momenti prefissati. Queste applicazioni leggono grandi quantità di dati, li elaborano e producono risultati senza interazione diretta, come avviene spesso nei processi di fine giornata o di consolidamento dati.
+
+Dal punto di vista logico, un’applicazione è normalmente suddivisa in componenti funzionali. L’interfaccia utente si occupa dell’interazione con l’utente; la logica applicativa implementa le regole del dominio aziendale; la gestione dei dati garantisce la memorizzazione persistente e l’accesso alle informazioni. Questa separazione facilita l’evoluzione del software e la sua manutenzione.
+
+** 6.3 Le reti entro i sistemi informatici
+I sistemi informativi moderni sono fortemente basati sulle reti di comunicazione. La rete consente a sistemi diversi di scambiarsi dati e di condividere risorse, rendendo possibile l’uso di applicazioni distribuite.
+
+Nei sistemi informatici si distinguono architetture centralizzate e distribuite. Nei sistemi centralizzati l’elaborazione avviene in un unico punto, mentre nei sistemi distribuiti il carico è suddiviso tra più nodi collegati in rete. Le architetture distribuite offrono maggiore flessibilità e scalabilità, ma richiedono una progettazione più complessa.
+
+Le reti si classificano anche in base alla loro estensione geografica. Le reti locali (LAN) operano in aree limitate come edifici o campus; le reti metropolitane (MAN) coprono aree urbane; le reti geografiche (WAN) si estendono su grandi distanze, fino a comprendere reti globali come Internet.
+
+Un altro aspetto fondamentale è la topologia di rete, cioè la disposizione dei nodi e dei collegamenti. Le topologie influenzano affidabilità, prestazioni e costi dell’infrastruttura, e devono essere scelte in funzione delle esigenze del sistema informativo.
+
+** 6.4 Il modello ISO/OSI e la comunicazione in rete
+Per comprendere il funzionamento delle comunicazioni in rete viene introdotto il modello ISO/OSI, che descrive il processo di trasmissione dei dati suddividendolo in sette livelli.
+
+I livelli inferiori si occupano della trasmissione fisica dei segnali e del controllo dell’accesso al mezzo di comunicazione. I livelli intermedi gestiscono l’instradamento dei dati e la loro trasmissione affidabile, come avviene nel livello di trasporto con il protocollo TCP.
+
+I livelli superiori sono orientati alle applicazioni. Essi gestiscono la rappresentazione dei dati, il controllo delle sessioni di comunicazione e i servizi applicativi veri e propri. Questo modello a livelli consente di progettare sistemi modulari e interoperabili, semplificando l’evoluzione tecnologica.
+
+** 6.5 Evoluzione tecnologica dei sistemi informativi
+Storicamente, i primi sistemi informativi erano basati su architetture monolitiche e centralizzate, spesso realizzate su mainframe. Questo modello garantiva un elevato controllo, ma comportava costi elevati e scarsa flessibilità.
+
+Con l’evoluzione delle tecnologie si è passati al modello client-server, in cui le funzionalità vengono distribuite tra client e server. Questo approccio ha migliorato l’usabilità e la diffusione delle applicazioni.
+
+Successivamente si sono affermate architetture multi-tier, in cui l’interfaccia, la logica applicativa e la gestione dei dati sono collocate su livelli distinti. Questo modello facilita la manutenzione, migliora la scalabilità e consente una maggiore riusabilità delle componenti, ma introduce anche una maggiore complessità progettuale.
+
+** 6.6 Servizi tipici nelle reti aziendali
+All’interno delle reti aziendali sono presenti numerosi servizi specializzati. I file server e i print server permettono la condivisione centralizzata di file e dispositivi, semplificando la gestione delle risorse.
+
+I database server ospitano i DBMS e gestiscono grandi quantità di dati aziendali, garantendo coerenza, sicurezza e accesso concorrente. I web server consentono la pubblicazione di informazioni e applicazioni tramite il World Wide Web, rendendo possibile l’accesso remoto ai servizi.
+
+Accanto a questi servizi di base esistono servizi più avanzati, come i groupware server, che supportano la collaborazione tra utenti, e gli application server, che forniscono un ambiente di esecuzione per applicazioni complesse nelle architetture multi-tier. I server di amministrazione e monitoraggio permettono infine il controllo e la gestione dell’intera infrastruttura informatica.
+
+** 6.7 Il modello client-server e le applicazioni multi-tier
+Nel modello client-server il client si occupa dell’interazione con l’utente, mentre il server fornisce servizi e risorse condivise. Questo modello ha rappresentato una svolta rispetto ai sistemi monolitici, permettendo una migliore distribuzione del carico.
+
+Le applicazioni multi-tier estendono questo concetto introducendo uno o più livelli intermedi. La logica applicativa viene separata sia dall’interfaccia sia dalla gestione dei dati, migliorando sicurezza e prestazioni. Tuttavia, la corretta progettazione di questi sistemi è cruciale per evitare colli di bottiglia e problemi di comunicazione.
+
+** 6.8 Performance, scalabilità e complessità
+Uno dei problemi principali dei sistemi informativi è la gestione delle prestazioni al crescere del numero di utenti. L’aumento degli utenti comporta un incremento del carico computazionale e del traffico di rete.
+
+La scalabilità diventa quindi un requisito essenziale: il sistema deve poter crescere senza degradare eccessivamente le prestazioni. Allo stesso tempo aumenta la complessità complessiva del sistema, sia dal punto di vista tecnico sia gestionale.
+
+In fase di progettazione è quindi necessario trovare un equilibrio tra funzionalità, prestazioni, costi e semplicità architetturale, tenendo conto delle esigenze presenti e future dell’organizzazione.
+** Evoluzione del client-server e architetture multi-tier
+L’evoluzione delle applicazioni informatiche ha portato dal modello client-server tradizionale (2-tier) a soluzioni più articolate, in particolare alle architetture multi-tier, con l’obiettivo di migliorare la scalabilità, la manutenibilità e la flessibilità dei sistemi informativi.
+
+Nel modello 2-tier il client gestisce sia l’interfaccia utente sia parte della logica applicativa, mentre il server è responsabile della gestione dei dati. Questo approccio, sebbene semplice da implementare, presenta limiti evidenti: forte dipendenza dal sistema operativo del client, difficoltà di aggiornamento del software distribuito e scarsa capacità di supportare un numero elevato di utenti concorrenti.
+
+L’architettura 3-tier introduce una separazione più chiara delle responsabilità, suddividendo l’applicazione in tre livelli logici distinti:
+- il livello di presentazione, che si occupa esclusivamente dell’interazione con l’utente;
+- il livello di processo o logica di business, che implementa le regole applicative;
+- il livello dei dati, che gestisce l’accesso persistente alle informazioni tramite DBMS.
+
+Questa suddivisione consente di modificare o sostituire un singolo livello senza compromettere il funzionamento complessivo del sistema.
+
+** Vantaggi delle architetture 3-tier
+Le architetture 3-tier offrono numerosi vantaggi rispetto ai modelli precedenti. La scalabilità migliora perché è possibile distribuire il carico di lavoro su più server dedicati. La manutenibilità aumenta grazie alla separazione delle responsabilità, che rende il codice più modulare e comprensibile. Anche la sicurezza beneficia di questo approccio, poiché l’accesso ai dati è mediato dalla logica applicativa e non diretto dal client.
+
+Inoltre, l’indipendenza del livello di presentazione favorisce l’uso di client leggeri e riduce la dipendenza dall’hardware e dal sistema operativo utilizzato dagli utenti.
+
+** Applicazioni Web come evoluzione del 3-tier
+Le applicazioni Web rappresentano una naturale evoluzione delle architetture multi-tier. In questo modello il browser svolge il ruolo di client leggero, limitandosi alla visualizzazione dei contenuti e alla gestione dell’interazione con l’utente tramite tecnologie come HTML, CSS e JavaScript.
+
+Il web server riceve le richieste HTTP e può limitarsi a fornire contenuti statici oppure delegare l’elaborazione a un application server. Quest’ultimo implementa la logica di business e interagisce con il database per produrre contenuti dinamici.
+
+Questo approccio consente un’ampia diffusione delle applicazioni, riduce i costi di distribuzione del software e facilita l’aggiornamento centralizzato.
+
+** Compatibilità e integrazione tra componenti
+L’aumento della complessità dei sistemi informativi introduce il problema della compatibilità tra componenti eterogenei, spesso sviluppati in periodi diversi e con tecnologie differenti. Le applicazioni moderne devono essere in grado di integrarsi con sistemi legacy e con piattaforme esterne.
+
+La stratificazione dei livelli software aiuta a isolare le dipendenze tecnologiche, ma richiede una progettazione attenta per evitare soluzioni di integrazione disordinate e difficili da mantenere, spesso definite come “spaghetti integration”.
+
+** Controllo e governo dei sistemi informativi: TOGAF e ITIL
+Per governare la complessità dei sistemi informativi aziendali vengono introdotti framework di riferimento.
+
+TOGAF fornisce un modello per descrivere l’architettura d’impresa, mettendo in relazione processi di business, applicazioni, dati e infrastrutture tecnologiche. L’obiettivo è garantire coerenza tra le scelte tecnologiche e le esigenze organizzative.
+
+ITIL è invece orientato alla gestione dei servizi IT e alla qualità dell’erogazione. Introduce il concetto di catalogo dei servizi e pone l’attenzione sulla continuità operativa, sulla gestione delle configurazioni e sul miglioramento continuo dei servizi.
+
+Entrambi i modelli supportano l’allineamento tra sistemi informativi e obiettivi di business.
+
+** Sistemi di storage e gestione dei dati
+La crescita del volume dei dati ha reso necessaria l’evoluzione delle tecnologie di memorizzazione. I sistemi RAID combinano più dischi fisici per migliorare l’affidabilità, le prestazioni o entrambe, a seconda del livello di RAID adottato.
+
+Accanto ai sistemi RAID si affermano architetture di storage dedicate come NAS e SAN, che consentono la condivisione centralizzata dei dati, l’aumento delle prestazioni di accesso e una maggiore tolleranza ai guasti. Queste soluzioni sono fondamentali nei contesti aziendali ad alta disponibilità e carico elevato.
+
+** Sistemi operativi e piattaforme applicative
+
+*** Microsoft Windows
+Windows è il sistema operativo più diffuso a livello mondiale, soprattutto in ambito aziendale e desktop. Nel tempo si è evoluto distinguendo chiaramente tra versioni destinate all’uso personale e versioni orientate al mondo enterprise.
+
+Le versioni desktop (Windows 3.x, 95, 98, XP Home, Vista, Windows 7 e successivi) sono pensate per l’utilizzo individuale, con forte attenzione all’interfaccia grafica e alla facilità d’uso. Le versioni server, invece, sono progettate per supportare carichi elevati, servizi di rete, gestione centralizzata delle risorse e applicazioni multiutente.
+
+Le versioni Windows Server (NT, 2000, 2003, 2008, 2012 e successive) sono molto diffuse nelle aziende medio-piccole e integrano servizi fondamentali come file server, domain controller, database server e application server. L’ecosistema Microsoft è spesso completato da SQL Server e dalla piattaforma .NET.
+
+*** Apple macOS
+macOS è il sistema operativo dei computer Apple Mac ed è basato su UNIX. È storicamente molto diffuso nel mondo della grafica, dell’editoria e della multimedialità, ma negli ultimi anni ha trovato spazio anche in ambito professionale e di sviluppo software.
+
+La compatibilità UNIX rende macOS adatto allo sviluppo di applicazioni server e web, pur restando prevalentemente una piattaforma client.
+
+*** UNIX e Linux
+UNIX rappresenta una famiglia storica di sistemi operativi nati per ambienti multiutente e multitasking. È molto diffuso nei sistemi server e nei contesti enterprise per la sua stabilità, affidabilità e scalabilità.
+
+Linux, nato come sistema open source, ha progressivamente conquistato il mercato server grazie alla sua flessibilità e ai costi contenuti. Oggi è utilizzato sia su server di fascia alta sia su sistemi embedded e dispositivi specializzati. È la piattaforma di riferimento per molte architetture web, cloud e di virtualizzazione.
+
+** Linguaggi di programmazione
+
+*** La famiglia COBOL
+COBOL (Common Business Oriented Language) è un linguaggio storico, progettato per applicazioni gestionali e amministrative. È ancora molto diffuso nei sistemi legacy, soprattutto in ambito bancario e assicurativo, dove affidabilità e stabilità sono prioritarie.
+
+Nonostante la scarsa evoluzione sintattica, COBOL continua a essere utilizzato per la manutenzione di sistemi critici, spesso integrati con applicazioni moderne.
+
+*** Delphi
+Delphi deriva dal Pascal ed è orientato allo sviluppo rapido di applicazioni. È stato molto utilizzato su piattaforma Windows per applicazioni desktop, grazie alla facilità di sviluppo e alle buone prestazioni.
+
+Nel tempo il suo utilizzo è diminuito, ma resta presente in alcuni contesti legacy.
+
+*** Visual Basic
+Visual Basic è stato uno dei linguaggi più diffusi per lo sviluppo rapido di applicazioni Windows. Ha avuto un grande successo in ambito aziendale, soprattutto per applicazioni interne.
+
+Con l’introduzione della piattaforma .NET, Visual Basic è stato integrato in VB.NET, mantenendo la filosofia di semplicità ma evolvendo verso un modello più moderno.
+
+*** Il mondo Microsoft .NET
+.NET è una piattaforma di sviluppo che supporta diversi linguaggi (C#, VB.NET, F#) e fornisce un ambiente unificato per la realizzazione di applicazioni desktop, web e server.
+
+C# è il linguaggio più rappresentativo della piattaforma ed è utilizzato sia per applicazioni enterprise sia per servizi web. .NET ha avuto una forte diffusione grazie all’integrazione con Windows Server e con gli strumenti Microsoft.
+
+*** Il mondo Java
+Java è un linguaggio multipiattaforma progettato secondo il principio “write once, run anywhere”. È molto diffuso nelle applicazioni enterprise, nei sistemi bancari, nelle telecomunicazioni e nel settore pubblico.
+
+Java è alla base di numerose architetture server e application server. La sua portabilità e robustezza lo rendono adatto a sistemi complessi e distribuiti.
+
+*** C e C++
+I linguaggi C e C++ sono fondamentali per lo sviluppo di sistemi ad alte prestazioni, driver, sistemi embedded e applicazioni di basso livello. Pur non essendo sempre adatti allo sviluppo rapido di applicazioni gestionali, restano centrali nei contesti in cui l’efficienza è critica.
+
+*** Linguaggi di scripting e Web
+I linguaggi di scripting per il Web comprendono JavaScript, PHP, ASP, JSP e simili. Essi sono utilizzati per realizzare applicazioni web dinamiche e interattive.
+
+JavaScript è diventato centrale nello sviluppo moderno, sia lato client sia lato server. Le applicazioni web si basano sempre più su architetture distribuite e servizi.
+
+** Integrazione delle applicazioni e architetture SOA
+
+*** Service Oriented Architecture (SOA)
+La SOA è un modello architetturale basato sull’esposizione di funzionalità applicative sotto forma di servizi. Ogni servizio è indipendente, riutilizzabile e accessibile tramite interfacce standard.
+
+I servizi comunicano attraverso protocolli come HTTP e SOAP o, nelle evoluzioni più recenti, tramite REST. La SOA consente di disaccoppiare i sistemi e facilitare l’integrazione tra applicazioni eterogenee.
+
+*** Componenti fondamentali della SOA
+Un servizio SOA è composto da un provider, che espone il servizio, e da un consumer, che lo utilizza. L’interazione è mediata da interfacce formali che descrivono le operazioni disponibili.
+
+Spesso è presente un service broker o registry, che consente di pubblicare, cercare e collegare i servizi.
+
+*** Enterprise Service Bus (ESB)
+L’ESB è un’infrastruttura che gestisce la comunicazione tra servizi, occupandosi di instradamento, trasformazione dei messaggi e orchestrazione dei processi.
+
+Grazie all’ESB è possibile coordinare servizi diversi all’interno di processi complessi, migliorando la flessibilità e la manutenibilità del sistema.
+
+** Grid computing, virtualizzazione e cloud
+
+*** Grid computing
+Il grid computing è un modello che consente di utilizzare risorse di calcolo distribuite come se fossero un’unica infrastruttura. È particolarmente adatto a elaborazioni intensive, come simulazioni scientifiche e analisi complesse.
+
+Le risorse possono essere geograficamente distribuite e condivise tra più organizzazioni.
+
+*** Virtualizzazione e macchine virtuali
+La virtualizzazione consente di eseguire più macchine virtuali su un unico server fisico, isolando hardware e sistema operativo. Ogni macchina virtuale appare come un sistema completo e indipendente.
+
+Questo approccio migliora l’utilizzo delle risorse, semplifica la gestione e aumenta la continuità operativa.
+
+*** Cloud computing
+Il cloud computing rappresenta un’evoluzione dei modelli precedenti e offre risorse informatiche come servizi accessibili via rete.
+
+I principali modelli di servizio sono:
+- IaaS, che fornisce infrastrutture virtualizzate;
+- PaaS, che offre piattaforme di sviluppo;
+- SaaS, che mette a disposizione applicazioni complete.
+
+Il cloud consente scalabilità, riduzione dei costi iniziali e maggiore flessibilità, rendendolo una soluzione strategica per molte aziende.

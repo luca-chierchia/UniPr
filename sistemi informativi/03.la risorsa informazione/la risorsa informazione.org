@@ -1,0 +1,159 @@
+* 03. La risorsa informazione
+
+** Introduzione
+
+Il lavoro del sistema informativo ha come oggetto principale l’informazione.
+Tutti i processi aziendali, sia decisionali sia operativi, utilizzano informazione
+al proprio interno e la scambiano con altri processi e con l’ambiente esterno.
+
+L’informazione possiede caratteristiche peculiari che rendono il sistema
+informativo profondamente diverso dai tradizionali settori tecnici
+dell’azienda. Per questo motivo, per comprendere pienamente il funzionamento
+di un sistema informativo – oggi divenuto il vero e proprio sistema nervoso
+digitale delle organizzazioni – è necessario analizzare in modo specifico
+la natura dell’informazione.
+
+In questo capitolo vengono esaminate le caratteristiche dell’informazione,
+le modalità con cui viene rappresentata, conservata e trasmessa, e il suo
+ruolo nella costruzione della conoscenza organizzativa.
+
+** L’informazione come risorsa organizzativa
+
+L’informazione è la principale risorsa scambiata, selezionata ed elaborata
+nelle attività gestionali di coordinamento e controllo.
+Ogni attività svolta all’interno di un’organizzazione, anche se non
+esplicitamente gestionale, ha sempre un contenuto informativo e contribuisce
+alla produzione o all’elaborazione di informazione.
+
+L’informazione è una risorsa immateriale, o intangibile, ed è alla base di
+altre risorse immateriali fondamentali come la conoscenza, l’esperienza
+individuale e l’esperienza organizzativa.
+A differenza delle risorse materiali, l’informazione non viene distrutta
+dal suo utilizzo (è non-depletable), può generare nuova informazione
+(self-generating) ed è difficilmente misurabile in termini puramente
+quantitativi.
+
+** Il ciclo di costruzione dell’informazione e della conoscenza
+
+La costruzione dell’informazione e della conoscenza avviene attraverso una
+serie di stadi successivi.
+Questo processo è stato formalizzato nel modello noto come Piramide della
+Conoscenza o modello DIKW, acronimo dei termini inglesi Data, Information,
+Knowledge e Wisdom.
+
+Il modello DIKW è ampiamente utilizzato nell’ambito del knowledge management
+per descrivere il passaggio dai dati grezzi alla saggezza decisionale.
+
+#+CAPTION:Piramide DIKW
+[[file:../risorse/dikw.png]]
+
+
+** I dati (Data)
+
+I dati rappresentano il materiale informativo grezzo, non ancora elaborato
+dal soggetto che li riceve.
+Essi descrivono fatti distinti e oggettivi, riferiti a eventi osservabili,
+ma presi singolarmente non possiedono un significato autonomo.
+
+In ambito organizzativo i dati possono essere visti come registrazioni
+strutturate delle transazioni.
+Ad esempio, una singola operazione di rifornimento presso una stazione di
+servizio può essere descritta tramite dati quali la data, la quantità di
+carburante erogata e il costo dell’operazione.
+Tuttavia, questi dati non spiegano il comportamento del cliente, né permettono
+di trarre conclusioni sulla gestione della stazione di servizio.
+
+I dati costituiscono quindi la base su cui costruire i livelli informativi
+successivi, ma da soli non sono sufficienti a supportare decisioni.
+
+** L’informazione (Information)
+
+L’informazione nasce quando i dati vengono elaborati cognitivamente,
+organizzati e messi in relazione all’interno di un contesto.
+È il contesto che conferisce significato ai dati.
+
+Trasformare dati in informazione significa selezionarli, interpretarli,
+correlarli e presentarli in una forma comprensibile.
+Un insieme di dati può risultare privo di significato se osservato isolatamente,
+ma diventare informativo se inserito in un contesto rilevante.
+
+Nel caso informatico, l’analisi dei dati di accesso a un portale Web,
+correlando le azioni di un singolo utente e ricostruendo il suo percorso
+di navigazione, produce informazione utile sul comportamento dell’utente stesso.
+
+L’informazione, a differenza del dato, è in grado di modificare la percezione
+e il ragionamento di chi la riceve.
+
+** La conoscenza (Knowledge)
+
+La conoscenza può essere definita come informazione applicata.
+Essa risponde non solo alla domanda “che cosa”, ma anche alle domande
+“come” e “quando” utilizzare l’informazione.
+
+La conoscenza nasce dall’esperienza e dall’interazione tra individui,
+processi e contesto.
+Non è semplicemente accumulabile come i dati o l’informazione, ma richiede
+un processo di interiorizzazione da parte delle persone.
+
+In ambito organizzativo, la conoscenza consente di comprendere i modelli
+di comportamento, di prevedere eventi futuri e di supportare decisioni
+complesse.
+
+** La saggezza (Wisdom)
+
+La saggezza rappresenta il livello più alto del modello DIKW ed è una forma
+di meta-conoscenza.
+Essa deriva dalla capacità di valutare criticamente la conoscenza,
+tenendo conto dell’esperienza, delle conseguenze e del contesto complessivo.
+
+La saggezza non può essere creata o trasferita nello stesso modo dei dati
+o dell’informazione.
+Può essere solo favorita attraverso l’esperienza, la riflessione e
+la comprensione profonda dei processi.
+
+Alcuni autori introducono uno stadio intermedio tra conoscenza e saggezza,
+definito comprensione o consapevolezza (understanding), che rappresenta
+la capacità di cogliere le relazioni profonde tra i fenomeni osservati.
+
+** Tipologie di conoscenza
+
+Nel knowledge management si distinguono principalmente tre tipi di conoscenza:
+la conoscenza esplicita, la conoscenza tacita e la conoscenza incorporata.
+
+La conoscenza esplicita è quella formalizzata e codificata in documenti,
+manuali, procedure e regole.
+È facilmente trasmissibile e conservabile.
+
+La conoscenza tacita è invece personale, intuitiva e difficilmente
+formalizzabile.
+Comprende competenze, valori, intuizioni ed esperienze individuali.
+Il cosiddetto “saper fare” rientra in questa categoria.
+
+La conoscenza incorporata è una forma di conoscenza esplicita che, pur
+essendo formalizzata, non è immediatamente riutilizzabile senza un adeguato
+livello di esperienza.
+Un processo formalizzato, ad esempio, può essere eseguito meccanicamente
+senza comprenderne le ragioni profonde.
+
+** La spirale della conoscenza di Nonaka e Takeuchi
+
+Nonaka e Takeuchi hanno descritto il processo di creazione della conoscenza
+organizzativa attraverso il modello della spirale della conoscenza.
+
+Il modello prevede quattro modalità di conversione tra conoscenza tacita
+ed esplicita.
+La socializzazione rappresenta il passaggio da conoscenza tacita a tacita
+attraverso l’interazione tra individui.
+L’esternalizzazione consiste nella trasformazione della conoscenza tacita
+in conoscenza esplicita mediante la formalizzazione.
+La combinazione riguarda la rielaborazione di conoscenza esplicita per
+generare nuova conoscenza esplicita.
+L’interiorizzazione descrive il processo inverso, in cui la conoscenza
+esplicita viene assimilata e trasformata in conoscenza tacita.
+
+Il termine “spirale” evidenzia il fatto che questo processo non è lineare,
+ma ciclico e cumulativo, e consente la crescita continua della conoscenza
+a livello individuale e organizzativo.
+
+#+CAPTION: Spirale della conoscenza
+[[file:../risorse/spirale-conoscenza.png]]

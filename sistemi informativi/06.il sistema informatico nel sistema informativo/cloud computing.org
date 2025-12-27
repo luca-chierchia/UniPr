@@ -1,0 +1,69 @@
+* Cloud Computing
+
+** Definizione generale
+Il cloud computing è un modello di erogazione di servizi informatici che consente di accedere, tramite rete, a risorse di calcolo, storage, piattaforme e applicazioni senza la necessità di possedere o gestire direttamente l’infrastruttura fisica sottostante. Le risorse sono fornite da un provider esterno e possono essere allocate o rilasciate dinamicamente in base alle esigenze dell’utente.
+
+Il cloud rappresenta un’evoluzione naturale dei concetti di virtualizzazione, grid computing e architetture distribuite, portando tali modelli a un livello di astrazione e automazione superiore.
+
+** Caratteristiche fondamentali del cloud
+Il cloud computing si distingue per alcune caratteristiche chiave che lo differenziano dall’infrastruttura IT tradizionale.
+
+L’accesso alle risorse avviene tramite rete, tipicamente Internet, permettendo l’utilizzo dei servizi da qualsiasi luogo e dispositivo autorizzato. Le risorse sono condivise tra più clienti secondo il modello multi-tenant, ma mantenute logicamente isolate.
+
+La scalabilità è uno degli aspetti centrali: le risorse possono aumentare o diminuire rapidamente in funzione del carico di lavoro, senza interventi manuali sull’hardware. Questo consente di rispondere in modo elastico a picchi di domanda.
+
+Il modello economico è di tipo pay-per-use: l’utente paga solo per le risorse effettivamente utilizzate, riducendo i costi iniziali e trasformando l’investimento da capitale (CAPEX) a operativo (OPEX).
+
+** Modelli di servizio
+
+*** Infrastructure as a Service (IaaS)
+Nel modello IaaS il provider fornisce risorse infrastrutturali di base come macchine virtuali, storage e reti virtuali. Il cliente ha il controllo sui sistemi operativi, sulle applicazioni e sulla configurazione dell’ambiente software.
+
+Questo modello è particolarmente adatto quando si desidera mantenere un elevato livello di controllo sull’ambiente, ad esempio per migrazioni di sistemi esistenti o per applicazioni personalizzate. La responsabilità della gestione del software rimane in gran parte al cliente.
+
+*** Platform as a Service (PaaS)
+Il PaaS fornisce una piattaforma completa per lo sviluppo, il testing e il deploy delle applicazioni. Il provider gestisce l’infrastruttura, il sistema operativo e spesso anche il middleware, mentre lo sviluppatore si concentra esclusivamente sul codice applicativo.
+
+Questo modello accelera lo sviluppo software e riduce la complessità operativa, rendendolo adatto a contesti in cui la rapidità di rilascio e la scalabilità sono prioritarie.
+
+*** Software as a Service (SaaS)
+Nel modello SaaS il provider offre applicazioni complete accessibili tramite browser o API. L’utente non gestisce né l’infrastruttura né la piattaforma, ma utilizza direttamente il servizio.
+
+Esempi tipici di SaaS includono sistemi di posta elettronica, CRM, ERP e strumenti di collaborazione. Questo modello è particolarmente vantaggioso per ridurre i costi di gestione e manutenzione.
+
+** Modelli di distribuzione del cloud
+
+*** Cloud pubblico
+Nel cloud pubblico le risorse sono messe a disposizione da un provider esterno e condivise tra più clienti. È il modello più diffuso grazie alla sua flessibilità, scalabilità e ai costi contenuti.
+
+È adatto a carichi di lavoro variabili, applicazioni web e servizi che non richiedono un controllo totale sull’infrastruttura fisica.
+
+*** Cloud privato
+Il cloud privato è dedicato a una singola organizzazione e può essere ospitato internamente o presso un provider esterno. Offre maggiore controllo, sicurezza e possibilità di personalizzazione rispetto al cloud pubblico.
+
+È spesso utilizzato da grandi aziende o enti che gestiscono dati sensibili o che devono rispettare vincoli normativi stringenti.
+
+*** Cloud ibrido
+Il cloud ibrido combina cloud pubblico e privato, permettendo di distribuire i carichi di lavoro in base a esigenze di sicurezza, prestazioni e costi. Ad esempio, dati critici possono risiedere nel cloud privato mentre servizi meno sensibili vengono eseguiti nel cloud pubblico.
+
+Questo modello offre un buon compromesso tra flessibilità e controllo.
+
+** Ruolo della virtualizzazione nel cloud
+La virtualizzazione è la tecnologia abilitante del cloud computing. Attraverso l’uso di hypervisor è possibile creare più macchine virtuali su un singolo server fisico, isolando i diversi ambienti di esecuzione.
+
+Questo consente un utilizzo più efficiente delle risorse hardware, facilita il provisioning rapido delle macchine e migliora la continuità operativa grazie a funzionalità come il live migration e il failover.
+
+** Vantaggi del cloud computing
+Il cloud consente una significativa riduzione dei costi iniziali, eliminando la necessità di acquistare hardware dedicato. Migliora la flessibilità operativa e permette di adattare rapidamente le risorse alle esigenze del business.
+
+La gestione centralizzata e l’automazione riducono i tempi di configurazione e manutenzione, aumentando l’affidabilità complessiva del sistema.
+
+** Criticità e rischi
+L’adozione del cloud introduce anche alcune criticità. La dipendenza dal provider può creare problemi di lock-in tecnologico. La sicurezza dei dati e la conformità normativa sono aspetti fondamentali, soprattutto quando i dati risiedono in infrastrutture esterne.
+
+È inoltre necessario considerare la disponibilità del servizio e la qualità della connessione di rete, che diventano elementi critici per l’accesso alle risorse.
+
+** Cloud computing e sistemi informativi aziendali
+Nel contesto dei sistemi informativi aziendali, il cloud rappresenta una leva strategica per l’innovazione. Applicazioni come ERP, CRM e SCM vengono sempre più spesso offerte come servizi cloud, facilitando l’integrazione e l’evoluzione dei processi aziendali.
+
+Il cloud consente di supportare meglio la crescita dell’azienda, migliorare la continuità operativa e rispondere più rapidamente ai cambiamenti del mercato.
