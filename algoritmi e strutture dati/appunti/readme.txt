@@ -1,3 +1,3 @@
-Algo di ordinamento:
-  Tempi di esecuzione,
-  Note su alcuni algoritmi
+##Algo di ordinamento:
+  - Tempi di esecuzione,
+  - Note su alcuni algoritmi
