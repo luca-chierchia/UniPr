@@ -40,6 +40,49 @@ public:
      */
     LinkedList(): head(nullptr), size(0){}
 
+    LinkedList(const LinkedList &other){
+        head = nullptr;
+        size = 0;
+        Node *cursor = other.head;
+        Node* tail = nullptr;
+        while(cursor != nullptr){
+            Node *newNode = create_node(cursor->key);
+
+            if(tail == nullptr){
+                head = newNode;
+            }else{
+                tail->next = newNode;
+            }
+
+            tail = newNode;
+            cursor = cursor->next;
+            size++;
+        }
+    }
+    LinkedList& operator=(const LinkedList &other){
+        if(this == &other)return *this;
+        clear();
+        head = nullptr;
+        size = 0;
+        Node *cursor = other.head;
+        Node* tail = nullptr;
+        while(cursor != nullptr){
+            Node *newNode = create_node(cursor->key);
+
+            if(tail == nullptr){
+                head = newNode;
+            }else{
+                tail->next = newNode;
+            }
+
+            tail = newNode;
+            cursor = cursor->next;
+            size++;
+        }
+        return *this;
+    }
+
+    ~LinkedList(){clear();}
 
     void print_list(){
         if(is_empty()) std::cout << "List is empty\n";
