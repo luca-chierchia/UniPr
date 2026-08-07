@@ -1,0 +1,146 @@
+#include <iostream>
+//
+// Created by Luca on 06/08/2026.
+//
+
+#ifndef ADT_DOUBLELINKEDLIST_H
+#define ADT_DOUBLELINKEDLIST_H
+class DoubleLinkedList{
+private:
+    struct Node{
+        int key;
+        Node* prev;
+        Node* next;
+    };
+
+    int listlen;
+    Node* head;
+    Node* tail;
+
+    Node* create_node(int k){
+        Node *newNode = new Node();
+        newNode->key = k;
+        newNode->next = nullptr;
+        newNode->prev = nullptr;
+        return newNode;
+    }
+
+public:
+
+    DoubleLinkedList(): head(nullptr), tail(nullptr), listlen(0){};
+    DoubleLinkedList(const DoubleLinkedList &l){}
+    DoubleLinkedList& operator=(const DoubleLinkedList &l){}
+    ~DoubleLinkedList(){
+        clear();
+    }
+    bool is_empty(){
+        return listlen == 0;
+    }
+
+    void clear(){
+        if(is_empty())return;
+
+        Node *cursor = head;
+        while(cursor != nullptr){
+            Node *tmp = cursor->next;
+            delete cursor;
+            cursor = tmp;
+        }
+        head = tail = nullptr;
+        listlen = 0;
+    }
+
+    void push_front(int k){
+        Node * newNode = create_node(k);
+        if(is_empty()) {
+            head = newNode;
+            tail = newNode;
+            listlen++;
+            return;
+        }
+        newNode->next = head;
+        head->prev =newNode;
+        head = newNode;
+        listlen++;
+    }
+
+    void push_back(int k){
+        if(is_empty()){
+            push_front(k);
+            return;
+        }
+        Node * newNode = create_node(k);
+        tail->next =newNode ;
+        newNode->prev = tail;
+        tail = newNode;
+        listlen++;
+    }
+    void pop_front(){
+        if(is_empty())return;
+        if(head == tail){
+            delete head;
+            head = tail = nullptr;
+            listlen--;
+            return;
+        }
+        Node *tmp = head;
+        head = head->next;
+        delete tmp;
+        head->prev = nullptr;
+        listlen--;
+    }
+    void pop_back(){
+        if(is_empty())return;
+        if(head == tail){
+            delete head;
+            head = tail = nullptr;
+            listlen--;
+            return;
+        }
+        Node *tmp = tail;
+        tail = tail->prev;
+        delete tmp;
+        tail->next = nullptr;
+        listlen--;
+    }
+    void insert_in(int k , int idx){
+        if(idx > listlen) return ;
+        if(idx == 0){
+            push_front(k);
+            return;
+        }
+        if(idx == listlen){
+            push_back(k);
+            return;
+        }
+
+        Node *cursor = head;
+        Node *prevNode = cursor;
+        for(int i = 0; i < idx;i++){
+            prevNode = cursor;
+            cursor = cursor->next;
+        }
+        Node *newNode = create_node(k);
+        prevNode->next = newNode;
+        newNode->prev = prevNode;
+        newNode->next = cursor;
+        cursor->prev = newNode;
+        listlen++;
+    }
+    
+    void print_list(){
+        if(is_empty()){
+            std::cout << "List is empty\n" ;
+            return;
+        }
+        Node* cursor = head;
+        while(cursor != nullptr){
+            std::cout << cursor->prev << "<--[prev]"<<"[addres:" << cursor<<",k:"<< cursor->key
+            << "][next]-->" << cursor->next << " | " ;
+            cursor = cursor->next;
+        }
+        std::cout << "\n";
+    }
+};
+
+#endif //ADT_DOUBLELINKEDLIST_H
