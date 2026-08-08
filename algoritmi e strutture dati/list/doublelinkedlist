@@ -28,8 +28,52 @@ private:
 public:
 
     DoubleLinkedList(): head(nullptr), tail(nullptr), listlen(0){};
-    DoubleLinkedList(const DoubleLinkedList &l){}
-    DoubleLinkedList& operator=(const DoubleLinkedList &l){}
+    DoubleLinkedList(const DoubleLinkedList &l){
+        head = nullptr;
+        tail = nullptr;
+        listlen = 0;
+        Node *cursor = l.head;
+
+
+        while( cursor != nullptr){
+            Node * newNode = create_node(cursor->key);
+
+            if(tail == nullptr){
+                head = newNode ;
+            }else{
+                tail->next = newNode;
+                newNode->prev = tail;
+            }
+            tail = newNode;
+            cursor = cursor->next;
+            listlen++;
+        }
+    }
+    DoubleLinkedList& operator=(const DoubleLinkedList &l){
+        if(this == &l) return *this;
+        clear();
+
+        head = nullptr;
+        tail = nullptr;
+        listlen = 0;
+        Node *cursor = l.head;
+
+
+        while( cursor != nullptr){
+            Node * newNode = create_node(cursor->key);
+
+            if(tail == nullptr){
+                head = newNode ;
+            }else{
+                tail->next = newNode;
+                newNode->prev = tail;
+            }
+            tail = newNode;
+            cursor = cursor->next;
+            listlen++;
+        }
+        return *this;
+    }
     ~DoubleLinkedList(){
         clear();
     }
@@ -127,7 +171,7 @@ public:
         cursor->prev = newNode;
         listlen++;
     }
-    
+
     void print_list(){
         if(is_empty()){
             std::cout << "List is empty\n" ;
