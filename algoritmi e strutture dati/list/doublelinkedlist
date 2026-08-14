@@ -9,16 +9,18 @@ class DoubleLinkedList{
 private:
     struct Node{
         int key;
-        Node* prev;
-        Node* next;
+        int *sat; // tipo int per semplificare, ma potrebbe essere un puntatore di tipo a dato qualunque (templatico)
+        Node *prev;
+        Node *next;
     };
 
     int listlen;
-    Node* head;
-    Node* tail;
+    Node *head;
+    Node *tail;
 
     Node* create_node(int k){
         Node *newNode = new Node();
+        newNode->sat = new int(42);
         newNode->key = k;
         newNode->next = nullptr;
         newNode->prev = nullptr;
@@ -87,6 +89,7 @@ public:
         Node *cursor = head;
         while(cursor != nullptr){
             Node *tmp = cursor->next;
+            delete cursor->sat;
             delete cursor;
             cursor = tmp;
         }
@@ -129,6 +132,7 @@ public:
         }
         Node *tmp = head;
         head = head->next;
+        delete tmp->sat;
         delete tmp;
         head->prev = nullptr;
         listlen--;
@@ -143,10 +147,49 @@ public:
         }
         Node *tmp = tail;
         tail = tail->prev;
+        delete tmp->sat;
         delete tmp;
         tail->next = nullptr;
         listlen--;
     }
+
+    void pop_elem(int k) {
+        if (is_empty()) return;
+
+        Node *cursor = head;
+        while (cursor != nullptr) {
+            if (cursor->key == k) {
+                if (cursor->prev != nullptr) {
+                    cursor->prev->next = cursor->next;
+                }else
+                    head = cursor->next;
+
+                if (cursor->next != nullptr) {
+                    cursor->next->prev = cursor->prev;
+                }else
+                    tail = cursor->prev;
+                delete cursor->sat;
+                delete cursor;
+                return;
+            }
+            cursor = cursor->next;
+        }
+    }
+
+    int* search(int k) {
+        if (is_empty()) return nullptr;
+
+        Node *cursor = head;
+
+        while (cursor != nullptr) {
+            if (cursor->key == k) {
+                return cursor->sat;
+            }
+            cursor = cursor->next;
+        }
+        return nullptr;
+    }
+
     void insert_in(int k , int idx){
         if(idx > listlen) return ;
         if(idx == 0){
@@ -172,7 +215,7 @@ public:
         listlen++;
     }
 
-    void print_list(){
+    void print_list_debug(){
         if(is_empty()){
             std::cout << "List is empty\n" ;
             return;
@@ -181,6 +224,19 @@ public:
         while(cursor != nullptr){
             std::cout << cursor->prev << "<--[prev]"<<"[addres:" << cursor<<",k:"<< cursor->key
             << "][next]-->" << cursor->next << " | " ;
+            cursor = cursor->next;
+        }
+        std::cout << "\n";
+    }
+
+    void print_list(){
+        if(is_empty()){
+            std::cout << "List is empty\n" ;
+            return;
+        }
+        Node* cursor = head;
+        while(cursor != nullptr){
+            std::cout << ",k:"<< cursor->key;
             cursor = cursor->next;
         }
         std::cout << "\n";
