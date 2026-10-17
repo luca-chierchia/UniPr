@@ -1,0 +1,44 @@
+#include <iostream>
+// Raccolta di esercizi di Fondamenti di programmazione, capitolo 5.
+
+// Scrivere una funzione booleana che decide se un numero intero positivo è primo
+bool isPrime(int p){
+  int i = p;
+  int counter = 0;
+  while(i > 0){
+    if( p%i == 0)
+      counter++;
+    i--;
+    if( counter > 2)
+      return false;
+    
+}
+  return true;
+}
+
+// scrivere le funzione per calcolare il massimo comune divisore e il minimo comune multiplo di due numeri interi
+int calcMcm(int x, int y){
+  int mcd = calcMCD(x,y);
+  return ((x * y )/mcd);
+}
+
+int calcMCD(int x, int y){
+  int min = (x < y ) ? x : y;
+  int i = min;
+  while(i > 1 ){
+    if(x%i == 0 && y%i == 0){
+      return i;
+    }
+    i--;
+  }
+  return 1;
+}
+  
+int main(){
+  for(int i = 0; i < 30; i++){
+    if(isPrime(i)){
+      std::cout << i << " è un numero primo\n";
+    }
+  }
+  return 0;
+}
