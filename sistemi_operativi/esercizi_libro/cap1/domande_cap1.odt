@@ -1,0 +1,56 @@
+1.1 Quali sono i tre scopi principali di un sistema operativo?
+Un sistema operativo ha funzioni di allocatore di risorse come tempo e quantità di cpu da utilizzare per i processi, quanta spazio sul disco utilizzare per i file, decidere in che zona di memoria destinare un processo, ha compiti di programma di controllo,diagnostica e rilevamente errori, protezione e sicurezza; infine deve offrire servizi utente.
+
+1.2 Abbiamo sottolineato come il sistema operativo sia volto all'uso efficiente dell'hardware. Quando è opportuno che il sistema operativo rinunci a questo principio e "sprechi" risorse? Perchè un sistema simile non può essere considerato davvero inefficiente?
+
+1.3 Qual'è la difficoltà peincipale che deve superare un programmatore nello scrivere un sistema operativo per un ambiente real-time?
+
+1.4 Considerate le varie definizioni di un sistema operativo. Valutate se sia opportuno che il sistema operativo includa o meno applicazioni quali browser e programmai di posta elettronica. Argomentate entrambe le possibilità, fornendo delle motivazioni.
+Dipende dallo scopo del sistema operativo, se ovviamente si sviluppa un os per utilizzo umano che necessita di connetività e comunicazione allora un browser web ed un servizio di posta elettronica risultano essenziali in quanto se un calcolatore fosse sprovvisto di tali servizi risulterebbe isolato. 
+
+1.5 Come funziona la distinzione tra modalità di sistema (modalità kernel) e modalità utente quale rudimentale forma di protezione e sicurezza del sistema.
+La modalità utente si distingue dalla modalità kernel differenziandosi per un bit (da verificare i bit se 0/1 per utente e di conseguenza l'altro per il kernel), il sistema operativo passa alla modalità kernel durante le chiamate di sistema che avvengono quando un utente interagisce con comuni interazione con il calcolatore, il passaggio da mod utente a mod kernel segue il seguente flusso: modalità utente -> libreria di sistema (ad esempio glibc) a cui vengono passati dei parametri secondo richiesti dall' API della system call -> passaggio a modalità kernel ->  lavoro del kernel di gestione dell'hardware -> restituzione valori della system call-> passaggio a modalità utente.
+
+1.6 Quale delle seguenti istruzioni dovrebbe essere privilegiata?
+a. impostare il timer
+b. leggere il clock
+c. cancellare la memoria
+d. invocare un'istruzione trap
+e. disattivare le interruzioni.
+f. modificare le informazioni nella tabella che indica lo status dei dispositivi.
+g. passare da modalità utente a modalità sistema
+b. accedere a un dispositivo i/o
+
+Le istruzioni che dovrebbero essere privilegiate sono: a,c,e,f,g
+
+1.7 Alcuni dei primi computer proteggevano il sistema operativo posizionandolo in una partizione della memoria che non poteva essere modificata ne dall'utente ne dal sistema operativo. Descrivete due difficoltà che secondo voi potrebbero sorgere da uno schema simile.
+
+1.8 Alcune cpu ofrrono più di due modalità di operazione. Quali sono due possibili impieghi di queste modalità multiple?
+
+1.9 i timer potrebbero essere utilizzati anche per calcolare l'ora corrente. Spiegate brevemente come
+
+1.10 Fornite due ragioni per l’utilizzo delle cache. Quali problemi risolvono? Quali problemi creano? Se una cache potesse essere
+costruita grande quanto il dispositivo per il quale lavora (per esempio una cache grande come un disco), perché non costruirla così
+grande ed eliminare il dispositivo?
+
+1.11 Confrontate i modelli di sistemi distribuiti di tipo client-server e di tipo peer-to-peer.
+
+1.19 Ordinate i seguenti sistemi di memorizzazione dal più lento al più veloce:
+a. Dischi magnetici
+b. Registri
+c. Disco ottico
+d. Memoria centrale
+e. Memoria non volatile
+f. Nastri magnetici
+g. Cache
+
+Ordine dal più lento al più veloce: f,a,c,e,d,g,b
+
+1.23 Quale configurazione di rete – lan o wan – si adatta meglio alle seguenti situazioni?
+a. Un edificio in un campus universitario.
+b. Diversi campus localizzati all’interno di una stessa regione.
+c. Il quartiere di una città.
+
+a -> lan
+b-> wan tra i campus e lan per i dipartimenti
+c-> wan
