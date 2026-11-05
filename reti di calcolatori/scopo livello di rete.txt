@@ -1,9 +1,0 @@
-Lo scopo principale del livello di rete (terzo livello del modello ISO/OSI) è consentire la trasmissione logica e l'inoltro dei pacchetti di dati (datagrammi) da un host mittente a un host destinatario, anche quando si trovano su reti differenti collegate tra loro.
-
-Funzioni principali
-
-• Indirizzamento logico: Assegna e riconosce indirizzi univoci (come gli indirizzi IP) per identificare i dispositivi su scala globale.
-• Instradamento (Routing): Determina il percorso migliore che i pacchetti devono compiere attraverso vari nodi intermedi e router per raggiungere la destinazione.
-• Inoltro (Forwarding): Riceve un pacchetto su un'interfaccia di un router e lo smista verso l'interfaccia di uscita corretta.
-• Frammentazione e riassemblaggio: Scompone i pacchetti troppo grandi in frammenti più piccoli se la rete di transito lo richiede, per poi ricomporli a destinazione.
-Nota: Se due dispositivi si trovano già all'interno della stessa rete locale (LAN), la comunicazione avviene tramite il livello di collegamento dati (livello 2) e non richiede l'intervento del livello di rete
