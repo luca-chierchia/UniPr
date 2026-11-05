@@ -1,0 +1,8 @@
+Lo scopo principale del livello fisico (il 1° livello del modello OSI) è trasmettere i flussi di bit grezzi (sequenze di 1 e 0) da un dispositivo all'altro attraverso un mezzo trasmissivo concreto.
+
+Funzioni e compiti principali
+
+• Conversione dei segnali: trasforma i bit ricevuti dal livello superiore (Data Link) in segnali elettrici, ottici o onde radio adatti al mezzo fisico usato (cavi in rame, fibre ottiche, Wi-Fi).
+• Definizione delle interfacce e dell'hardware: specifica le caratteristiche elettriche, meccaniche, funzionali e procedurali dei connettori, dei cavi e dei dispositivi (come hub, ripetitori e schede di rete).
+• Sincronizzazione: assicura che il dispositivo ricevente interpreti i bit alla stessa velocità di clock del trasmettitore.
+• Gestione del canale: determina la direzione della trasmissione (simplex, half-duplex o full-duplex) e la modalità di connessione (punto-punto o multipunto).

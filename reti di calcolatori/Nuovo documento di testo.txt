@@ -1,0 +1,60 @@
+fai anche un file per un formulario con spiegazioni delle formule
+
+
+1. Lo Scopo del Livello Fisico (Punto di partenza)
+
+• Obiettivo: Capire qual è il compito finale.
+• Contenuto: Trasferire i bit tra nodi adiacenti trasformandoli in segnali di energia (elettrica, luminosa o elettromagnetica) attraverso un adattatore.
+
+2. I Mezzi Trasmissivi (L'infrastruttura)
+
+• Obiettivo: Conoscere le "autostrade" su cui viaggia l'energia.
+• Contenuto: Studiare le tre categorie principali con i loro pro e contro:
+	• Elettrici: Doppino in rame e cavo coassiale.
+	• Ottici: Fibre monomodali e multimodali.
+	• Wireless: Onde radio, microonde e satelliti (GEO, MEO, LEO).
+
+3. La Natura del Segnale e la Banda Passante (La fisica di base)
+
+• Obiettivo: Comprendere le caratteristiche fisiche dell'energia usata.
+• Contenuto: Relazione tra frequenza (\(f\)), lunghezza d'onda (\(\lambda \)) e velocità di propagazione (\(v = \lambda \cdot f\)). Definizione di Banda Passante (\(H\)) come l'intervallo di frequenze in cui il mezzo risponde meglio.
+
+4. Il Deterioramento del Segnale (I problemi del mondo reale)
+
+• Obiettivo: Scoprire perché il segnale non viaggia all'infinito e si degrada.
+• Contenuto: I tre nemici principali della trasmissione:
+	• Attenuazione: Perdita di potenza (misurata in dB) con la distanza.
+	• Distorsione: Deformazione dell'onda dovuta al fatto che frequenze diverse si attenuano in modo diverso.
+	• Rumore e disturbo: Rumore termico di fondo (SNR) e interferenze esterne (diafonia).
+
+5. I Limiti Teorici del Canale (I teoremi fondamentali)
+
+• Obiettivo: Calcolare la velocità massima digitale (\(B\) in bps) ottenibile date le caratteristiche fisiche del mezzo.
+• Contenuto:
+	• Legge di Nyquist: Velocità massima per canali ideali senza rumore (\(B = 2H \log_2 V\)).
+	• Teorema di Shannon: Velocità massima invalicabile per canali reali con rumore (\(B = H \log_2 (1 + \text{SNR})\)).
+
+6. Le Metriche Temporali (Le prestazioni della comunicazione)
+
+• Obiettivo: Quantificare i ritardi introdotti nella spedizione.
+• Contenuto: Come si calcola il tempo totale (tempo di consegna e RTT) analizzandone le componenti:
+	• Tempo di trasmissione (\(T_{tr}\)): Tempo per far uscire i bit dalla scheda di rete (\(\text{bit} / \text{velocità}\)).
+	• Tempo di propagazione (\(T_{pr}\)): Tempo per percorrere fisicamente il mezzo (\(\text{distanza} / \text{velocità di prop.}\)).
+	• Diagrammi spazio-tempo per visualizzare i flussi.
+
+7. Codifica e Modulazione (Come trasformare i bit in onde)
+
+• Obiettivo: Capire l'ingegneria software/hardware usata per rappresentare gli 0 e 1.
+• Contenuto:
+	• Differenza tra Banda Base (reti locali, onde quadre) e Banda Passante (lunghe distanze, onde sinusoidali portanti).
+	• Sincronismo di Clock (comunicazione seriale sincrona vs asincrona).
+	• Schemi di codifica di linea: RZ, NRZ, NRZ-I, Manchester e multilivello (PAM5, ecc.).
+	• Tecniche di modulazione analogica (Ampiezza, Frequenza, Fase) e Diagrammi a costellazione (QAM).
+
+8. Il Multiplexing (Condivisione del mezzo)
+
+• Obiettivo: Ottimizzare i costi facendo viaggiare più comunicazioni insieme sul singolo canale fisico.
+• Contenuto: Tecniche di divisione della risorsa:
+	• FDM / OFDM: Divisione dello spettro in frequenze ortogonali.
+	• TDM: Divisione del tempo in slot (statica o dinamica).
+	• Caso di studio WiFi: Integrazione pratica di FDM, OFDM e TDM
