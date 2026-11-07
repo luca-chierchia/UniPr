@@ -1,0 +1,37 @@
+
+                     SWITCH A                                      SWITCH B
+        +---------------------------+                 +---------------------------+
+        |                           |                 |                           |
+PC1 ----| P1 - Untagged (VLAN 10)   |                 | P1 - Untagged (VLAN 10)   |---- PC3
+        |                           |                 |                           |
+PC2 ----| P2 - Untagged (VLAN 20)   |                 | P2 - Untagged (VLAN 20)   |---- PC4
+        |                           |                 |                           |
+        | P6 - Tagged (10, 20)      |=================| P6 - Tagged (10, 20)      |
+        |                           |   TRUNK 802.1Q  |                           |
+        +---------------------------+                 +---------------------------+
+        
+        
+              PC1                  SWITCH A                  SWITCH B                  PC3
+       |                       |                         |                       |
+       |--- Frame Untagged --->|                         |                       |
+       |                       |                         |                       |
+       |                  Aggiunge TAG                   |                       |
+       |                    VLAN 10                      |                       |
+       |                       |                         |                       |
+       |                       |--- Frame Tagged ------->|                       |
+       |                       |      VLAN 10            |                       |
+       |                       |                         |                       |
+       |                       |                    Rimuove TAG                 |
+       |                       |                      VLAN 10                    |
+       |                       |                         |                       |
+       |                       |                         |--- Frame Untagged --->|
+       |                       |                         |                       |
+
+Concetto fondamentale
+- Untagged: il frame viene trasmesso senza etichetta VLAN. Lo switch associa il traffico in ingresso alla VLAN configurata per la porta.
+- Tagged: il frame contiene un'etichetta IEEE 802.1Q che identifica la VLAN di appartenenza.
+- Trunk: un collegamento può trasportare contemporaneamente frame appartenenti a più VLAN.
+- Comunicazione tra VLAN differenti: richiede un dispositivo con funzionalità di routing.
+Precisazione: una porta trunk può anche trasportare frame non taggati, se è configurata una VLAN nativa. Inoltre, quando uno switch aggiunge o rimuove un tag VLAN, deve aggiornare il campo FCS del frame.
+
+Nell'esempio, PC1 può comunicare con PC3 e PC2 con PC4, mentre PC1 e PC4, appartenendo a VLAN differenti, non possono comunicare direttamente attraverso la sola commutazione di livello 2.
