@@ -1,0 +1,40 @@
+Domande capitolo 3 - PROCESSI
+
+3.5 Quando un processo crea un nuovo processo utilizzando l’istruzione
+fork(), quale dei seguenti stati è condiviso tra il processo
+padre e il processo figlio?
+a. Stack
+b. Heap
+c. Segmenti di memoria condivisa
+
+c. vengono condivisi segmenti di memoria, infatti viene
+effettuata una copia dei dati come le variabili del data segment.
+
+3.8 Descrivete le azioni intraprese dal kernel nell’esecuzione di un
+cambio di contesto tra processi.
+
+Durante un context-switch il kernel deve salvare un istantanea dei
+dati del processo attualmente in esecuzione che deve interrompere, tra
+questi dati ci sono vari registri , il program counter e le risorse
+associate al processo. Una volta salvato il PCB (process content
+block) si possono prelevare i dati e le risorse che appartengono
+all'altro processo che appartengono al suo PCB ( costo di overhead) ed
+eseguire le istruzioni in base al pc (program counter) del processo in
+esecuzione, il ciclo viene ripetuto.
+
+3.10 Spiegate il ruolo del processo
+init (o systemd) su sistemi unix e Linux, con riferimento alla
+terminazione dei processi.
+
+Il processo systemd viene inizializzato con il sistema operativo e i
+genere gli è assegnato il PDI 1, il suo scopo è il recupero dei
+processi orfani, ovvero i processi figli che ancora devono terminare,
+tramite una riassegnazione del padre, in tal modo è possibile
+recuperare le informazioni di uscita del processo orfano.
+il cuo padre è terminato prima di loro, oppure i processi zombie che
+effettivamente sono terminati ma il processo padre non ha eseguito il
+wait() per il recupero informazini. Possiamo definire a tutti gli
+effetti il processo systemd un processo adottante di processi zombie e
+processi orfani con lo scopo di recuperare le informazioni di
+terminazione di questi processi consentendo al kernel di rimuovere le
+informazioni residue del processo.

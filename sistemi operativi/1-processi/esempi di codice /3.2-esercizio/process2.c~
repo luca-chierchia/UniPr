@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <unistd.h>
+
+// Considerando anche il processo padre iniziale, quanti processi vengono creati dal programma
+
+int main()
+{/* crea mediante fork un processo figlio */
+  fork(); // padre + figlio
+  /* crea un altro processo figlio */
+  fork(); // padre e figlio eseguono entrambi fork(), genrano quindi altri 2 processi
+  // abbiamo un totale di 4 processi 
+  /* e ne crea un altro ancora */
+  fork(); // i 4 processi precedenti creano altri processi figli
+  // avremo un totale di 2^4 = 16 processi totali creati del main
+  return 0;
+}
+
+
