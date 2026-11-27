@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+
+class Tree{
+private:
+  // metodi e attributi privati dell'albero
+  Node *root;
+  struct Node{
+    // struct Node gestita dall'albero
+    int value; // valutare template
+    Node *left;
+    Node *right;
+  }
+    void createNode(nodeValue val){}
+public:
+  Tree() root(nullptr)
+  // metodi pubblici
+}
+
+  int main(){
+  std::cout << "prova\n";
+  return 0;
+
+}
